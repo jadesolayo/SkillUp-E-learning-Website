@@ -16,12 +16,22 @@ body {
 
     .logo-cont {
       width: 15%;
+      @media (max-width: 768px) {
+        width: 45%;
+      }
     }
     .search-box {
       width: 35%;
       border: 1px solid var(--secondary);
       padding: 0.35rem;
       border-radius: 1.4rem;
+      @media (max-width: 1000px) {
+        display: block;
+        width: 15%;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
       input {
         border: none;
         width: 100%;
@@ -41,6 +51,12 @@ body {
         padding: 0.5rem;
         border-radius: 0.4rem;
       }
+      @media (max-width: 1000px) {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   //   Hero Styles
@@ -50,12 +66,25 @@ body {
     align-items: center;
     justify-content: center;
     background-color: hsl(228, 17%, 94%);
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 2rem;
+      flex-direction: column;
+    }
     .hero-text {
       width: 35%;
+      @media (max-width: 768px) {
+        margin-top: 2rem;
+        width: 100%;
+      }
       h1 {
         font-weight: 700;
         line-height: 4rem;
         font-size: var(--font-size-big);
+        @media (max-width: 768px) {
+          font-size: 2rem;
+          line-height: normal;
+        }
       }
       p {
         margin-top: 1rem;
@@ -64,12 +93,17 @@ body {
         color: var(--secondary);
       }
       .hero-links {
+        display: flex;
         margin-top: 1rem;
         font-weight: 500;
         font-size: var(--font-size-small2);
         .hero-btn {
           padding: 1rem 2.5rem;
           border-radius: 10px;
+          @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 0.8rem 1.2rem;
+          }
         }
         .hero-btn1 {
           word-spacing: 5px;
@@ -96,6 +130,11 @@ body {
     .hero-img {
       width: 50%;
       margin-left: 2rem;
+      @media (max-width: 768px) {
+        order: -1;
+        width: 99%;
+        margin-left: 0;
+      }
     }
   }
   // Popular Courses Styles
