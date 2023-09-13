@@ -119,12 +119,12 @@
                 <div class="col-md-6">
                   <div class="banner-caption-02">
                     <h5 class="banner-caption-02__sub-title">
-                      New Certificates
+                      New Courses
                     </h5>
                     <h3 class="banner-caption-02__title">
-                      Take Your Skills To The Next Level.
+                    Take Your Learning to the Next Level
                     </h3>
-                    <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Find out more</a>
+                    <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Enroll Now</a>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -143,12 +143,12 @@
                 <div class="col-md-6">
                   <div class="banner-caption-02">
                     <h5 class="banner-caption-02__sub-title">
-                      New Collection
+                      Teach on SkillUp by Jade
                     </h5>
                     <h3 class="banner-caption-02__title">
-                      Improve Your Coding Skills Today
+                      Unleash Your Expertise: Become a Course Creator
                     </h3>
-                    <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">View courses</a>
+                    <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Learn More</a>
                   </div>
                 </div>
                 <div class="col-md-6">
