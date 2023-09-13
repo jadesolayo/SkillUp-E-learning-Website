@@ -50,11 +50,11 @@
             <div class="col-md-6">
               <!-- Slider Caption Start -->
               <div class="slider-caption-02" data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="slider-caption-02__sub-title">Acquire </h3>
+                <h1 class="slider-caption-02__sub-title" style="font-size: 2rem;">Accquire </h1>
                 <h2 class="slider-caption-02__main-title">
                   Skills You Need to <mark>Succeed</mark>
                 </h2>
-                <p>
+                <p style="font-size: 1.4rem;">
                   Our E-learning platform gives you access to a wide variety of courses,
                   taught by experts. Learn at your own pace, on your own time.
                 </p>
@@ -66,7 +66,7 @@
               <!-- Slider Image Start -->
               <div class="slider-image pb-0">
                 <div class="slider-image__image text-center" data-aos="fade-up" data-aos-duration="1000">
-                  <img src="assets/images/home-02-hero-image.png" alt="Hero Image" width="449" height="541" />
+                  <img src="assets/images/hero-img2.jpg" alt="Hero Image" width="449" height="541" />
                 </div>
 
                 <div class="slider-image-widget-02" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="1000">
@@ -122,7 +122,7 @@
                       New Certificates
                     </h5>
                     <h3 class="banner-caption-02__title">
-                      Online Courses from SkillUp by Jade
+                      Take Your Skills To The Next Level.
                     </h3>
                     <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Find out more</a>
                   </div>
@@ -146,7 +146,7 @@
                       New Collection
                     </h5>
                     <h3 class="banner-caption-02__title">
-                      Improve Your Coding Skills This Fall
+                      Improve Your Coding Skills Today
                     </h3>
                     <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">View courses</a>
                   </div>
@@ -227,18 +227,18 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-1.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/web-dev-course.jpg" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single-layout-01.html">Successful Negotiation: Master Your Negotiating
-                          Skills</a>
+                        <a href="course-single-layout-01.html">Web Development 101: Learn everything you need to know to become a web developer, from HTML and CSS to JavaScript and PHP.
+</a>
                       </h3>
-                      <a href="#" class="course-info__instructor">parra</a>
+                      <a href="#" class="course-info__instructor">Jessica Turner</a>
                       <div class="course-info__price">
-                        <span class="sale-price">$39.<small class="separator">00</small></span>
+                        <span class="sale-price">&#x20A6;3,500.00<small class="separator"></small></span>
                       </div>
                       <div class="course-info__rating">
                         <div class="rating-star">
@@ -256,17 +256,18 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-2.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/photography-course.png" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single-layout-01.html">Time Management Mastery: Do More, Stress Less</a>
+                        <a href="course-single-layout-01.html">Photography Fundamentals: Master Photography!
+                          Capture Moments,Create Memories. "</a>
                       </h3>
-                      <a href="#" class="course-info__instructor">parra</a>
+                      <a href="#" class="course-info__instructor">Folarin Ogunleye</a>
                       <div class="course-info__price">
-                        <span class="sale-price">$29.<small class="separator">99</small></span>
+                        <span class="sale-price">&#x20A6;6,500.00<small class="separator"></small></span>
                       </div>
                       <div class="course-info__rating">
                         <div class="rating-star">
@@ -284,17 +285,17 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-3.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/public-speaking.png" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single-layout-01.html">Angular – The Complete Guide (2020 Edition)</a>
+                        <a href="course-single-layout-01.html">Learn Public Speaking: Overcome your fear of public speaking and become a confident speaker with this course. You'll learn how to prepare your presentation, deliver it effectively, and answer questions from the audience. Tagline: "Learn public speaking and make a great impression."</a>
                       </h3>
-                      <a href="#" class="course-info__instructor">parra</a>
+                      <a href="#" class="course-info__instructor">Samuel Blessing</a>
                       <div class="course-info__price">
-                        <span class="sale-price">$49.<small class="separator">99</small></span>
+                        <span class="sale-price">&#x20A6;7,000.00<small class="separator"></small></span>
                       </div>
                       <div class="course-info__rating">
                         <div class="rating-star">
@@ -312,7 +313,7 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-4.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/marketing-course.jpg" alt="courses" width="258" height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -321,9 +322,9 @@
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single-layout-01.html">Consulting Approach to Problem Solving</a>
+                        <a href="course-single-layout-01.html">Learn Digital Marketing: Master the latest digital marketing strategies and techniques with this course. You'll learn how to create and manage effective online campaigns, from search engine optimization (SEO) to pay-per-click (PPC) advertising. Tagline: "Learn digital marketing and grow your business online."</a>
                       </h3>
-                      <a href="#" class="course-info__instructor">parra</a>
+                      <a href="#" class="course-info__instructor">Alade Bisola</a>
                       <div class="course-info__price">
                         <span class="free">Free</span>
                       </div>
@@ -343,7 +344,7 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-5.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/graphic-design.png" alt="courses" width="258" height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -352,9 +353,9 @@
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single-layout-01.html">The Business Intelligence Analyst Course 2020</a>
+                        <a href="course-single-layout-01.html">Complete Graphic Design Course: Learn from experienced graphic designers who will share their knowledge and expertise with you.</a>
                       </h3>
-                      <a href="#" class="course-info__instructor">parra</a>
+                      <a href="#" class="course-info__instructor">Nneka Ibrahim</a>
                       <div class="course-info__price">
                         <span class="free">Free</span>
                       </div>
@@ -367,7 +368,7 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-6.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/product-mgt.png" alt="courses" width="258" height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -379,7 +380,7 @@
                         <a href="course-single-layout-01.html">Become a Product Manager | Learn the Skills & Get
                           the Job</a>
                       </h3>
-                      <a href="#" class="course-info__instructor">parra</a>
+                      <a href="#" class="course-info__instructor">Patricia Ezomon</a>
                       <div class="course-info__price">
                         <span class="free">Free</span>
                       </div>
@@ -399,7 +400,7 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-7.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/mech-eng.png" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
@@ -410,7 +411,7 @@
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
                       <div class="course-info__price">
-                        <span class="sale-price">$84.<small class="separator">00</small></span>
+                        <span class="sale-price">&#x20A6;3,500.00<small class="separator"></small></span>
                       </div>
                     </div>
                   </div>
@@ -421,7 +422,7 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-8.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/algebra.jpg" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
@@ -431,7 +432,7 @@
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
                       <div class="course-info__price">
-                        <span class="sale-price">$45.<small class="separator">00</small></span>
+                        <span class="sale-price">&#x20A6;5,500.00<small class="separator"></small></span>
                       </div>
                       <div class="course-info__rating">
                         <div class="rating-star">
@@ -449,13 +450,13 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-9.jpg" alt="courses" width="258" height="173" /></a>
+                        <a href="course-single-layout-01.html"><img src="assets/images/courses/emo-intel.jpeg" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single-layout-01.html">Essential Digital Tools for Student Engagement</a>
+                        <a href="course-single-layout-01.html">Emotional Intelligence and Communication:The Key to Success: Learn how to understand, manage, and use your emotions to improve your relationships, career, and life.</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Donald Logan</a>
                       <div class="course-info__price">
@@ -477,7 +478,8 @@
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single-layout-01.html"><img src="assets/images/courses/courses-10.jpg" alt="courses" width="258" height="173" /></a>
+                 
+                      <a href="course-single-layout-01.html"><img src="assets/images/courses/lightroom.jpeg" alt="courses" width="258" height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
