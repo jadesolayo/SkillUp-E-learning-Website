@@ -2571,7 +2571,7 @@ span.flatpickr-weekday {
   visibility: hidden;
   z-index: 100;
   border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
+  border-right: 8px solid transparent;p
   border-bottom: 10px solid #FFFFFF;
   filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.12));
   transition: 0;
