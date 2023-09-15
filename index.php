@@ -145,7 +145,7 @@
                     <h5 class="banner-caption-02__sub-title">
                       Teach on SkillUp by Jade
                     </h5>
-                    <h3 class="banner-caption-02__title">
+                    <h3 class="banner-caption-02__title" style="font-size: 1.342rem;">
                       Unleash Your Expertise: Become a Course Creator
                     </h3>
                     <a href="course-grid-left-sidebar.html" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Learn More</a>
