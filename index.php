@@ -1642,7 +1642,7 @@
                 <div class="category-item">
                   <a class="category-item__link" href="course-category.html">
                     <div class="category-item__image">
-                      <img src="assets/images/category/category-1.jpg" alt="Category" width="258" height="318" />
+                      <img src="assets/images/category/art_and_design.jpeg" alt="Category" width="258" height="318" />
                     </div>
                     <div class="category-item__caption">
                       <h3 class="category-item__name">Art & Design</h3>
@@ -1656,7 +1656,7 @@
                 <div class="category-item">
                   <a class="category-item__link" href="course-category.html">
                     <div class="category-item__image">
-                      <img src="assets/images/category/category-2.jpg" alt="Category" width="258" height="318" />
+                      <img src="assets/images/category/business.jpeg" alt="Category" width="258" height="318" />
                     </div>
                     <div class="category-item__caption">
                       <h3 class="category-item__name">Business</h3>
@@ -1670,7 +1670,7 @@
                 <div class="category-item">
                   <a class="category-item__link" href="course-category.html">
                     <div class="category-item__image">
-                      <img src="assets/images/category/category-3.jpg" alt="Category" width="258" height="318" />
+                      <img src="assets/images/category/data_science.jpeg" alt="Category" width="258" height="318" />
                     </div>
                     <div class="category-item__caption">
                       <h3 class="category-item__name">Data Science</h3>
@@ -1684,10 +1684,10 @@
                 <div class="category-item">
                   <a class="category-item__link" href="course-category.html">
                     <div class="category-item__image">
-                      <img src="assets/images/category/category-4.jpg" alt="Category" width="258" height="318" />
+                      <img src="assets/images/category/web-dev.jpg" alt="Category" width="258" height="318" />
                     </div>
                     <div class="category-item__caption">
-                      <h3 class="category-item__name">Development</h3>
+                      <h3 class="category-item__name">Web Development</h3>
                     </div>
                   </a>
                 </div>
@@ -1698,7 +1698,7 @@
                 <div class="category-item">
                   <a class="category-item__link" href="course-category.html">
                     <div class="category-item__image">
-                      <img src="assets/images/category/category-5.jpg" alt="Category" width="258" height="318" />
+                      <img src="assets/images/category/finance.jpg" alt="Category" width="258" height="318" />
                     </div>
                     <div class="category-item__caption">
                       <h3 class="category-item__name">Finance</h3>
@@ -2037,7 +2037,7 @@
             <a href="#" class="banner-caption-03__btn btn btn-primary btn-hover-secondary">Register for free</a>
           </div>
 
-          <div class="banner-big-box__image" style="background-image: url(assets/images/banner-image-03.jpg)"></div>
+          <div class="banner-big-box__image" style="background-image: url(assets/images/bg_04.png)"></div>
         </div>
         <!-- Banner Box End -->
       </div>
