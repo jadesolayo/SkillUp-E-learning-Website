@@ -33,6 +33,5 @@
   <!-- Style CSS -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- SweetAlert Script -->
-  <script src="assets/js/vendor/sweetalert.min.js"></script>
+  
 </head>
