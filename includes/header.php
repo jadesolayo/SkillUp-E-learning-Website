@@ -30,16 +30,13 @@ include_once("includes/functions.php");
               <div class="header-top-bar-wrap__info d-sm-flex">
                 <ul class="header-top-bar-wrap__info-list d-none d-lg-flex">
                   <li>
-                    <button data-bs-toggle="modal" data-bs-target="#loginModal">
-                      Log in
+                    <button>
+                      <a href="../auth/login.php">Log in</a>
                     </button>
                   </li>
                   <li>
-                    <button
-                      data-bs-toggle="modal"
-                      data-bs-target="#registerModal"
-                    >
-                      Register
+                    <button>
+                      <a href="../auth/register.php">Register</a>
                     </button>
                   </li>
                 </ul>
