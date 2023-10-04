@@ -1,18 +1,18 @@
-<!-- logout.php -->
 <?php
 session_start();
 
-// Unset all session variables
+// Clear all session variables
 $_SESSION = array();
 
 // Destroy the session
 session_destroy();
 
-// Clear cookies
-setcookie('PHPSESSID', '', time() - 3600, '/');
-setcookie('token', '', time() - 3600, '/');
+// Clear and expire any existing cookies (if you set any)
+if (isset($_COOKIE['remember_me'])) {
+    setcookie('remember_me', '', time() - 3600, '/');
+}
 
-// Redirect to the login page
-header("Location: login.php");
+// Redirect the user to the login page
+header("Location: ../auth/login.php");
 exit();
 ?>
