@@ -1,7 +1,6 @@
 <?php
 session_start();
 include_once("includes/config.php");
-include_once("includes/functions.php");
 ?>
 <!-- Header start -->
       <div class="header-section header-sticky">
