@@ -30,12 +30,12 @@ include_once("includes/config.php");
                 <ul class="header-top-bar-wrap__info-list d-none d-lg-flex">
                   <li>
                     <button>
-                      <a href="../auth/login.php">Log in</a>
+                      <a href="auth/login.php">Log in</a>
                     </button>
                   </li>
                   <li>
                     <button>
-                      <a href="../auth/register.php">Register</a>
+                      <a href="auth/register.php">Register</a>
                     </button>
                   </li>
                 </ul>
