@@ -14,7 +14,7 @@
         <!-- page Banner Section Start -->
         <div class="page-banner">
             <div class="page-banner__wrapper about-banner"
-                style="background-image: url(assets/images/about-us-hero.jpg);">
+                style="background-image: url(assets/images/about-us-hero-bg.jpg);">
                 <div class="container">
 
                     <!-- Page Breadcrumb Start -->
