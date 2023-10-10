@@ -17,7 +17,10 @@ include_once("includes/config.php");
             </li>
             <li>
               <a href="mailto:agency@example.com"><i class="far fa-envelope"></i>
-                <span class="info-text">agency@example.com</span></a>
+                <span class="info-text">
+                  support@skillupbyjade.com
+
+                </span></a>
             </li>
           </ul>
         </div>

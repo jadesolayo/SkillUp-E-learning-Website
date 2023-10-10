@@ -14,7 +14,7 @@
         <!-- page Banner Section Start -->
         <div class="page-banner">
             <div class="page-banner__wrapper about-banner"
-                style="background-image: url(assets/images/about-us-hero-bg.jpg);">
+                style="background-image: url(assets/images/about-banner-01.jpeg);">
                 <div class="container">
 
                     <!-- Page Breadcrumb Start -->
@@ -50,9 +50,13 @@
                     <h4 class="about-section-title__sub-title">Start to success</h4>
                     <h2 class="about-section-title__main-title">The Leading Global Marketplace for Learning and
                         Instruction</h2>
-                    <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper
-                        auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras
-                        semper atincidunt egetnval</p>
+                    <p>
+
+                        At SkillUp by Jade, we are proud to be the leading global marketplace for learning and
+                        instruction. Our platform connects learners with expert instructors from around the world,
+                        offering a diverse range of courses and resources to empower individuals in their pursuit of
+                        knowledge and skill development. With a commitment to excellence and innovation, SkillUp by Jade
+                        is your gateway to a world of learning opportunities, accessible anytime, anywhere.</p>
 
                 </div>
                 <!-- About Title End -->
@@ -256,7 +260,9 @@
                 <!-- Section Title Start -->
                 <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="section-title__title-03">What Make Us <mark>Spcecial?</mark></h2>
-                    <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipisc ing elit.</p>
+                    <p class="mt-0">We dedicate ourselves to fostering a vibrant learning community where learners like
+                        you can explore your passions, and expert instructors can share their knowledge with the world.
+                    </p>
                 </div>
                 <!-- Section Title End -->
 
@@ -267,15 +273,18 @@
                         <div class="academics-item text-center" data-aos="fade-up" data-aos-duration="1000">
                             <a href="#" class="academics-item__link">
                                 <div class="academics-item__image">
-                                    <img src="assets/images/academics/event-thumbnail-01.jpg" alt="University"
-                                        width="370" height="269">
+                                    <img src="assets/images/who-we-are.jpeg" alt="University" width="370" height="269">
                                     <h3 class="academics-item__title">Who we are</h3>
                                 </div>
                                 <div class="academics-item__description">
-                                    <p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing</strong> elit, sed
-                                        diam nonummy ndisse suscipit sagittis leom dolor sit amet,</p>
+                                    <p></p>
                                 </div>
-                            </a>
+                            </a>We are a team of <strong>passionate educators</strong> and
+                            <strong>technologists</strong> who believe that everyone deserves access to high-quality
+                            education. That's why we created our e-learning platform, which offers a wide range of
+                            courses on a variety of topics, all taught by experienced instructors.
+
+
                         </div>
                         <!-- Academics End -->
 
@@ -286,13 +295,17 @@
                         <div class="academics-item text-center" data-aos="fade-up" data-aos-duration="1000">
                             <a href="#" class="academics-item__link">
                                 <div class="academics-item__image">
-                                    <img src="assets/images/academics/event-thumbnail-02.jpg" alt="University"
-                                        width="370" height="269">
+                                    <img src="assets/images/what-we-do.jpeg" alt="University" width="370" height="269">
                                     <h3 class="academics-item__title">What we do</h3>
                                 </div>
                                 <div class="academics-item__description">
-                                    <p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing</strong> elit, sed
-                                        diam nonummy ndisse suscipit sagittis leom dolor sit amet,</p>
+                                    <p>
+                                        We provide <strong>high-quality</strong> , <strong>affordable</strong>
+                                        e-learning courses to students of all ages
+                                        and backgrounds. Our courses are taught by experienced instructors and cover a
+                                        wide range of topics, from business and technology to personal development and
+                                        the arts.
+                                    </p>
                                 </div>
                             </a>
                         </div>
