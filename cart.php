@@ -352,10 +352,8 @@
 
     </main>
 
-    <!-- Log In Modal Start -->
-    <?php include("includes/login.php") ?>
-    <?php include("includes/register.php") ?>
-    <!-- Log In Modal End -->
+    
+    
 
 
 

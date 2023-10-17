@@ -2024,10 +2024,6 @@ include("includes/config.php");
     <!--Back To End-->
   </main>
 
-  <!-- Log In Modal Start -->
-  <?php include("includes/login.php") ?>
-  <?php include("includes/register.php") ?>
-    <!-- Log In Modal End -->
 
   <!-- JS Vendor, Plugins & Activation Script Files -->
 

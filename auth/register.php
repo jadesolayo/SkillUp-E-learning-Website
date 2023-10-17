@@ -46,8 +46,8 @@ include("../includes/config.php");
         } else {
             try {
                 $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-                $token = generateToken(); // Generate a token (you need to implement this function)
-                $serial = generateSerial(); // Generate a serial (you need to implement this function)
+                $token = generateToken(); 
+                $serial = generateSerial(); 
 
                 $sql = "INSERT INTO users (user_firstname, user_lastname, user_username, user_email, user_password, token, serial) VALUES (:firstname, :lastname, :username, :email, :password, :token, :serial)";
                 $query = $dbh->prepare($sql);
@@ -58,9 +58,7 @@ include("../includes/config.php");
                 $query->bindParam(':password', $passwordHash, PDO::PARAM_STR);
                 $query->bindParam(':token', $token, PDO::PARAM_STR);
                 $query->bindParam(':serial', $serial, PDO::PARAM_STR);
-                $query->execute();
-                $lastInsertId = $dbh->lastInsertId();
-                if ($lastInsertId) {
+                if ($query->execute()) {
                     
                     // Store session variables
                     $_SESSION['phpsessid'] = session_id();
