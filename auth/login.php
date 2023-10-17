@@ -32,60 +32,52 @@ include("../includes/config.php");
         $password = $_POST['password'];
     
         try {
-            // Assuming you have a $dbh variable for your PDO connection
-            $sql = "SELECT user_username, user_password FROM users WHERE user_username = :username OR user_email = :username";
+            // Check if the input is an email address
+            if (filter_var($usernameOrEmail, FILTER_VALIDATE_EMAIL)) {
+                // User provided an email, fetch user data by email
+                $sql = "SELECT * FROM users WHERE user_email = :username_or_email";
+            } else {
+                // User provided a username, fetch user data by username
+                $sql = "SELECT * FROM users WHERE user_username = :username_or_email";
+            }
+
             $query = $dbh->prepare($sql);
             $query->bindParam(':username', $usernameOrEmail, PDO::PARAM_STR);
             $query->execute();
-            $results = $query->fetch(PDO::FETCH_ASSOC);
-    
-            if ($query->rowCount() > 0) {
-                $storedPassword = $results['user_password']; // Access the column as an associative array
-    
-                if (password_verify($password, $storedPassword)) {
-                    $_SESSION['alogin'] = $results['user_username']; // Set the session variable
-    
-                    if (isset($_POST['remember_me'])) {
-                        // Set a cookie to remember the user for a longer duration
-                        $cookie_name = 'remember_user';
-                        $cookie_value = $_SESSION['alogin'];
-                        setcookie($cookie_name, $cookie_value, time() + 30 * 24 * 3600); // 30 days
-                    }
-    
-                    echo '
+            $user = $query->fetchAll(PDO::FETCH_ASSOC);
+
+
+            // Verify the password
+            if ($user && password_verify($password, $user['password'])) {
+                // Password is correct, set session variables
+                $_SESSION['phpsessid'] = session_id();
+                $_SESSION['token'] = $user['token'];
+                $_SESSION['serial'] = $user['serial'];
+
+
+                // Redirect to a logged-in page
+                echo '
                     <script>
-                        swal({
-                            title: "Good job!",
-                            text: "Login successful!",
-                            icon: "success",
-                            timer: 1500,
-                        }).then(function() {
-                            document.location = "../dashboard/dashboard.php";
-                        });
+                      swal({
+                        title: "Good job!",
+                        text: "Login successful!",
+                        icon: "success",
+                        timer: 1500,
+                      }).then(function() {
+                        document.location = "../dashboard/dashboard.php";
+                      });
                     </script>
                     ';
-                    // exit();
-                } else {
-                    echo '
+                exit();
+            } else {
+                echo '
                     <script>
                         swal({
                             icon: "error",
                             title: "Error",
                             text: "Incorrect password",
                         });
-                    </script>
-                    ';
-                }
-            } else {
-                echo '
-                <script>
-                    swal({
-                        icon: "error",
-                        title: "Error",
-                        text: "Username or email not found",
-                    });
-                </script>
-                ';
+                    </script>';
             }
         } catch (PDOException $e) {
             echo $e->getMessage();
