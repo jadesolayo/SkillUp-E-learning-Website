@@ -22,6 +22,7 @@ include_once("includes/config.php");
           </ul>
         </div>
 
+<<<<<<< HEAD
         <div class="header-top-bar-wrap__info d-sm-flex">
           <ul class="header-top-bar-wrap__info-list d-none d-lg-flex">
             <li>
@@ -80,6 +81,44 @@ include_once("includes/config.php");
                   </path>
                 </g>
               </svg>
+=======
+              <div class="header-top-bar-wrap__info d-sm-flex">
+                <ul class="header-top-bar-wrap__info-list d-none d-lg-flex">
+                  <li>
+                    <button>
+                      <a href="auth/login.php">Log in</a>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <a href="auth/register.php">Register</a>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="header-top-bar-wrap__info-social">
+                  <li>
+                    <a href="https://twitter.com/" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/" target="_blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+>>>>>>> 269445db1ec5c2316c944198d1ca79d59ca5ab64
             </div>
             <div class="header-category-toggle__text">Explore</div>
           </a>

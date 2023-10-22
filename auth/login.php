@@ -27,11 +27,10 @@ include("../includes/config.php");
 <body>
 
     <?php
-
     if (isset($_POST['login'])) {
-        $usernameOrEmail = $_POST['username_or_email'];
+        $usernameOrEmail = $_POST['username'];
         $password = $_POST['password'];
-
+    
         try {
             // Check if the input is an email address
             if (filter_var($usernameOrEmail, FILTER_VALIDATE_EMAIL)) {
@@ -43,7 +42,7 @@ include("../includes/config.php");
             }
 
             $query = $dbh->prepare($sql);
-            $query->bindParam(':username_or_email', $usernameOrEmail, PDO::PARAM_STR);
+            $query->bindParam(':username', $usernameOrEmail, PDO::PARAM_STR);
             $query->execute();
             $user = $query->fetchAll(PDO::FETCH_ASSOC);
 
@@ -87,6 +86,7 @@ include("../includes/config.php");
     ?>
 
 
+
     <div class="main">
         <section class="sign-in">
             <div class="container">
@@ -102,7 +102,7 @@ include("../includes/config.php");
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="username_or_email" id="username_or_email" placeholder="Username or Email" />
+                                <input type="text" name="username" id="username" placeholder="Username or Email" />
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
@@ -110,7 +110,8 @@ include("../includes/config.php");
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember_me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
+                                    me</label>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="login" id="login" class="form-submit" value="Log in" />
