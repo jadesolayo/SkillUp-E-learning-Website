@@ -30,52 +30,60 @@ include("../includes/config.php");
     if (isset($_POST['login'])) {
         $usernameOrEmail = $_POST['username'];
         $password = $_POST['password'];
+        
+        // Initialize $user as false
+        $user = false;
     
         try {
-            // Check if the input is an email address
             if (filter_var($usernameOrEmail, FILTER_VALIDATE_EMAIL)) {
-                // User provided an email, fetch user data by email
-                $sql = "SELECT * FROM users WHERE user_email = :username_or_email";
+                $sql = "SELECT * FROM users WHERE user_email = :username";
             } else {
-                // User provided a username, fetch user data by username
-                $sql = "SELECT * FROM users WHERE user_username = :username_or_email";
+                $sql = "SELECT * FROM users WHERE user_username = :username";
             }
-
+    
             $query = $dbh->prepare($sql);
             $query->bindParam(':username', $usernameOrEmail, PDO::PARAM_STR);
             $query->execute();
-            $user = $query->fetchAll(PDO::FETCH_ASSOC);
-
-
-            // Verify the password
-            if ($user && password_verify($password, $user['password'])) {
-                // Password is correct, set session variables
-                $_SESSION['phpsessid'] = session_id();
-                $_SESSION['token'] = $user['token'];
-                $_SESSION['serial'] = $user['serial'];
-
-
-                // Redirect to a logged-in page
-                echo '
-                    <script>
-                      swal({
-                        title: "Good job!",
-                        text: "Login successful!",
-                        icon: "success",
-                        timer: 1500,
-                      }).then(function() {
-                        document.location = "../dashboard/dashboard.php";
-                      });
-                    </script>
+            $user = $query->fetch(PDO::FETCH_ASSOC); // Use fetch() to get a single row
+    
+            if ($user) {
+                if (array_key_exists('password', $user) && password_verify($password, $user['password'])) {
+                    // Password is correct, set session variables
+                    $_SESSION['phpsessid'] = $user['user_id'];
+                    $_SESSION['token'] = $user['token'];
+                    $_SESSION['serial'] = $user['serial'];
+    
+                    // Redirect to a logged-in page
+                    echo '
+                        <script>
+                          swal({
+                            title: "Good job!",
+                            text: "Login successful!",
+                            icon: "success",
+                            timer: 1500,
+                          }).then(function() {
+                            document.location = "../dashboard/dashboard.php";
+                          });
+                        </script>
                     ';
-                exit();
+                    exit();
+                } else {
+                    echo '
+                        <script>
+                            swal({
+                                icon: "error",
+                                title: "Error",
+                                text: "Incorrect password",
+                            });
+                        </script>';
+                }
             } else {
                 echo '
                     <script>
                         swal({
                             icon: "error",
                             title: "Error",
-                            text: "Incorrect password",
+                            text: "User not found",
                         });
                     </script>';
             }
@@ -83,6 +91,8 @@ include("../includes/config.php");
             echo $e->getMessage();
         }
     }
+    
+    
     ?>
 
 
