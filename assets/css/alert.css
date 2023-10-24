@@ -1,0 +1,43 @@
+.warning {
+    color: #ffffff;
+    background-color: #FF8080;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius:.5em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:12px;
+   width: 400px;
+}
+
+.error {
+    color: #ff0000;
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius:.5em;
+    border: 1px solid #ffffff;
+    margin: 10px 0px;
+    padding:12px;
+    width: 400px;
+}
+
+.info {
+    color: #ffffff;
+    background-color: #79CFE0;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius:.5em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:12px;
+   width: 400px;
+}
+
+.success {
+    color: #ffffff;
+    background-color: #7DDF7C;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius:.5em;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:12px;
+   width: 400px;
+}
