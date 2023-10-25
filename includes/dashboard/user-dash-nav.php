@@ -23,7 +23,7 @@
                 <div class="dashboard-nav__menu">
                     <ul class="dashboard-nav__menu-list">
                         <li>
-                            <a href="dashboard-index.php">
+                            <a href="dashboard.php">
                                 <i class="edumi edumi-layers"></i>
                                 <span class="text">Dashboard</span>
                             </a>

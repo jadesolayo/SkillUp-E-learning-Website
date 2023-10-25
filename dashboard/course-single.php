@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<?php include("includes/head-tag.php") ?>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SkillUp - E-Learning Platform</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png" />
+
+    <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="../assets/css/vendor/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/edumall-icon.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css" />
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="../assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/jquery.powertip.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/glightbox.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/flatpickr.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/select2.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+
+</head>
 
 <body>
 
     <main class="main-wrapper">
 
         <!-- Header start -->
-        <?php include("includes/header.php") ?>
+
         <!-- Header End -->
 
 
@@ -19,13 +55,13 @@
                 <div class="container">
 
                     <!-- Page Breadcrumb Start -->
-                    <div class="page-breadcrumb">
+                    <!-- <div class="page-breadcrumb">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item"><a href="course-grid-left-sidebar.html">courses</a></li>
                             <li class="breadcrumb-item active">Mastering Data Modeling Fundamentals</li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!-- Page Breadcrumb End -->
 
                 </div>
@@ -34,7 +70,7 @@
         <!-- Page Banner Section End -->
 
         <!-- Offcanvas Start -->
-        <?php include("includes/offcanvas.php") ?>
+        
         <!-- Offcanvas End -->
 
         <!-- Tutor Course Main content Start -->
@@ -776,9 +812,7 @@
         </div>
         <!-- Tutor Course Main content End -->
 
-        <!-- Footer Start -->
-        <?php include("includes/footer.php") ?>
-        <!-- Footer End -->
+        
 
         <!--Back To Start-->
         <button id="backBtn" class="back-to-top backBtn">
@@ -800,29 +834,29 @@
     <!-- JS Vendor, Plugins & Activation Script Files -->
 
     <!-- Vendors JS -->
-    <script src="./assets/js/vendor/modernizr-3.11.7.min.js"></script>
-    <script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/vendor/modernizr-3.11.7.min.js"></script>
+    <script src="../assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
 
     <!-- Plugins JS -->
-    <script src="./assets/js/plugins/aos.js"></script>
-    <script src="./assets/js/plugins/parallax.js"></script>
-    <script src="./assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="./assets/js/plugins/jquery.powertip.min.js"></script>
-    <script src="./assets/js/plugins/nice-select.min.js"></script>
-    <script src="./assets/js/plugins/glightbox.min.js"></script>
-    <script src="./assets/js/plugins/jquery.sticky-kit.min.js"></script>
-    <script src="./assets/js/plugins/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/js/plugins/masonry.pkgd.min.js"></script>
-    <script src="./assets/js/plugins/flatpickr.js"></script>
-    <script src="./assets/js/plugins/range-slider.js"></script>
-    <script src="./assets/js/plugins/select2.min.js"></script>
+    <script src="../assets/js/plugins/aos.js"></script>
+    <script src="../assets/js/plugins/parallax.js"></script>
+    <script src="../assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/jquery.powertip.min.js"></script>
+    <script src="../assets/js/plugins/nice-select.min.js"></script>
+    <script src="../assets/js/plugins/glightbox.min.js"></script>
+    <script src="../assets/js/plugins/jquery.sticky-kit.min.js"></script>
+    <script src="../assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/js/plugins/masonry.pkgd.min.js"></script>
+    <script src="../assets/js/plugins/flatpickr.js"></script>
+    <script src="../assets/js/plugins/range-slider.js"></script>
+    <script src="../assets/js/plugins/select2.min.js"></script>
 
 
     <!-- Activation JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 
 </body>
