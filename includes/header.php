@@ -1,16 +1,15 @@
-<?php
-session_start();
-include_once("includes/config.php");
-?>
-<!-- Header start -->
 <div class="header-section header-sticky">
+
   <!-- Header Top Start -->
   <div class="header-top d-none d-sm-block">
     <div class="container">
+
       <!-- Header Top Bar Wrapper Start -->
       <div class="header-top-bar-wrap d-sm-flex justify-content-between">
+
         <div class="header-top-bar-wrap__info">
           <ul class="header-top-bar-wrap__info-list">
+<<<<<<< HEAD
             <li>
               <a href="tel:+8819906886"><i class="fas fa-phone"></i>
                 <span class="info-text">(+88) 1990 6886</span></a>
@@ -22,39 +21,29 @@ include_once("includes/config.php");
 
                 </span></a>
             </li>
+=======
+            <li><a href="tel:+8819906886"><i class="fas fa-phone"></i> <span class="info-text">(+88) 1990 6886</span></a></li>
+            <li><a href="mailto:agency@example.com"><i class="far fa-envelope"></i> <span class="info-text">agency@example.com</span></a></li>
+>>>>>>> c3e58b1a28aee5aa9209ed03fb01abb231f98ddc
           </ul>
         </div>
 
         <div class="header-top-bar-wrap__info d-sm-flex">
           <ul class="header-top-bar-wrap__info-list d-none d-lg-flex">
-            <li>
-              <button>
-                <a href="auth/login.php">Log in</a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="auth/register.php">Register</a>
-              </button>
-            </li>
+            <li><button><a href="auth/login.php"></a></button></li>
+            <li><button><a href="auth/register.php">Register</a></button></li>
           </ul>
           <ul class="header-top-bar-wrap__info-social">
-            <li>
-              <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
+
       </div>
       <!-- Header Top Bar Wrapper End -->
+
     </div>
   </div>
   <!-- Header Top End -->
@@ -64,10 +53,10 @@ include_once("includes/config.php");
     <div class="container">
       <!-- Header Main Wrapper Start -->
       <div class="header-main-wrapper">
+
         <!-- Header Logo Start -->
         <div class="header-logo">
-          <a class="header-logo__logo" href="index.php"><img src="assets/images/logo.png" width="296" height="64"
-              alt="Logo" /></a>
+          <a class="header-logo__logo" href="index.php"><img src="assets/images/logo.png" width="296" height="64" alt="Logo"></a>
         </div>
         <!-- Header Logo End -->
 
@@ -75,41 +64,33 @@ include_once("includes/config.php");
         <div class="header-category-menu d-none d-xl-block">
           <a href="#" class="header-category-toggle">
             <div class="header-category-toggle__icon">
-              <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g stroke="none" stroke-width="1" fill-rule="evenodd">
-                  <path
-                    d="M2,14 C3.1045695,14 4,14.8954305 4,16 C4,17.1045695 3.1045695,18 2,18 C0.8954305,18 0,17.1045695 0,16 C0,14.8954305 0.8954305,14 2,14 Z M9,14 C10.1045695,14 11,14.8954305 11,16 C11,17.1045695 10.1045695,18 9,18 C7.8954305,18 7,17.1045695 7,16 C7,14.8954305 7.8954305,14 9,14 Z M16,14 C17.1045695,14 18,14.8954305 18,16 C18,17.1045695 17.1045695,18 16,18 C14.8954305,18 14,17.1045695 14,16 C14,14.8954305 14.8954305,14 16,14 Z M2,7 C3.1045695,7 4,7.8954305 4,9 C4,10.1045695 3.1045695,11 2,11 C0.8954305,11 0,10.1045695 0,9 C0,7.8954305 0.8954305,7 2,7 Z M9,7 C10.1045695,7 11,7.8954305 11,9 C11,10.1045695 10.1045695,11 9,11 C7.8954305,11 7,10.1045695 7,9 C7,7.8954305 7.8954305,7 9,7 Z M16,7 C17.1045695,7 18,7.8954305 18,9 C18,10.1045695 17.1045695,11 16,11 C14.8954305,11 14,10.1045695 14,9 C14,7.8954305 14.8954305,7 16,7 Z M2,0 C3.1045695,0 4,0.8954305 4,2 C4,3.1045695 3.1045695,4 2,4 C0.8954305,4 0,3.1045695 0,2 C0,0.8954305 0.8954305,0 2,0 Z M9,0 C10.1045695,0 11,0.8954305 11,2 C11,3.1045695 10.1045695,4 9,4 C7.8954305,4 7,3.1045695 7,2 C7,0.8954305 7.8954305,0 9,0 Z M16,0 C17.1045695,0 18,0.8954305 18,2 C18,3.1045695 17.1045695,4 16,4 C14.8954305,4 14,3.1045695 14,2 C14,0.8954305 14.8954305,0 16,0 Z">
-                  </path>
+                  <path d="M2,14 C3.1045695,14 4,14.8954305 4,16 C4,17.1045695 3.1045695,18 2,18 C0.8954305,18 0,17.1045695 0,16 C0,14.8954305 0.8954305,14 2,14 Z M9,14 C10.1045695,14 11,14.8954305 11,16 C11,17.1045695 10.1045695,18 9,18 C7.8954305,18 7,17.1045695 7,16 C7,14.8954305 7.8954305,14 9,14 Z M16,14 C17.1045695,14 18,14.8954305 18,16 C18,17.1045695 17.1045695,18 16,18 C14.8954305,18 14,17.1045695 14,16 C14,14.8954305 14.8954305,14 16,14 Z M2,7 C3.1045695,7 4,7.8954305 4,9 C4,10.1045695 3.1045695,11 2,11 C0.8954305,11 0,10.1045695 0,9 C0,7.8954305 0.8954305,7 2,7 Z M9,7 C10.1045695,7 11,7.8954305 11,9 C11,10.1045695 10.1045695,11 9,11 C7.8954305,11 7,10.1045695 7,9 C7,7.8954305 7.8954305,7 9,7 Z M16,7 C17.1045695,7 18,7.8954305 18,9 C18,10.1045695 17.1045695,11 16,11 C14.8954305,11 14,10.1045695 14,9 C14,7.8954305 14.8954305,7 16,7 Z M2,0 C3.1045695,0 4,0.8954305 4,2 C4,3.1045695 3.1045695,4 2,4 C0.8954305,4 0,3.1045695 0,2 C0,0.8954305 0.8954305,0 2,0 Z M9,0 C10.1045695,0 11,0.8954305 11,2 C11,3.1045695 10.1045695,4 9,4 C7.8954305,4 7,3.1045695 7,2 C7,0.8954305 7.8954305,0 9,0 Z M16,0 C17.1045695,0 18,0.8954305 18,2 C18,3.1045695 17.1045695,4 16,4 C14.8954305,4 14,3.1045695 14,2 C14,0.8954305 14.8954305,0 16,0 Z"></path>
                 </g>
               </svg>
             </div>
-            <div class="header-category-toggle__text">Explore</div>
+            <div class="header-category-toggle__text">Category</div>
           </a>
 
           <div class="header-category-dropdown-wrap">
             <ul class="header-category-dropdown">
               <li>
-                <a href="shop-left-sidebar.html">
-                  Design <span class="toggle-sub-menu"></span></a>
+                <a href="shop-left-sidebar.php"> Design <span class="toggle-sub-menu"></span></a>
 
                 <ul class="sub-categories children">
-                  <li>
-                    <a href="shop-left-sidebar.html">All Business</a>
-                  </li>
+                  <li><a href="shop-left-sidebar.php">All Business</a></li>
                   <li>
                     <a href="#">Communications<span class="toggle-sub-menu"></span></a>
 
                     <ul class="course-list children">
                       <li>
-                        <a class="categories-course" href="shop-single-list-left-sidebar.html">
+                        <a class="categories-course" href="shop-single-list-left-sidebar.php">
                           <div class="categories-course__thumbnail">
-                            <img src="assets/images/courses/courses-1.jpg" alt="Course" width="62" height="50" />
+                            <img src="assets/images/courses/courses-1.jpg" alt="Course" width="62" height="50">
                           </div>
                           <div class="categories-course__caption">
-                            <h5 class="categories-course__title">
-                              Illustrator 2020 MasterClass
-                            </h5>
+                            <h5 class="categories-course__title">Illustrator 2020 MasterClass</h5>
                             <div class="categories-course__price">
                               <span class="categories-course__sale-price">$22.00</span>
                               <span class="categories-course__regular-price">$30.00</span>
@@ -118,14 +99,12 @@ include_once("includes/config.php");
                         </a>
                       </li>
                       <li>
-                        <a class="categories-course" href="shop-single-list-left-sidebar.html">
+                        <a class="categories-course" href="shop-single-list-left-sidebar.php">
                           <div class="categories-course__thumbnail">
-                            <img src="assets/images/courses/courses-2.jpg" alt="Course" width="62" height="50" />
+                            <img src="assets/images/courses/courses-2.jpg" alt="Course" width="62" height="50">
                           </div>
                           <div class="categories-course__caption">
-                            <h5 class="categories-course__title">
-                              Illustrator 2020 MasterClass
-                            </h5>
+                            <h5 class="categories-course__title">Illustrator 2020 MasterClass</h5>
                             <div class="categories-course__price">
                               <span class="categories-course__sale-price">$22.00</span>
                               <span class="categories-course__regular-price">$30.00</span>
@@ -134,14 +113,12 @@ include_once("includes/config.php");
                         </a>
                       </li>
                       <li>
-                        <a class="categories-course" href="shop-single-list-left-sidebar.html">
+                        <a class="categories-course" href="shop-single-list-left-sidebar.php">
                           <div class="categories-course__thumbnail">
-                            <img src="assets/images/courses/courses-3.jpg" alt="Course" width="62" height="50" />
+                            <img src="assets/images/courses/courses-3.jpg" alt="Course" width="62" height="50">
                           </div>
                           <div class="categories-course__caption">
-                            <h5 class="categories-course__title">
-                              Illustrator 2020 MasterClass
-                            </h5>
+                            <h5 class="categories-course__title">Illustrator 2020 MasterClass</h5>
                             <div class="categories-course__price">
                               <span class="categories-course__sale-price">$22.00</span>
                               <span class="categories-course__regular-price">$30.00</span>
@@ -151,34 +128,24 @@ include_once("includes/config.php");
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <a href="shop-left-sidebar.html">Entrepreneurship</a>
-                  </li>
-                  <li><a href="shop-left-sidebar.html">Finance</a></li>
-                  <li><a href="shop-left-sidebar.html">Management</a></li>
-                  <li><a href="shop-left-sidebar.html">Sales</a></li>
-                  <li>
-                    <a href="shop-left-sidebar.html">Strategy &amp; Analytics</a>
-                  </li>
+                  <li><a href="shop-left-sidebar.php">Entrepreneurship</a></li>
+                  <li><a href="shop-left-sidebar.php">Finance</a></li>
+                  <li><a href="shop-left-sidebar.php">Management</a></li>
+                  <li><a href="shop-left-sidebar.php">Sales</a></li>
+                  <li><a href="shop-left-sidebar.php">Strategy &amp; Analytics</a></li>
                 </ul>
               </li>
-              <li><a href="shop-left-sidebar.html">Business</a></li>
-              <li><a href="shop-left-sidebar.html">Data Science</a></li>
-              <li><a href="shop-left-sidebar.html">Development</a></li>
-              <li><a href="shop-left-sidebar.html">Finance</a></li>
-              <li>
-                <a href="shop-left-sidebar.html">Health &amp; Fitness</a>
-              </li>
-              <li><a href="shop-left-sidebar.html">Lifestyle</a></li>
-              <li><a href="shop-left-sidebar.html">Marketing</a></li>
-              <li><a href="shop-left-sidebar.html">Music</a></li>
-              <li>
-                <a href="shop-left-sidebar.html">Personal Development</a>
-              </li>
-              <li><a href="shop-left-sidebar.html">Photography</a></li>
-              <li>
-                <a href="shop-left-sidebar.html">Teaching &amp; Academics</a>
-              </li>
+              <li><a href="shop-left-sidebar.php">Business</a></li>
+              <li><a href="shop-left-sidebar.php">Data Science</a></li>
+              <li><a href="shop-left-sidebar.php">Development</a></li>
+              <li><a href="shop-left-sidebar.php">Finance</a></li>
+              <li><a href="shop-left-sidebar.php">Health &amp; Fitness</a></li>
+              <li><a href="shop-left-sidebar.php">Lifestyle</a></li>
+              <li><a href="shop-left-sidebar.php">Marketing</a></li>
+              <li><a href="shop-left-sidebar.php">Music</a></li>
+              <li><a href="shop-left-sidebar.php">Personal Development</a></li>
+              <li><a href="shop-left-sidebar.php">Photography</a></li>
+              <li><a href="shop-left-sidebar.php">Teaching &amp; Academics</a></li>
             </ul>
           </div>
         </div>
@@ -186,13 +153,12 @@ include_once("includes/config.php");
 
         <!-- Header Inner Start -->
         <div class="header-inner">
+
           <!-- Header Search Start -->
           <div class="header-search">
             <form action="#">
-              <input type="text" class="header-search__input" placeholder="Search..." />
-              <button class="header-search__btn">
-                <i class="fas fa-search"></i>
-              </button>
+              <input type="text" class="header-search__input" placeholder="Search...">
+              <button class="header-search__btn"><i class="fas fa-search"></i></button>
             </form>
           </div>
           <!-- Header Search End -->
@@ -201,16 +167,16 @@ include_once("includes/config.php");
           <div class="header-navigation d-none d-xl-block">
             <nav class="menu-primary">
               <ul class="menu-primary__container">
-                <li>
-                  <a class="active" href="index.php"><span>Home</span></a>
+                <li><a class="active" href="#"><span>Home</span></a>
+
+
+
+
 
 
                 </li>
                 <li>
-                  <a href="about.php"><span>About</span></a>
-                </li>
-                <li>
-                  <a href="courses.php"><span>Courses</span></a>
+                  <a href="#"><span>Courses</span></a>
                   <ul class="mega-menu">
                     <li>
                       <!-- Mega Menu Content Start -->
@@ -218,37 +184,25 @@ include_once("includes/config.php");
                         <div class="row">
                           <div class="col-xl-3">
                             <div class="menu-content-list">
-                              <a href="index.html" class="menu-content-list__link">Main Demo
-                                <span class="badge hot">Hot</span></a>
-                              <a href="index-course-hub.html" class="menu-content-list__link">Course Hub</a>
-                              <a href="index-online-academy.html" class="menu-content-list__link">Online Academy
-                                <span class="badge hot">Hot</span></a>
-                              <a href="index-university.html" class="menu-content-list__link">University</a>
-                              <a href="index-education-center.html" class="menu-content-list__link">Education Center
-                                <span class="badge hot">Hot</span></a>
+                              <a href="index.php" class="menu-content-list__link">Main Demo <span class="badge hot">Hot</span></a>
+                              <a href="index-course-hub.php" class="menu-content-list__link">Course Hub</a>
+                              <a href="index-online-academy.php" class="menu-content-list__link">Online Academy <span class="badge hot">Hot</span></a>
+                              <a href="index-university.php" class="menu-content-list__link">University</a>
+                              <a href="index-education-center.php" class="menu-content-list__link">Education Center <span class="badge hot">Hot</span></a>
                             </div>
                           </div>
                           <div class="col-xl-3">
                             <div class="menu-content-list">
-                              <a href="index-language-academic.html" class="menu-content-list__link">Language
-                                Academic</a>
-                              <a href="index-single-instructor.html" class="menu-content-list__link">Single
-                                Instructor</a>
-                              <a href="index-dev.html" class="menu-content-list__link">Dev <span
-                                  class="badge new">New</span></a>
-                              <a href="index-online-art.html" class="menu-content-list__link">Online Art
-                                <span class="badge new">New</span></a>
+                              <a href="index-language-academic.php" class="menu-content-list__link">Language Academic</a>
+                              <a href="index-single-instructor.php" class="menu-content-list__link">Single Instructor</a>
+                              <a href="index-dev.php" class="menu-content-list__link">Dev <span class="badge new">New</span></a>
+                              <a href="index-online-art.php" class="menu-content-list__link">Online Art <span class="badge new">New</span></a>
                             </div>
                           </div>
                           <div class="col-xl-6">
-                            <div class="menu-content-banner" style="
-                                      background-image: url(assets/images/home-megamenu-bg.jpg);
-                                    ">
-                              <h4 class="menu-content-banner__title">
-                                Achieve Your Goals With EduMall
-                              </h4>
-                              <a href="#" class="menu-content-banner__btn btn btn-primary btn-hover-secondary">Purchase
-                                now</a>
+                            <div class="menu-content-banner" style="background-image: url(assets/images/home-megamenu-bg.jpg);">
+                              <h4 class="menu-content-banner__title">Achieve Your Goals With EduMall</h4>
+                              <a href="#" class="menu-content-banner__btn btn btn-primary btn-hover-secondary">Purchase now</a>
                             </div>
                           </div>
                         </div>
@@ -258,11 +212,108 @@ include_once("includes/config.php");
                   </ul>
                 </li>
                 <li>
-                  <a href="blog.php"><span>Blog</span></a>
+                  <a href="#"><span>Blog</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="blog-grid-01.php"><span>Grid Basic Layout</span></a></li>
+                    <li><a href="blog-grid-02.php"><span>Grid Wide</span></a></li>
+                    <li><a href="blog-grid-left-sidebar.php"><span>Grid Left Sidebar</span></a></li>
+                    <li><a href="blog-grid-right-sidebar.php"><span>Grid Right Sidebar</span></a></li>
+                    <li><a href="blog-list-style-01.php"><span>List Layout 01</span></a></li>
+                    <li><a href="blog-list-style-02.php"><span>List Layout 02</span></a></li>
+                    <li>
+                      <a href="#"><span>Single Layouts</span></a>
+                      <ul class="sub-menu">
+                        <li><a href="blog-details-left-sidebar.php"><span>Left Sidebar</span></a></li>
+                        <li><a href="blog-details-right-sidebar.php"><span>Right Sidebar</span></a></li>
+                        <li><a href="blog-details.php"><span>No Sidebar</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
-                <!-- <li>
-                        <a href="#"><span>Pages</span></a>
-                      </li> -->
+                <li>
+                  <a href="#"><span>Pages</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="become-an-instructor.php"><span>Become an Instructor</span></a></li>
+                    <li>
+                      <a href="instructors.php"><span>Instructor</span></a>
+                      <ul class="sub-menu">
+                        <li><a href="dashboard-my-courses.php"><span>My Courses</span></a></li>
+                        <li><a href="dashboard-announcement.php"><span>Announcements</span></a></li>
+                        <li><a href="dashboard-withdraw.php"><span>Withdrawals</span></a></li>
+                        <li><a href="dashboard-quiz-attempts.php"><span>Quiz Attempts</span></a></li>
+                        <li><a href="dashboard-question-answer.php"><span>Question & Answer</span></a></li>
+                        <li><a href="dashboard-assignments.php"><span>Assignments</span></a></li>
+                        <li><a href="dashboard-students.php"><span>My Students</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about.php"><span>About us</span></a></li>
+                    <li><a href="about-02.php"><span>About us 02</span></a></li>
+                    <li><a href="contact-us.php"><span>Contact us</span></a></li>
+                    <li><a href="contact-us-02.php"><span>Contact us 02</span></a></li>
+                    <li><a href="membership-plans.php"><span>Membership plans</span></a></li>
+                    <li><a href="faqs.php"><span>FAQs</span></a></li>
+                    <li><a href="404-page.php"><span>404 Page</span></a></li>
+                    <li>
+                      <a href="#"><span>Dashboard</span></a>
+                      <ul class="sub-menu">
+                        <li><a href="dashboard-index.php"><span>Dashboard</span></a></li>
+                        <li><a href="dashboard-student-index.php"><span>Dashboard Student</span></a></li>
+                        <li><a href="dashboard-profile.php"><span>My Profile</span></a></li>
+                        <li><a href="dashboard-all-course.php"><span>Enrolled Courses</span></a></li>
+                        <li><a href="dashboard-wishlist.php"><span>Wishlist</span></a></li>
+                        <li><a href="dashboard-reviews.php"><span>Reviews</span></a></li>
+                        <li><a href="dashboard-my-quiz-attempts.php"><span>My Quiz Attempts</span></a></li>
+                        <li><a href="dashboard-purchase-history.php"><span>Purchase History</span></a></li>
+                        <li><a href="dashboard-settings.php"><span>Settings</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>Features</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="#"><span>Events</span></a>
+                      <ul class="sub-menu">
+                        <li><a href="event-grid-sidebar.php"><span>Event Listing 01</span></a></li>
+                        <li><a href="event-grid.php"><span>Event Listing 02</span></a></li>
+                        <li><a href="event-list.php"><span>Event Listing 03</span></a></li>
+                        <li><a href="event-list-sidebar.php"><span>Event Listing 04</span></a></li>
+                        <li>
+                          <a href="#"><span>Single Layouts</span></a>
+                          <ul class="sub-menu">
+                            <li><a href="event-details-layout-01.php"><span>Layout 01</span></a></li>
+                            <li><a href="event-details-layout-02.php"><span>Layout 02</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><span>Shop</span></a>
+                      <ul class="sub-menu">
+                        <li><a href="shop-default.php"><span>Shop – Default</span></a></li>
+                        <li><a href="shop-left-sidebar.php"><span>Shop – Left Sidebar</span></a></li>
+                        <li><a href="shop-right-sidebar.php"><span>Shop – Right Sidebar</span></a></li>
+                        <li><a href="my-account.php"><span>My account</span></a></li>
+                        <li><a href="wishlist.php"><span>Wishlist</span></a></li>
+                        <li><a href="cart.php"><span>Cart</span></a></li>
+                        <li><a href="cart-empty.php"><span>Cart Empty</span></a></li>
+                        <li><a href="checkout.php"><span>Checkout</span></a></li>
+                        <li>
+                          <a href="#"><span>Single Layouts</span></a>
+                          <ul class="sub-menu">
+                            <li><a href="shop-single-list-left-sidebar.php"><span>List – Left Sidebar</span></a></li>
+                            <li><a href="shop-single-list-right-sidebar.php"><span>List – Right Sidebar</span></a></li>
+                            <li><a href="shop-single-list-no-sidebar.php"><span>List – No Sidebar</span></a></li>
+                            <li><a href="shop-single-tab-left-sidebar.php"><span>Tabs – Left Sidebar</span></a></li>
+                            <li><a href="shop-single-tab-right-sidebar.php"><span>Tabs – Right Sidebar</span></a></li>
+                            <li><a href="shop-single-tab-no-sidebar.php"><span>Tabs – No Sidebar</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="zoom-meetings.php"><span>Zoom Meetings</span></a></li>
+                    <li><a href="zoom-meetings-single.php"><span>Zoom Meeting Single</span></a></li>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
@@ -277,48 +328,37 @@ include_once("includes/config.php");
 
             <!-- Header Mini Cart Start -->
             <div class="header-mini-cart">
+
               <!-- Header Mini Cart Product List Start -->
-              <ul class="header-mini-cart__product-list">
+              <ul class="header-mini-cart__product-list ">
                 <li class="header-mini-cart__item">
                   <a href="#" class="header-mini-cart__close"></a>
                   <div class="header-mini-cart__thumbnail">
-                    <a href="shop-single-list-left-sidebar.html"><img src="assets/images/product/product-1.png"
-                        alt="Product" width="80" height="93" /></a>
+                    <a href="shop-single-list-left-sidebar.php"><img src="assets/images/product/product-1.png" alt="Product" width="80" height="93"></a>
                   </div>
                   <div class="header-mini-cart__caption">
-                    <h3 class="header-mini-cart__name">
-                      <a href="shop-single-list-left-sidebar.html">Awesome for Websites</a>
-                    </h3>
-                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span
-                        class="separator">.00</span></span>
+                    <h3 class="header-mini-cart__name"><a href="shop-single-list-left-sidebar.php">Awesome for Websites</a></h3>
+                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span class="separator">.00</span></span>
                   </div>
                 </li>
                 <li class="header-mini-cart__item">
                   <a href="#" class="header-mini-cart__close"></a>
                   <div class="header-mini-cart__thumbnail">
-                    <a href="shop-single-list-left-sidebar.html"><img src="assets/images/product/product-2.png"
-                        alt="Product" width="80" height="93" /></a>
+                    <a href="shop-single-list-left-sidebar.php"><img src="assets/images/product/product-2.png" alt="Product" width="80" height="93"></a>
                   </div>
                   <div class="header-mini-cart__caption">
-                    <h3 class="header-mini-cart__name">
-                      <a href="shop-single-list-left-sidebar.html">Awesome for Websites</a>
-                    </h3>
-                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span
-                        class="separator">.00</span></span>
+                    <h3 class="header-mini-cart__name"> <a href="shop-single-list-left-sidebar.php">Awesome for Websites</a></h3>
+                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span class="separator">.00</span></span>
                   </div>
                 </li>
                 <li class="header-mini-cart__item">
                   <a href="#" class="header-mini-cart__close"></a>
                   <div class="header-mini-cart__thumbnail">
-                    <a href="shop-single-list-left-sidebar.html"><img src="assets/images/product/product-3.png"
-                        alt="Product" width="80" height="93" /></a>
+                    <a href="shop-single-list-left-sidebar.php"><img src="assets/images/product/product-3.png" alt="Product" width="80" height="93"></a>
                   </div>
                   <div class="header-mini-cart__caption">
-                    <h3 class="header-mini-cart__name">
-                      <a href="shop-single-list-left-sidebar.html">Awesome for Websites</a>
-                    </h3>
-                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span
-                        class="separator">.00</span></span>
+                    <h3 class="header-mini-cart__name"> <a href="shop-single-list-left-sidebar.php">Awesome for Websites</a></h3>
+                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span class="separator">.00</span></span>
                   </div>
                 </li>
               </ul>
@@ -327,24 +367,23 @@ include_once("includes/config.php");
               <div class="header-mini-cart__footer">
                 <div class="header-mini-cart__total">
                   <p class="header-mini-cart__label">Total:</p>
-                  <p class="header-mini-cart__value">
-                    $445<span class="separator">.99</span>
-                  </p>
+                  <p class="header-mini-cart__value">$445<span class="separator">.99</span></p>
                 </div>
                 <div class="header-mini-cart__btn">
-                  <a href="cart.html" class="btn btn-primary btn-hover-secondary">View cart</a>
-                  <a href="checkout.html" class="btn btn-primary btn-hover-secondary">Checkout</a>
+                  <a href="cart.php" class="btn btn-primary btn-hover-secondary">View cart</a>
+                  <a href="checkout.php" class="btn btn-primary btn-hover-secondary">Checkout</a>
                 </div>
               </div>
+
             </div>
             <!-- Header Mini Cart End -->
+
           </div>
           <!-- Header Mini Cart End -->
 
           <!-- Header Mobile Toggle Start -->
           <div class="header-toggle">
-            <button class="header-toggle__btn d-xl-none" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasMobileMenu">
+            <button class="header-toggle__btn d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobileMenu">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
@@ -356,12 +395,14 @@ include_once("includes/config.php");
             </button>
           </div>
           <!-- Header Mobile Toggle End -->
+
         </div>
         <!-- Header Inner End -->
+
       </div>
       <!-- Header Main Wrapper End -->
     </div>
   </div>
   <!-- Header Main End -->
+
 </div>
-<!-- Header End -->

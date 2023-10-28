@@ -23,43 +23,43 @@
                 <div class="dashboard-nav__menu">
                     <ul class="dashboard-nav__menu-list">
                         <li>
-                            <a href="dashboard-index.html">
+                            <a href="dashboard.php">
                                 <i class="edumi edumi-layers"></i>
                                 <span class="text">Dashboard</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-profile.html">
+                            <a href="dashboard-profile.php">
                                 <i class="edumi edumi-follower"></i>
                                 <span class="text">My Profile</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-all-course.html">
+                            <a href="dashboard-all-course.php">
                                 <i class="edumi edumi-open-book"></i>
                                 <span class="text">Enrolled Courses</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-wishlist.html">
+                            <a href="dashboard-wishlist.php">
                                 <i class="edumi edumi-heart"></i>
                                 <span class="text">Wishlist</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-reviews.html">
+                            <a href="dashboard-reviews.php">
                                 <i class="edumi edumi-star"></i>
                                 <span class="text">Reviews</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-my-quiz-attempts.html">
+                            <a href="dashboard-my-quiz-attempts.php">
                                 <i class="edumi edumi-help"></i>
                                 <span class="text">My Quiz Attempts</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-purchase-history.html">
+                            <a href="dashboard-purchase-history.php">
                                 <i class="edumi edumi-shopping-cart"></i>
                                 <span class="text">Purchase History</span>
                             </a>
@@ -67,7 +67,7 @@
                     </ul>
                     <ul class="dashboard-nav__menu-list">
                         <li>
-                            <a href="dashboard-settings.html">
+                            <a href="dashboard-settings.php">
                                 <i class="edumi edumi-settings"></i>
                                 <span class="text">Settings</span>
                             </a>

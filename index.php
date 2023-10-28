@@ -1,6 +1,5 @@
 <?php
-session_start();
-include("includes/config.php");
+include('includes/functions.php');
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -1961,10 +1960,13 @@ include("includes/config.php");
     <!--Back To End-->
   </main>
 
+<<<<<<< HEAD
   <!-- Log In Modal Start -->
   <?php include("includes/login.php") ?>
   <?php include("includes/register.php") ?>
   <!-- Log In Modal End -->
+=======
+>>>>>>> c3e58b1a28aee5aa9209ed03fb01abb231f98ddc
 
   <!-- JS Vendor, Plugins & Activation Script Files -->
 
