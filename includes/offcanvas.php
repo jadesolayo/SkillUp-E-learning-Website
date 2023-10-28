@@ -7,7 +7,7 @@
         <div class="offcanvas-header bg-white">
           <div class="offcanvas-logo">
             <a class="offcanvas-logo__logo" href="#"
-              ><img src="assets/images/dark-logo.png" alt="Logo"
+              ><img src="assets/images/logo.png" alt="Logo"
             /></a>
           </div>
           <button

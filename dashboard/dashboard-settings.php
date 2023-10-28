@@ -99,62 +99,7 @@ if(!isset($_SESSION['user'])) {
                                             </div>
                                             <!-- Account Account details End -->
                                         </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Twitter</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Facebook</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Instagram</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Linkedin</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Pinterest</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Youtube</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Github</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
+                                        
                                     </div>
 
                                 </div>
@@ -217,6 +162,9 @@ if(!isset($_SESSION['user'])) {
 
                                 </div>
                                 <!-- Dashboard Settings Info End -->
+                                <div class="dashboard-settings__btn">
+                            <button class="btn btn-primary btn-hover-secondary">Delete Account</button>
+                        </div>
 
                             </div>
                         </div>
