@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="dashboard-nav__logo">
-                    <a class="logo" href=".../dashboard/dashboard.php"><img src=".../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
+                    <a class="logo" href="../instructor/dashboard.php"><img src="../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
                 </div>
 
             </div>
@@ -26,43 +26,31 @@
                             <span class="dashboard-nav__title">Instructor</span>
                         </li>
                         <li>
-                            <a href="dashboard-my-courses.html">
+                            <a href="dashboard.php">
+                                <i class="edumi edumi-layers"></i>
+                                <span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-my-courses.php">
                                 <i class="edumi edumi-youtuber"></i>
                                 <span class="text">My Courses</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-announcement.html">
+                            <a href="dashboard-announcement.php">
                                 <i class="edumi edumi-announcement"></i>
                                 <span class="text">Announcements</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-withdraw.html">
+                            <a href="dashboard-withdraw.php">
                                 <i class="edumi edumi-wallet"></i>
                                 <span class="text">Withdrawals</span>
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-quiz-attempts.html">
-                                <i class="edumi edumi-support"></i>
-                                <span class="text">Quiz Attempts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="dashboard-question-answer.html">
-                                <i class="edumi edumi-question"></i>
-                                <span class="text">Question & Answer</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="dashboard-assignments.html">
-                                <i class="edumi edumi-checklist"></i>
-                                <span class="text">Assignments</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="dashboard-students.html">
+                            <a href="dashboard-students.php">
                                 <i class="edumi edumi-users"></i>
                                 <span class="text">My Students</span>
                             </a>
@@ -70,13 +58,13 @@
                     </ul>
                     <ul class="dashboard-nav__menu-list">
                         <li>
-                            <a href="dashboard-settings.html">
+                            <a href="dashboard-settings.php">
                                 <i class="edumi edumi-settings"></i>
                                 <span class="text">Settings</span>
                             </a>
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                                 <i class="edumi edumi-sign-out"></i>
                                 <span class="text">Logout</span>
                             </a>

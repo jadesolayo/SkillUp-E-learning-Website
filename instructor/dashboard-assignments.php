@@ -1,7 +1,7 @@
 <?php
 require "../includes/functions.php";
-if(!isset($_SESSION['user'])) {
-    header("location: ../auth/login.php");
+if(!isset($_SESSION['instructor'])) {
+    header("location: ../auth/instructor-login.php");
     exit();
 }
 ?>
@@ -13,7 +13,7 @@ if(!isset($_SESSION['user'])) {
 <body class="dashboard-page">
 
     <!-- Dashboard Nav Start -->
-    <?php include('../includes/dashboard/user-dash-nav.php') ?>
+    <?php include('../includes/dashboard/instructor-dash-nav.php') ?>
     <!-- Dashboard Nav End -->
 
     
@@ -23,7 +23,7 @@ if(!isset($_SESSION['user'])) {
     <main class="dashboard-main-wrapper">
 
         <!-- Dashboard Header Start -->
-        <?php include("../includes/dashboard/user-dash-header.php") ?>
+        <?php include("../includes/dashboard/instructor-dash-header.php") ?>
         <!-- Dashboard Header End -->
 
 
