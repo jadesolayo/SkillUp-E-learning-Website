@@ -30,7 +30,7 @@
 
         <div class="header-top-bar-wrap__info d-sm-flex">
           <ul class="header-top-bar-wrap__info-list d-none d-lg-flex">
-            <li><button><a href="auth/login.php"></a></button></li>
+            <li><button><a href="auth/login.php">Login</a></button></li>
             <li><button><a href="auth/register.php">Register</a></button></li>
           </ul>
           <ul class="header-top-bar-wrap__info-social">
@@ -213,106 +213,9 @@
                 </li>
                 <li>
                   <a href="#"><span>Blog</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="blog-grid-01.php"><span>Grid Basic Layout</span></a></li>
-                    <li><a href="blog-grid-02.php"><span>Grid Wide</span></a></li>
-                    <li><a href="blog-grid-left-sidebar.php"><span>Grid Left Sidebar</span></a></li>
-                    <li><a href="blog-grid-right-sidebar.php"><span>Grid Right Sidebar</span></a></li>
-                    <li><a href="blog-list-style-01.php"><span>List Layout 01</span></a></li>
-                    <li><a href="blog-list-style-02.php"><span>List Layout 02</span></a></li>
-                    <li>
-                      <a href="#"><span>Single Layouts</span></a>
-                      <ul class="sub-menu">
-                        <li><a href="blog-details-left-sidebar.php"><span>Left Sidebar</span></a></li>
-                        <li><a href="blog-details-right-sidebar.php"><span>Right Sidebar</span></a></li>
-                        <li><a href="blog-details.php"><span>No Sidebar</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
                 <li>
-                  <a href="#"><span>Pages</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="become-an-instructor.php"><span>Become an Instructor</span></a></li>
-                    <li>
-                      <a href="instructors.php"><span>Instructor</span></a>
-                      <ul class="sub-menu">
-                        <li><a href="dashboard-my-courses.php"><span>My Courses</span></a></li>
-                        <li><a href="dashboard-announcement.php"><span>Announcements</span></a></li>
-                        <li><a href="dashboard-withdraw.php"><span>Withdrawals</span></a></li>
-                        <li><a href="dashboard-quiz-attempts.php"><span>Quiz Attempts</span></a></li>
-                        <li><a href="dashboard-question-answer.php"><span>Question & Answer</span></a></li>
-                        <li><a href="dashboard-assignments.php"><span>Assignments</span></a></li>
-                        <li><a href="dashboard-students.php"><span>My Students</span></a></li>
-                      </ul>
-                    </li>
-                    <li><a href="about.php"><span>About us</span></a></li>
-                    <li><a href="about-02.php"><span>About us 02</span></a></li>
-                    <li><a href="contact-us.php"><span>Contact us</span></a></li>
-                    <li><a href="contact-us-02.php"><span>Contact us 02</span></a></li>
-                    <li><a href="membership-plans.php"><span>Membership plans</span></a></li>
-                    <li><a href="faqs.php"><span>FAQs</span></a></li>
-                    <li><a href="404-page.php"><span>404 Page</span></a></li>
-                    <li>
-                      <a href="#"><span>Dashboard</span></a>
-                      <ul class="sub-menu">
-                        <li><a href="dashboard-index.php"><span>Dashboard</span></a></li>
-                        <li><a href="dashboard-student-index.php"><span>Dashboard Student</span></a></li>
-                        <li><a href="dashboard-profile.php"><span>My Profile</span></a></li>
-                        <li><a href="dashboard-all-course.php"><span>Enrolled Courses</span></a></li>
-                        <li><a href="dashboard-wishlist.php"><span>Wishlist</span></a></li>
-                        <li><a href="dashboard-reviews.php"><span>Reviews</span></a></li>
-                        <li><a href="dashboard-my-quiz-attempts.php"><span>My Quiz Attempts</span></a></li>
-                        <li><a href="dashboard-purchase-history.php"><span>Purchase History</span></a></li>
-                        <li><a href="dashboard-settings.php"><span>Settings</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#"><span>Features</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="#"><span>Events</span></a>
-                      <ul class="sub-menu">
-                        <li><a href="event-grid-sidebar.php"><span>Event Listing 01</span></a></li>
-                        <li><a href="event-grid.php"><span>Event Listing 02</span></a></li>
-                        <li><a href="event-list.php"><span>Event Listing 03</span></a></li>
-                        <li><a href="event-list-sidebar.php"><span>Event Listing 04</span></a></li>
-                        <li>
-                          <a href="#"><span>Single Layouts</span></a>
-                          <ul class="sub-menu">
-                            <li><a href="event-details-layout-01.php"><span>Layout 01</span></a></li>
-                            <li><a href="event-details-layout-02.php"><span>Layout 02</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><span>Shop</span></a>
-                      <ul class="sub-menu">
-                        <li><a href="shop-default.php"><span>Shop – Default</span></a></li>
-                        <li><a href="shop-left-sidebar.php"><span>Shop – Left Sidebar</span></a></li>
-                        <li><a href="shop-right-sidebar.php"><span>Shop – Right Sidebar</span></a></li>
-                        <li><a href="my-account.php"><span>My account</span></a></li>
-                        <li><a href="wishlist.php"><span>Wishlist</span></a></li>
-                        <li><a href="cart.php"><span>Cart</span></a></li>
-                        <li><a href="cart-empty.php"><span>Cart Empty</span></a></li>
-                        <li><a href="checkout.php"><span>Checkout</span></a></li>
-                        <li>
-                          <a href="#"><span>Single Layouts</span></a>
-                          <ul class="sub-menu">
-                            <li><a href="shop-single-list-left-sidebar.php"><span>List – Left Sidebar</span></a></li>
-                            <li><a href="shop-single-list-right-sidebar.php"><span>List – Right Sidebar</span></a></li>
-                            <li><a href="shop-single-list-no-sidebar.php"><span>List – No Sidebar</span></a></li>
-                            <li><a href="shop-single-tab-left-sidebar.php"><span>Tabs – Left Sidebar</span></a></li>
-                            <li><a href="shop-single-tab-right-sidebar.php"><span>Tabs – Right Sidebar</span></a></li>
-                            <li><a href="shop-single-tab-no-sidebar.php"><span>Tabs – No Sidebar</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="zoom-meetings.php"><span>Zoom Meetings</span></a></li>
-                    <li><a href="zoom-meetings-single.php"><span>Zoom Meeting Single</span></a></li>
-                  </ul>
+                <a href="./instructor/become-an-instructor.php"><span>Become an Instructor</span></a>
                 </li>
               </ul>
             </nav>

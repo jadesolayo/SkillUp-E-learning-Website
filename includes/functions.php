@@ -86,6 +86,77 @@ function registerUser($firstname, $lastname, $username, $email, $password, $conf
     }
 };
 
+function registerInstructor($firstname, $lastname, $username, $email, $password, $confirmPassword)
+{
+    $mysqli = connect();
+    $args = func_get_args();
+
+    $args = array_map(function ($value) {
+        return trim($value);
+    }, $args);
+
+    foreach ($args as $value) {
+        if (empty($value)) {
+            return "All fields are required";
+        }
+    }
+
+    foreach ($args as $value) {
+        if (preg_match("/([<|>])/", $value)) {
+            return "<> characters are not allowed";
+        }
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Email is not valid
+        return "Email is not valid";
+    } else {
+        // Email is valid
+        // return "Email is valid";
+    }
+
+    $stmt = $mysqli->prepare("SELECT email FROM instructors WHERE email = ? ");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+    if ($data != NULL) {
+        return "Email already exists";
+    }
+
+    if (strlen($username) > 50) {
+        return "Username is too long";
+    }
+
+    $stmt = $mysqli->prepare("SELECT username FROM instructors WHERE username = ? ");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+    if ($data != NULL) {
+        return "Username already exists";
+    }
+
+    if (strlen($password) > 50) {
+        return "Password is too long";
+    }
+
+    if ($password !== $confirmPassword) {
+        return "Passwords do not match";
+    }
+
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    $stmt = $mysqli->prepare("INSERT INTO instructors(firstname, lastname, username, email, password) VALUES(?,?,?,?,?)");
+    $stmt->bind_param("sssss", $firstname, $lastname, $username, $email, $hashed_password);
+    $stmt->execute();
+    if ($stmt->affected_rows != 1) {
+        return "An error occured. Please try again";
+    } else {
+        return "Success";
+    }
+};
+
 function loginUser($username, $password)
 {
     $mysqli = connect();
@@ -114,6 +185,38 @@ function loginUser($username, $password)
     } else {
         $_SESSION["user"] = $username;
         header("Location: ../dashboard/dashboard.php");
+        exit();
+    }
+}
+
+function loginInstructor($username, $password)
+{
+    $mysqli = connect();
+    $username = trim($username);
+    $password = trim($password);
+
+    if (empty($username) || empty($password)) {
+        return "Both fields are required";
+    }
+
+    // Note: It's better to hash and store passwords securely instead of applying further filtering here.
+
+    $sql = "SELECT username, password FROM instructors WHERE username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+
+    if ($data === null) {
+        return "Wrong Username or Password";
+    }
+
+    if (!password_verify($password, $data["password"])) {
+        return "Wrong Username or Password";
+    } else {
+        $_SESSION["user"] = $username;
+        header("Location: ../instructor/dashboard.php");
         exit();
     }
 }

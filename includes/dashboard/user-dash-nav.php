@@ -41,27 +41,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-wishlist.php">
-                                <i class="edumi edumi-heart"></i>
-                                <span class="text">Wishlist</span>
-                            </a>
-                        </li>
                         <li>
                             <a href="dashboard-reviews.php">
                                 <i class="edumi edumi-star"></i>
                                 <span class="text">Reviews</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="dashboard-my-quiz-attempts.php">
-                                <i class="edumi edumi-help"></i>
-                                <span class="text">My Quiz Attempts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="dashboard-purchase-history.php">
-                                <i class="edumi edumi-shopping-cart"></i>
-                                <span class="text">Purchase History</span>
                             </a>
                         </li>
                     </ul>

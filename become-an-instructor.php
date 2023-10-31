@@ -1,17 +1,17 @@
 <?php
-include("../includes/functions.php");
+include("includes/functions.php");
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<?php include("../includes/head-tag.php") ?>
+<?php include("./includes/head-tag.php") ?>
 
 <body>
 
     <main class="main-wrapper">
 
         <!-- Header start -->
-        <?php include("../includes/header.php") ?>
+        <?php include("includes/header.php") ?>
         <!-- Header End -->
 
 
@@ -45,11 +45,11 @@ include("../includes/functions.php");
                                         <!-- Section Title Start -->
                                         <div class="section-title">
                                             <h2 class="section-title__title-03">Become an Instructor</h2>
-                                            <p class="mt-2">Top instructors from around the world teach millions of students on EduMall. </p>
+                                            <p class="mt-2">Top instructors from around the world teach millions of students on SkillUp. </p>
                                         </div>
                                         <!-- Section Title End -->
 
-                                        <a href="#" class="instructor-banner__btn btn btn-primary btn-hover-secondary">Start teaching today</a>
+                                        <a href="auth/instructor-register.php" class="instructor-banner__btn btn btn-primary btn-hover-secondary">Start teaching today</a>
                                     </div>
                                     <!-- Instructor Banner End -->
                                 </div>
@@ -75,7 +75,7 @@ include("../includes/functions.php");
         <!-- Page Banner Section End -->
 
         <!-- Offcanvas Start -->
-        <?php include("../includes/offcanvas.php") ?>
+        <?php include("includes/offcanvas.php") ?>
         <!-- Offcanvas End -->
 
         <!-- Edumall Box Section Start -->
@@ -607,7 +607,7 @@ include("../includes/functions.php");
                 <div class="instructor-action__content text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="instructor-action__main-title">Become an Instructor Today</h2>
                     <h4 class="instructor-action__sub-title">Join the world's largest online learning marketplace.</h4>
-                    <a class="instructor-action__btn btn btn-primary btn-hover-secondary" href="#">Start teaching today</a>
+                    <a class="instructor-action__btn btn btn-primary btn-hover-secondary" href="auth/instructor-register.php">Start teaching today</a>
                 </div>
 
             </div>
@@ -615,7 +615,7 @@ include("../includes/functions.php");
         <!-- Instructor Action End -->
 
         <!-- Footer Start -->
-        <?php include("../includes/footer.php") ?>
+        <?php include("includes/footer.php") ?>
         <!-- Footer End -->
 
         <!--Back To Start-->
