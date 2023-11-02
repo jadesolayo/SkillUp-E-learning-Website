@@ -177,45 +177,12 @@
                 </li>
                 <li>
                   <a href="#"><span>Courses</span></a>
-                  <ul class="mega-menu">
-                    <li>
-                      <!-- Mega Menu Content Start -->
-                      <div class="mega-menu-content">
-                        <div class="row">
-                          <div class="col-xl-3">
-                            <div class="menu-content-list">
-                              <a href="index.php" class="menu-content-list__link">Main Demo <span class="badge hot">Hot</span></a>
-                              <a href="index-course-hub.php" class="menu-content-list__link">Course Hub</a>
-                              <a href="index-online-academy.php" class="menu-content-list__link">Online Academy <span class="badge hot">Hot</span></a>
-                              <a href="index-university.php" class="menu-content-list__link">University</a>
-                              <a href="index-education-center.php" class="menu-content-list__link">Education Center <span class="badge hot">Hot</span></a>
-                            </div>
-                          </div>
-                          <div class="col-xl-3">
-                            <div class="menu-content-list">
-                              <a href="index-language-academic.php" class="menu-content-list__link">Language Academic</a>
-                              <a href="index-single-instructor.php" class="menu-content-list__link">Single Instructor</a>
-                              <a href="index-dev.php" class="menu-content-list__link">Dev <span class="badge new">New</span></a>
-                              <a href="index-online-art.php" class="menu-content-list__link">Online Art <span class="badge new">New</span></a>
-                            </div>
-                          </div>
-                          <div class="col-xl-6">
-                            <div class="menu-content-banner" style="background-image: url(assets/images/home-megamenu-bg.jpg);">
-                              <h4 class="menu-content-banner__title">Achieve Your Goals With EduMall</h4>
-                              <a href="#" class="menu-content-banner__btn btn btn-primary btn-hover-secondary">Purchase now</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Mega Menu Content Start -->
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="#"><span>Blog</span></a>
                 </li>
                 <li>
-                <a href="./instructor/become-an-instructor.php"><span>Become an Instructor</span></a>
+                <a href="become-an-instructor.php"><span>Become an Instructor</span></a>
                 </li>
               </ul>
             </nav>

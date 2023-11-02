@@ -215,7 +215,7 @@ function loginInstructor($username, $password)
     if (!password_verify($password, $data["password"])) {
         return "Wrong Username or Password";
     } else {
-        $_SESSION["user"] = $username;
+        $_SESSION["instructor"] = $username;
         header("Location: ../instructor/dashboard.php");
         exit();
     }
@@ -239,3 +239,115 @@ function passwordReset()
 function deleteAccount()
 {
 };
+
+function fetchUserProfile($username)
+{
+    $mysqli = connect(); // Assuming you have a database connection function
+
+    $sql = "SELECT user_id, user_firstname, user_lastname, user_email FROM users WHERE user_username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        return $result->fetch_assoc();
+    }
+
+    return null;
+}
+
+function fetchInstructorProfile($username)
+{
+    $mysqli = connect(); // Assuming you have a database connection function
+
+    $sql = "SELECT id, firstname, lastname, username, email FROM instructors WHERE username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        return $result->fetch_assoc();
+    }
+
+    return null;
+}
+
+function addCourse($courseTitle, $courseDescription, $courseCategory, $coursePrice, $courseDuration, $courseImages)
+{
+    $mysqli = connect();
+
+    $fileNames = $courseImages["name"];
+    $fileTempNames = $courseImages["tmp_name"];
+
+    $uploadedFiles = array();
+
+    // Define the absolute path to the uploads directory
+    $uploadDirectory = __DIR__ . '../uploads'; // Assuming this PHP file is in the root of your project
+
+    // Move the uploaded files to the desired location
+    foreach ($fileNames as $i => $filename) {
+        $tempname = $fileTempNames[$i];
+        $folder = $uploadDirectory . $filename;
+
+        if (move_uploaded_file($tempname, $folder)) {
+            $uploadedFiles[] = $filename;
+        } else {
+            // Handle file upload error
+            $msg = "Error uploading file";
+            return $msg;
+        }
+    }
+
+    if (!empty($uploadedFiles)) {
+        $insert_query = "INSERT INTO coursesinfo (coursetitle, coursedescription, category, price, duration, courseimage) VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = $mysqli->prepare($insert_query);
+
+        // Create a placeholder for binding the image filenames
+        $imageFilenames = '';
+        for ($i = 0; $i < count($uploadedFiles); $i++) {
+            $imageFilenames .= 's';
+        }
+
+        // Combine all filenames into an array
+        $params = [$courseTitle, $courseDescription, $courseCategory, $coursePrice, $courseDuration];
+        foreach ($uploadedFiles as $filename) {
+            $params[] = $filename;
+        }
+
+        // Bind parameters dynamically based on the number of filenames
+        $stmt->bind_param($imageFilenames, ...$params);
+        $stmt->execute();
+
+        return "Success";
+    } else {
+        // Handle database insertion error
+        return "Error adding the course.";
+    }
+}
+
+
+
+
+
+    
+
+        
+
+
+
+// function getCategories($mysqli) {
+//     $categories = array();
+
+//     $query = "SELECT id, category FROM category";
+//     $result = $mysqli->query($query);
+
+//     if ($result) {
+//         while ($row = $result->fetch_assoc()) {
+//             $categories[$row['id']] = $row['category'];
+//         }
+//     }
+
+//     return $categories;
+// }
