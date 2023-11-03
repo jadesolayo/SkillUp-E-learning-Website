@@ -4,6 +4,15 @@ if(!isset($_SESSION['user'])) {
     header("location: ../auth/login.php");
     exit();
 }
+
+$user = $_SESSION["user"]; // Use $_SESSION["instructor"] instead of $_SESSION["user"]
+$userProfile = fetchUserProfile($user);
+
+if (!$userProfile) {
+    // Handle the case where instructor details are not found
+    echo "User details not found.";
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -34,48 +43,48 @@ if(!isset($_SESSION['user'])) {
                 <!-- Dashboard Info Start -->
                 <div class="dashboard-info">
                     <div class="row gy-2 gy-sm-6">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-6 col-sm-6">
                             <!-- Dashboard Info Card Start -->
-                            <div class="dashboard-info__card">
-                                <a class="dashboard-info__card-box" href="#">
-                                    <div class="dashboard-info__card-icon icon-color-01">
-                                        <i class="edumi edumi-open-book"></i>
+                            <div class="dashboard-profile">
+                                <div class="dashboard-profile__item">
+                                    <div class="dashboard-profile__heading">First Name</div>
+                                    <div class="dashboard-profile__content">
+                                        <p><?php echo $userProfile["user_firstname"]; ?></p>
                                     </div>
-                                    <div class="dashboard-info__card-content">
-                                        <div class="dashboard-info__card-value">19</div>
-                                        <div class="dashboard-info__card-heading">Enrolled Courses</div>
+                                </div>
+                                <div class="dashboard-profile__item">
+                                    <div class="dashboard-profile__heading">Last Name</div>
+                                    <div class="dashboard-profile__content">
+                                        <p><?php echo $userProfile["user_lastname"]; ?></p>
                                     </div>
-                                </a>
+                                </div>
+                                <div class="dashboard-profile__item">
+                                    <div class="dashboard-profile__heading">Username</div>
+                                    <div class="dashboard-profile__content">
+                                        <p><?php echo $userProfile["user_username"]; ?></p>
+                                    </div>
+                                </div>
+                                <div class="dashboard-profile__item">
+                                    <div class="dashboard-profile__heading">Email</div>
+                                    <div class="dashboard-profile__content">
+                                        <p><?php echo $userProfile["user_email"]; ?></p>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Dashboard Info Card End -->
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <!-- Dashboard Info Card Start -->
                             <div class="dashboard-info__card">
-                                <a class="dashboard-info__card-box" href="#">
-                                    <div class="dashboard-info__card-icon icon-color-02">
-                                        <i class="edumi edumi-streaming"></i>
+                                <div class="dashboard-info__card-box">
+                                    <div class="dashboard-info__card-icon icon-color-05">
+                                        <i class="edumi edumi-user-support"></i>
                                     </div>
                                     <div class="dashboard-info__card-content">
-                                        <div class="dashboard-info__card-value">0</div>
-                                        <div class="dashboard-info__card-heading">Active Courses</div>
+                                        <div class="dashboard-info__card-value">1</div>
+                                        <div class="dashboard-info__card-heading">Enroled Courses</div>
                                     </div>
-                                </a>
-                            </div>
-                            <!-- Dashboard Info Card End -->
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <!-- Dashboard Info Card Start -->
-                            <div class="dashboard-info__card">
-                                <a class="dashboard-info__card-box" href="#">
-                                    <div class="dashboard-info__card-icon icon-color-03">
-                                        <i class="edumi edumi-correct"></i>
-                                    </div>
-                                    <div class="dashboard-info__card-content">
-                                        <div class="dashboard-info__card-value">27</div>
-                                        <div class="dashboard-info__card-heading">Completed Courses</div>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
                             <!-- Dashboard Info Card End -->
                         </div>

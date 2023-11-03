@@ -261,6 +261,48 @@ function changePassword($username, $currentPassword, $newPassword, $confirmPassw
     }
 }
 
+function changeuserPassword($username, $currentPassword, $newPassword, $confirmPassword)
+{
+    $mysqli = connect();
+    $username = trim($username);
+    $currentPassword = trim($currentPassword);
+    $newPassword = trim($newPassword);
+    $confirmPassword = trim($confirmPassword);
+
+    if (empty($username) || empty($currentPassword) || empty($newPassword) || empty($confirmPassword)) {
+        return "All fields are required";
+    }
+
+    // Verify if the provided current password is correct
+    $sql = "SELECT password FROM instructors WHERE username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+
+    if ($data === null || !password_verify($currentPassword, $data["password"])) {
+        return "Incorrect current password";
+    }
+
+    if ($newPassword !== $confirmPassword) {
+        return "New password and confirm password do not match";
+    }
+
+    // Update the password with the new one
+    $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+    $updateSql = "UPDATE instructors SET password = ? WHERE username = ?";
+    $updateStmt = $mysqli->prepare($updateSql);
+    $updateStmt->bind_param("ss", $hashedPassword, $username);
+    $updateStmt->execute();
+
+    if ($updateStmt->affected_rows > 0) {
+        return "Success";
+    } else {
+        return "Failed to change the password";
+    }
+}
+
 
 function logoutUser()
 {
@@ -285,7 +327,7 @@ function fetchUserProfile($username)
 {
     $mysqli = connect();
 
-    $sql = "SELECT user_id, user_firstname, user_lastname, user_email FROM users WHERE user_username = ?";
+    $sql = "SELECT user_id, user_firstname, user_username, user_lastname, user_email FROM users WHERE user_username = ?";
     $stmt = $mysqli->prepare($sql);
     $stmt->bind_param("s", $username);
     $stmt->execute();
