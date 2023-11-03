@@ -1,5 +1,6 @@
 <?php
 require "../includes/functions.php";
+
 if (!isset($_SESSION['instructor'])) {
     header("location: ../auth/instructor-login.php");
     exit();
@@ -46,11 +47,15 @@ if (isset($_POST['submit'])) {
                                 <?php
                                 if (@$response == "Success") {
                                 ?>
-                                    <p class="success">Course added successfully!</p>
+                                    <div class="alert alert-color left-icon-alert" role="alert">
+                                        <p class="success">Course added successfully!</p>
+                                    </div>
                                 <?php
-                                } else {
+                                } else if ($response !== null) {
                                 ?>
-                                    <p class="error"> <?php echo @$response; ?> </p>
+                                    <div class="alert alert-danger left-icon-alert">
+                                        <p class="error"> <?php echo $response; ?> </p>
+                                    </div>
                                 <?php
                                 }
                                 ?>
@@ -76,7 +81,6 @@ if (isset($_POST['submit'])) {
                                             <option value="Data Science">Data Science</option>
                                             <option value="Data Analysis">Data Analysis</option>
                                             <option value="Design">Design</option>
-                                            
                                         </select>
                                     </div>
                                 </div>
@@ -95,7 +99,7 @@ if (isset($_POST['submit'])) {
                                 <div class="col-md-12 py-2">
                                     <div class="dashboard-content__input">
                                         <label class="form-label-02">Course Image</label>
-                                        <input type="file" name="courseimage[]" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple class="form-control"  required>
+                                        <input type="file" name="courseimage[]" id="file-input" accept="image/png, image/jpeg" multiple class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="dashboard-settings__btn">
@@ -131,3 +135,6 @@ if (isset($_POST['submit'])) {
     <script src="../assets/js/plugins/masonry.pkgd.min.js"></script>
     <script src="../assets/js/plugins/flatpickr.js"></script>
     <script src="../assets/js/plugins/range-slider.js"></script>
+</body>
+
+</html>
