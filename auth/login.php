@@ -37,7 +37,7 @@ if (isset($_POST['login'])) {
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img width="200px" src="../assets/images/logo.png" alt=""></figure>
+                        <figure><a href="../index.php"><img width="200px" src="../assets/images/logo.png" alt=""></a></figure>
                         <figure><img src="../assets/images/signin-image.png" alt="signin image"></figure>
                         <a href="../auth/register.php" class="signup-image-link">Create an account</a>
                     </div>

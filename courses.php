@@ -1,3 +1,10 @@
+<?php
+require "../includes/functions.php";
+if(!isset($_SESSION['user'])) {
+    header("location: ../auth/instructor-login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 

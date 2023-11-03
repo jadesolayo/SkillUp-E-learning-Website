@@ -401,42 +401,6 @@ function addCourse($courseTitle, $courseDescription, $courseCategory, $coursePri
     return "Error adding the course.";
 }
 
-// function getCourseDetails($courseId, $mysqli) {
-
-//     $mysqli = connect();
-
-//     $sql = "SELECT * FROM coursesinfo WHERE course_id = ?";
-//     $stmt = $mysqli->prepare($sql);
-//     $stmt->bind_param("i", $courseId);
-//     $stmt->execute();
-//     $result = $stmt->get_result();
-    
-//     if ($result->num_rows > 0) {
-//         return $result->fetch_assoc();
-//     }
-    
-//     return null; // Course not found
-// }
-
-// function getCourseImages($courseId, $mysqli) {
-
-//     $mysqli = connect();
-
-//     $sql = "SELECT courseimage FROM coursesinfo WHERE course_id = ?";
-//     $stmt = $mysqli->prepare($sql);
-//     $stmt->bind_param("i", $courseId);
-//     $stmt->execute();
-//     $result = $stmt->get_result();
-    
-//     $courseImages = array();
-
-//     while ($row = $result->fetch_assoc()) {
-//         $courseImages[] = $row['courseimage'];
-//     }
-
-//     return $courseImages;
-// }
-
 function getAllCourses() {
     $mysqli = connect();
 
@@ -452,8 +416,10 @@ function getAllCourses() {
     return $courses;
 }
 
+function enrollCourses() {
 
-  
+    
+}
 
 
 

@@ -88,7 +88,7 @@ if (isset($_POST['register'])) {
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img width="200px" src="../assets/images/logo.png" alt=""></figure>
+                        <figure><a href="../index.php"><img width="200px" src="../assets/images/logo.png" alt=""></a></figure>
                         <figure><img src="../assets/images/signup-image.png" alt="sing up image"></figure>
                         <a href="../auth/login.php" class="signup-image-link">Already have an account? Login</a>
                     </div>
