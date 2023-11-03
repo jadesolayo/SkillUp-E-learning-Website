@@ -131,7 +131,8 @@ include('includes/functions.php');
                     <h3 class="banner-caption-02__title" style="font-size: 1.35rem; margin-top: .80rem">
                       Join Our Thriving Community of Instructors Today!
                     </h3>
-                    <a href="courses.php" class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Learn
+                    <a href="become-an-instructor.php"
+                      class="banner-caption-02__btn btn btn-primary btn-hover-secondary">Learn
                       More</a>
                   </div>
                 </div>
@@ -1930,7 +1931,7 @@ include('includes/functions.php');
         <!-- Banner Box Start -->
         <div class="banner-big-box banner-bg-4" data-aos="fade-up" data-aos-duration="1000">
           <img class="banner-big-box__arrow" src="assets/images/curve-arrow.png" alt="arrow" width="50" height="45"
-            style="margin-left: 5rem;"> />
+            style="margin-left: 5rem;">
 
           <div class="banner-caption-03" style="margin-left: 5rem;">
             <h3 class="banner-caption-03__title">
@@ -1960,13 +1961,6 @@ include('includes/functions.php');
     <!--Back To End-->
   </main>
 
-<<<<<<< HEAD
-  <!-- Log In Modal Start -->
-  <?php include("includes/login.php") ?>
-  <?php include("includes/register.php") ?>
-  <!-- Log In Modal End -->
-=======
->>>>>>> c3e58b1a28aee5aa9209ed03fb01abb231f98ddc
 
   <!-- JS Vendor, Plugins & Activation Script Files -->
 
