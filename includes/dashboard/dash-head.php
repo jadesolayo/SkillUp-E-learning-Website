@@ -33,4 +33,16 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
+    <style>
+        .alert-color {
+            background: green !important;
+            color: #fff;
+        }
+
+        .alert-danger {
+            background: red !important;
+            color: #fff;
+        }
+    </style>
+
 </head>

@@ -30,7 +30,7 @@
             </div>
 
             <div class="dashboard-header__btn">
-                <a class="btn btn-outline-primary" href="#"><i class="edumi edumi-content-writing"></i> <span class="text">Add A New Course </span></a>
+                <a class="btn btn-outline-primary" href="add-courses.php"><i class="edumi edumi-content-writing"></i> <span class="text">Add A New Course </span></a>
             </div>
 
             <div class="dashboard-header__toggle">
