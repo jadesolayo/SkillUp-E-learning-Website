@@ -4,6 +4,14 @@ if(!isset($_SESSION['instructor'])) {
     header("location: ../auth/instructor-login.php");
     exit();
 }
+
+if (isset($_POST['change-password'])) {
+    $currentPassword = $_POST['current-password'];
+    $newPassword = $_POST['new-password'];
+    $confirmPassword = $_POST['confirm-password'];
+
+    $response = changePassword($_SESSION['instructor'], $currentPassword, $newPassword, $confirmPassword);
+}
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -39,138 +47,65 @@ if(!isset($_SESSION['instructor'])) {
                 <!-- Dashboard Settings Start -->
                 <div class="dashboard-settings">
 
-                    <!-- Dashboard Tabs Start -->
-                    <div class="dashboard-tabs-menu">
-                        <ul>
-                            <li><a class="active" href="dashboard-settings.php">Profile</a></li>
-                            <li><a href="dashboard-settings-reset-password.php">Reset Password</a></li>
-                        </ul>
-                    </div>
-                    <!-- Dashboard Tabs End -->
-
-                    <form action="#">
-                        <div class="row gy-6">
+                    <form method="post">
+                    <?php
+                                if (@$response == "Success") {
+                                ?>
+                                    <div class="alert alert-color left-icon-alert" role="alert">
+                                        <p class="success">Password changed successfully!</p>
+                                    </div>
+                                <?php
+                                } else if (@$response !== null) {
+                                ?>
+                                    <div class="alert alert-danger left-icon-alert">
+                                        <p class="error"> <?php echo $response; ?> </p>
+                                    </div>
+                                <?php
+                                }
+                                ?>
+                        <div class="row">
                             <div class="col-lg-6">
 
                                 <!-- Dashboard Settings Info Start -->
-                                <div class="dashboard-content-box">
+                                <div class="dashboard-content-box dashboard-settings__info">
 
-                                    <h4 class="dashboard-content-box__title">Contact information</h4>
-                                    <p>Provide your details below to create your account profile</p>
+                                    <h4 class="dashboard-settings__title">Reset Password</h4>
 
                                     <div class="row gy-4">
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">First name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Last name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Job Title</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Account Account details Start -->
-                                            <div class="dashboard-content__input">
-                                                <label class="form-label-02">Phone Number</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- Account Account details End -->
-                                        </div>
                                         <div class="col-md-12">
                                             <!-- Account Account details Start -->
                                             <div class="dashboard-content__input">
-                                                <label class="form-label-02">Bio</label>
-                                                <textarea class="form-control"></textarea>
+                                                <label class="form-label-02">Current Password</label>
+                                                <input name="current-password" type="password" class="form-control" value="<?php echo @$_POST['current-password']; ?>">
                                             </div>
                                             <!-- Account Account details End -->
                                         </div>
-                                        
+                                        <div class="col-md-6">
+                                            <!-- Account Account details Start -->
+                                            <div class="dashboard-content__input">
+                                                <label class="form-label-02">New Password</label>
+                                                <input name="new-password" type="password" class="form-control" value="<?php echo @$_POST['new-password']; ?>">
+                                            </div>
+                                            <!-- Account Account details End -->
+                                        </div>
+                                        <div class="col-md-6">
+                                            <!-- Account Account details Start -->
+                                            <div class="dashboard-content__input">
+                                                <label class="form-label-02">Confirm New Password</label>
+                                                <input name="confirm-password" type="password" class="form-control" value="<?php echo @$_POST['confirm-password']; ?>">
+                                            </div>
+                                            <!-- Account Account details End -->
+                                        </div>
                                     </div>
 
                                 </div>
                                 <!-- Dashboard Settings Info End -->
-
-                            </div>
-                            <div class="col-lg-6">
-
-                                <!-- Dashboard Settings Info Start -->
-                                <div class="dashboard-content-box">
-
-                                    <h4 class="dashboard-content-box__title">Photo</h4>
-                                    <p>Upload your profile photo.</p>
-
-                                    <div id="dashboard-profile-cover-photo-editor" class="dashboard-settings-profile">
-                                        <input id="dashboard-photo-dialogue-box" class="dashboard-settings-profile__input" type="file" accept=".png,.jpg,.jpeg" />
-
-                                        <div id="dashboard-cover-area" class="dashboard-settings-profile__cover" data-fas lback="assets/images/cover-photo.jpg" style="background-image:url(assets/images/cover-photo.jpg)">
-                                            <span class="cover-deleter">
-                                                <i class="fas fa-trash-alt"></i>
-                                            </span>
-                                            <div class="overlay">
-                                                <button class="cover-uploader" type="button">
-                                                    <i class="fas fa-camera"></i>&nbsp;
-                                                    <span>Update Cover Photo</span>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div id="photo-meta-area" class="dashboard-settings-profile__photo-meta">
-                                            <img src="assets/images/info-icon.svg" alt="icon" />
-                                            <span>Profile Photo Size: <strong>200x200</strong> pixels,</span>
-                                            <span>Cover Photo Size: <strong>700x430</strong> pixels,</span>
-                                            <span class="loader-area">Saving&hellip;</span>
-                                        </div>
-
-                                        <div id="profile-photo" class="dashboard-settings-profile__photo" data-fas lback="assets/images/avatar-placeholder.jpg" style="background-image:url(assets/images/avatar-placeholder.jpg)">
-                                            <div class="overlay">
-                                                <i class="fas fa-camera"></i>
-                                            </div>
-                                        </div>
-
-                                        <div id="profile-photo-option" class="dashboard-settings-profile__photo-option">
-                                            <span class="profile-photo-uploader"><i class="fas fa-upload"></i> Upload Photo</span>
-                                            <span class="profile-photo-deleter"><i class="fas fa-trash-alt"></i> Delete</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="dashboard-settings-profile-info">
-                                        <label class="dashboard-settings-profile-info__display-name">Display name publicly as</label>
-                                        <select>
-                                            <option>student</option>
-                                            <option>Adeniyi</option>
-                                            <option>David</option>
-                                            <option selected="selected">Adeniyi David</option>
-                                            <option>David Adeniyi</option>
-                                        </select>
-                                        <p class="dashboard-settings-profile-info__description">The display name is shown in all public fields, such as the author name, instructor name, student name, and name that will be printed on the certificate.</p>
-                                    </div>
-
-                                </div>
-                                <!-- Dashboard Settings Info End -->
-                                <div class="dashboard-settings__btn">
-                            <button class="btn btn-primary btn-hover-secondary">Delete Account</button>
-                        </div>
 
                             </div>
                         </div>
 
                         <div class="dashboard-settings__btn">
-                            <button class="btn btn-primary btn-hover-secondary">Update Profile</button>
+                            <button name="change-password" class="btn btn-primary btn-hover-secondary">Reset Password</button>
                         </div>
                     </form>
 

@@ -37,7 +37,7 @@ function registerUser($firstname, $lastname, $username, $email, $password, $conf
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Email is not valid
+
         return "Email is not valid";
     } else {
         // Email is valid
@@ -108,7 +108,7 @@ function registerInstructor($firstname, $lastname, $username, $email, $password,
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Email is not valid
+
         return "Email is not valid";
     } else {
         // Email is valid
@@ -167,7 +167,6 @@ function loginUser($username, $password)
         return "Both fields are required";
     }
 
-    // Note: It's better to hash and store passwords securely instead of applying further filtering here.
 
     $sql = "SELECT user_username, user_password FROM users WHERE user_username = ?";
     $stmt = $mysqli->prepare($sql);
@@ -199,7 +198,6 @@ function loginInstructor($username, $password)
         return "Both fields are required";
     }
 
-    // Note: It's better to hash and store passwords securely instead of applying further filtering here.
 
     $sql = "SELECT username, password FROM instructors WHERE username = ?";
     $stmt = $mysqli->prepare($sql);
@@ -220,6 +218,49 @@ function loginInstructor($username, $password)
         exit();
     }
 }
+
+function changePassword($username, $currentPassword, $newPassword, $confirmPassword)
+{
+    $mysqli = connect();
+    $username = trim($username);
+    $currentPassword = trim($currentPassword);
+    $newPassword = trim($newPassword);
+    $confirmPassword = trim($confirmPassword);
+
+    if (empty($username) || empty($currentPassword) || empty($newPassword) || empty($confirmPassword)) {
+        return "All fields are required";
+    }
+
+    // Verify if the provided current password is correct
+    $sql = "SELECT password FROM instructors WHERE username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+
+    if ($data === null || !password_verify($currentPassword, $data["password"])) {
+        return "Incorrect current password";
+    }
+
+    if ($newPassword !== $confirmPassword) {
+        return "New password and confirm password do not match";
+    }
+
+    // Update the password with the new one
+    $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+    $updateSql = "UPDATE instructors SET password = ? WHERE username = ?";
+    $updateStmt = $mysqli->prepare($updateSql);
+    $updateStmt->bind_param("ss", $hashedPassword, $username);
+    $updateStmt->execute();
+
+    if ($updateStmt->affected_rows > 0) {
+        return "Success";
+    } else {
+        return "Failed to change the password";
+    }
+}
+
 
 function logoutUser()
 {
@@ -242,7 +283,7 @@ function deleteAccount()
 
 function fetchUserProfile($username)
 {
-    $mysqli = connect(); // Assuming you have a database connection function
+    $mysqli = connect();
 
     $sql = "SELECT user_id, user_firstname, user_lastname, user_email FROM users WHERE user_username = ?";
     $stmt = $mysqli->prepare($sql);
@@ -259,7 +300,7 @@ function fetchUserProfile($username)
 
 function fetchInstructorProfile($username)
 {
-    $mysqli = connect(); // Assuming you have a database connection function
+    $mysqli = connect();
 
     $sql = "SELECT id, firstname, lastname, username, email FROM instructors WHERE username = ?";
     $stmt = $mysqli->prepare($sql);
@@ -318,8 +359,56 @@ function addCourse($courseTitle, $courseDescription, $courseCategory, $coursePri
     return "Error adding the course.";
 }
 
+// function getCourseDetails($courseId, $mysqli) {
 
+//     $mysqli = connect();
 
+//     $sql = "SELECT * FROM coursesinfo WHERE course_id = ?";
+//     $stmt = $mysqli->prepare($sql);
+//     $stmt->bind_param("i", $courseId);
+//     $stmt->execute();
+//     $result = $stmt->get_result();
+    
+//     if ($result->num_rows > 0) {
+//         return $result->fetch_assoc();
+//     }
+    
+//     return null; // Course not found
+// }
+
+// function getCourseImages($courseId, $mysqli) {
+
+//     $mysqli = connect();
+
+//     $sql = "SELECT courseimage FROM coursesinfo WHERE course_id = ?";
+//     $stmt = $mysqli->prepare($sql);
+//     $stmt->bind_param("i", $courseId);
+//     $stmt->execute();
+//     $result = $stmt->get_result();
+    
+//     $courseImages = array();
+
+//     while ($row = $result->fetch_assoc()) {
+//         $courseImages[] = $row['courseimage'];
+//     }
+
+//     return $courseImages;
+// }
+
+function getAllCourses() {
+    $mysqli = connect();
+
+    $sql = "SELECT * FROM coursesinfo";
+    $result = $mysqli->query($sql);
+
+    $courses = array();
+
+    while ($row = $result->fetch_assoc()) {
+        $courses[] = $row;
+    }
+
+    return $courses;
+}
 
 
   
@@ -331,22 +420,4 @@ function addCourse($courseTitle, $courseDescription, $courseCategory, $coursePri
 
 
     
-
-        
-
-
-
-// function getCategories($mysqli) {
-//     $categories = array();
-
-//     $query = "SELECT id, category FROM category";
-//     $result = $mysqli->query($query);
-
-//     if ($result) {
-//         while ($row = $result->fetch_assoc()) {
-//             $categories[$row['id']] = $row['category'];
-//         }
-//     }
-
-//     return $categories;
-// }
+?>

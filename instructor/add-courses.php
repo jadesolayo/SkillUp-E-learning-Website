@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
                                         <p class="success">Course added successfully!</p>
                                     </div>
                                 <?php
-                                } else if ($response !== null) {
+                                } else if (@$response !== null) {
                                 ?>
                                     <div class="alert alert-danger left-icon-alert">
                                         <p class="error"> <?php echo $response; ?> </p>
@@ -75,7 +75,7 @@ if (isset($_POST['submit'])) {
                                     <div class="dashboard-content__input">
                                         <label class="form-label-02">Category</label>
                                         <select name="course-category" class="form-select">
-                                            <option value="">Select a Category</option>
+                                            <option disabled="disabled" selected="selected">Select a Category</option>
                                             <option value="Programming">Programming</option>
                                             <option value="Web Development">Web Development</option>
                                             <option value="Data Science">Data Science</option>
