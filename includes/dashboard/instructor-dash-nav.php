@@ -38,18 +38,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-announcement.php">
-                                <i class="edumi edumi-announcement"></i>
-                                <span class="text">Announcements</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="dashboard-withdraw.php">
-                                <i class="edumi edumi-wallet"></i>
-                                <span class="text">Withdrawals</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="dashboard-students.php">
                                 <i class="edumi edumi-users"></i>
                                 <span class="text">My Students</span>
@@ -64,7 +52,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.php">
+                            <a href="logout.php">
                                 <i class="edumi edumi-sign-out"></i>
                                 <span class="text">Logout</span>
                             </a>
