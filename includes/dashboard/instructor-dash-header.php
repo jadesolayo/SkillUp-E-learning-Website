@@ -15,7 +15,7 @@
 
             <div class="dashboard-header__user">
                 <div class="dashboard-header__user-avatar">
-                    <img src="assets/images/avatar/avatar-02.jpg" alt="Avatar" width="90" height="90">
+                    <img src="../assets/images/avatar.png" alt="Avatar" width="90" height="90">
                 </div>
                 <div class="dashboard-header__user-info">
                     <h4 class="dashboard-header__user-name"><span class="welcome-text">Welcome,</span> <?php echo $_SESSION["instructor"] ?> </h4>

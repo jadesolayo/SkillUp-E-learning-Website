@@ -29,24 +29,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-profile.php">
-                                <i class="edumi edumi-follower"></i>
-                                <span class="text">My Profile</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="dashboard-all-course.php">
                                 <i class="edumi edumi-open-book"></i>
                                 <span class="text">Enrolled Courses</span>
                             </a>
                         </li>
                         <li>
-                        <li>
-                            <a href="dashboard-reviews.php">
-                                <i class="edumi edumi-star"></i>
-                                <span class="text">Reviews</span>
-                            </a>
-                        </li>
                     </ul>
                     <ul class="dashboard-nav__menu-list">
                         <li>
