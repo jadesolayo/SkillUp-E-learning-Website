@@ -283,49 +283,48 @@ function addCourse($courseTitle, $courseDescription, $courseCategory, $coursePri
 
     $uploadedFiles = array();
 
-    // Define the absolute path to the uploads directory
-    $uploadDirectory = __DIR__ . '../uploads'; // Assuming this PHP file is in the root of your project
-
     // Move the uploaded files to the desired location
     foreach ($fileNames as $i => $filename) {
         $tempname = $fileTempNames[$i];
-        $folder = $uploadDirectory . $filename;
+        $folder = "../uploads/" . $filename;
 
         if (move_uploaded_file($tempname, $folder)) {
             $uploadedFiles[] = $filename;
         } else {
             // Handle file upload error
             $msg = "Error uploading file";
-            return $msg;
         }
     }
 
     if (!empty($uploadedFiles)) {
-        $insert_query = "INSERT INTO coursesinfo (coursetitle, coursedescription, category, price, duration, courseimage) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmt = $mysqli->prepare($insert_query);
-
-        // Create a placeholder for binding the image filenames
-        $imageFilenames = '';
-        for ($i = 0; $i < count($uploadedFiles); $i++) {
-            $imageFilenames .= 's';
-        }
-
-        // Combine all filenames into an array
-        $params = [$courseTitle, $courseDescription, $courseCategory, $coursePrice, $courseDuration];
-        foreach ($uploadedFiles as $filename) {
-            $params[] = $filename;
-        }
-
-        // Bind parameters dynamically based on the number of filenames
-        $stmt->bind_param($imageFilenames, ...$params);
+        // Insert the uploaded file names into the database
+        $sql = "INSERT INTO coursesinfo (coursetitle, coursedescription, category, price, duration, courseimage) VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = $mysqli->prepare($sql);
+        
+        // Prepare the bind parameters dynamically
+        $bindTypes = str_repeat('s', count($uploadedFiles) + 5); // +5 for other parameters
+        $bindValues = array_merge([$bindTypes], [$courseTitle, $courseDescription, $courseCategory, $coursePrice, $courseDuration], $uploadedFiles);
+        
+        // Bind parameters
+        $stmt->bind_param(...$bindValues);
+        
         $stmt->execute();
 
-        return "Success";
-    } else {
-        // Handle database insertion error
-        return "Error adding the course.";
+        if ($stmt->affected_rows > 0) {
+            return "Success";
+        }
     }
+    
+    return "Error adding the course.";
 }
+
+
+
+
+
+  
+
+
 
 
 
