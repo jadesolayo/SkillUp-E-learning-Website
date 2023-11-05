@@ -45,7 +45,7 @@ include("includes/functions.php");
                                         <!-- Section Title Start -->
                                         <div class="section-title">
                                             <h2 class="section-title__title-03">Become an Instructor</h2>
-                                            <p class="mt-2">Top instructors from around the world teach millions of students on SkillUp. </p>
+                                            <p class="mt-2"><br> Passionate about sharing your expertise? Join us as an instructor! <br> <br> Create engaging courses and reach a global audience. Whether you're an experienced educator or a skilled professional, we provide the tools and support for your success.</p>
                                         </div>
                                         <!-- Section Title End -->
 
@@ -56,7 +56,7 @@ include("includes/functions.php");
                                 <div class="col-lg-6">
                                     <!-- Instructor Banner Image Start -->
                                     <div class="instructor-banner__image" data-aos="fade-up" data-aos-duration="1000">
-                                        <img src="assets/images/become-a-teacher-hero-image.png" alt="Teacher Hero" width="727" height="347">
+                                        <img src="assets/images/banner/instructor-banner-1.png" alt="Teacher Hero" width="727" height="347">
                                     </div>
                                     <!-- Instructor Banner Image End -->
                                 </div>
@@ -87,7 +87,12 @@ include("includes/functions.php");
                         <!-- Section Title Start -->
                         <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
                             <h2 class="section-title__title-03">Discover Your Potential</h2>
-                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                            <p>Unleash your potential with our diverse range of courses. Whether you're looking to expand your knowledge, advance your career, or pursue your passions, our platform offers the perfect opportunity. Explore, learn, and grow with us. Your journey to personal and professional development starts here.
+
+
+
+
+</p>
                         </div>
                         <!-- Section Title End -->
                     </div>
@@ -112,7 +117,7 @@ include("includes/functions.php");
                             <div class="edumall-box-item-04__content">
                                 <h3 class="edumall-box-item-04__title">Earn Money</h3>
 
-                                <p>Earn money every time a student purchases your course. Get paid monthly through PayPal or Payoneer, it’s your choice.</p>
+                                <p>Turn your expertise into income. Become an instructor, create courses, and earn money while sharing your knowledge. Join our community of educators and start monetizing your skills today. Your journey to financial empowerment begins here.</p>
                             </div>
                         </div>
                         <!-- Edumall Box Item End -->
@@ -142,7 +147,7 @@ include("includes/functions.php");
                             <div class="edumall-box-item-04__content">
                                 <h3 class="edumall-box-item-04__title">Inspire Students</h3>
 
-                                <p>Help people learn new skills, advance their careers, and explore their hobbies by sharing your knowledge.</p>
+                                <p>Make a difference in the lives of eager learners. Become an instructor and inspire students worldwide. Share your passion, expertise, and insights to spark curiosity and encourage growth. Join us in inspiring the next generation of knowledge seekers.</p>
                             </div>
                         </div>
                         <!-- Edumall Box Item End -->
@@ -174,7 +179,7 @@ include("includes/functions.php");
                             <div class="edumall-box-item-04__content">
                                 <h3 class="edumall-box-item-04__title">Join Our Community</h3>
 
-                                <p>Take advantage of our active community of instructors to help you through your course creation process.</p>
+                                <p>Be a part of our diverse and thriving community. Join us to connect with like-minded learners and educators. Together, we embark on a journey of knowledge, growth, and collaboration. Join our community today and be part of the learning revolution.</p>
                             </div>
                         </div>
                         <!-- Edumall Box Item End -->
@@ -313,12 +318,12 @@ include("includes/functions.php");
 
                                         <div class="become-an-instructor__caption">
                                             <h4 class="become-an-instructor__title">Plan your course</h4>
-                                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                                            <p>Instructors are encouraged to carefully plan their courses to ensure a structured and engaging learning experience. Define clear learning objectives, organize content logically, and create interactive, high-quality materials. Set milestones, encourage student interaction, and provide constructive feedback. Regular updates based on student feedback and the latest knowledge keep courses fresh and valuable. Planning is the foundation for sharing your expertise effectively.</p>
                                         </div>
 
                                         <div class="become-an-instructor__caption">
                                             <h4 class="become-an-instructor__title">How we help you</h4>
-                                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egeeque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                                            <p>We're committed to your success as an instructor. We provide the tools and resources you need to create, market, and monetize your courses. Our revenue-sharing model ensures you benefit from your hard work, and our supportive community and regular updates keep you on the path to success. With our platform, you can focus on teaching and inspiring, while we take care of the rest.</p>
                                         </div>
                                     </div>
                                     <!-- Become an instructor content End -->
@@ -407,13 +412,13 @@ include("includes/functions.php");
                                         <h3 class="become-an-instructor__main-title">Instructor Rules</h3>
 
                                         <div class="become-an-instructor__caption">
-                                            <h4 class="become-an-instructor__title">Plan your course</h4>
-                                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                                            <h4 class="become-an-instructor__title">Content Guidelines</h4>
+                                            <p>Instructors are expected to adhere to our content guidelines, ensuring that the courses created on our platform meet quality and ethical standards. This includes respecting copyright and intellectual property rights, avoiding plagiarism, and providing accurate, relevant, and up-to-date content. Content should be engaging, well-structured, and aligned with the intended learning outcomes. By following these guidelines, instructors contribute to a positive learning experience for our students.</p>
                                         </div>
 
                                         <div class="become-an-instructor__caption">
-                                            <h4 class="become-an-instructor__title">How we help you</h4>
-                                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egeeque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                                            <h4 class="become-an-instructor__title">Student Interaction and Support</h4>
+                                            <p>Instructors are encouraged to actively engage with their students, foster a sense of community, and provide timely feedback. Engaging with students through discussions, Q&A sessions, and forums enhances the learning experience. Instructors should be approachable and responsive to student queries, creating an environment where learners feel supported and valued. This interaction not only benefits students but also contributes to the instructor's success on our platform by fostering positive reviews and ongoing student enrollment.</p>
                                         </div>
                                     </div>
                                     <!-- Become an instructor content End -->
@@ -496,13 +501,15 @@ include("includes/functions.php");
                                         <h3 class="become-an-instructor__main-title">Start with Courses</h3>
 
                                         <div class="become-an-instructor__caption">
-                                            <h4 class="become-an-instructor__title">Plan your course</h4>
-                                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                                            <h4 class="become-an-instructor__title">Course Creation and Quality</h4>
+                                            <p>
+
+Instructors should begin by creating courses that meet our quality standards. Courses should be well-structured, engaging, and informative. High-quality content, clear learning objectives, and interactive elements are essential. By starting with well-crafted courses, instructors provide a solid foundation for effective teaching and successful engagement with students.</p>
                                         </div>
 
                                         <div class="become-an-instructor__caption">
-                                            <h4 class="become-an-instructor__title">How we help you</h4>
-                                            <p>Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egeeque convallis a cras semper auctor. Libero id faucibus nisl tincidunt egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor. Liberoe convallis a cras semper atincidunt egetnval</p>
+                                            <h4 class="become-an-instructor__title">Diverse Course Topics</h4>
+                                            <p>Our platform welcomes instructors to start by diversifying the range of course topics they offer. From academic subjects to practical skills and hobbies, a broad spectrum of courses is encouraged. This diversity not only attracts a wide audience of learners but also allows instructors to share their expertise in areas they are passionate about, increasing their reach and impact. Starting with a diverse set of courses can help instructors build a robust online presence and portfolio.</p>
                                         </div>
                                     </div>
                                     <!-- Become an instructor content End -->
@@ -581,14 +588,14 @@ include("includes/functions.php");
                             <!-- Instructor Banner Content Start -->
                             <div class="instructor-banner-02__content" data-aos="fade-up" data-aos-duration="1000">
                                 <h2 class="instructor-banner-02__title">We're here to help</h2>
-                                <p>Our Instructor Support Team is here for you 24/7 to help you through your course creation needs. Use our Teaching Center, a resource center to help you through the process.This community group is always on, always there, and always helpful.</p>
+                                <p>Our Instructor Support Team is here for you 24/7 to help you through your course creation needs. Our commitment to our instructors goes beyond course creation. We're here to provide dedicated support and guidance every step of the way. If you have questions, need assistance, or seek advice on improving your courses, our team is just a message away. We offer resources, webinars, and a responsive support system to ensure you have the tools and knowledge to succeed as an educator on our platform. Your success is our success, and we're here to support you in achieving your teaching goals.</p>
                             </div>
                             <!-- Instructor Banner Content End -->
                         </div>
                         <div class="col-lg-6">
                             <!-- Instructor Banner Image Start -->
                             <div class="instructor-banner-02__image text-end" data-aos="fade-up" data-aos-duration="1000">
-                                <img src="assets/images/become-an-instructor-help-section-image.png" alt="instructor" width="574" height="303">
+                                <img src="assets/images/banner/banner-help-center.png" alt="instructor" width="574" height="303">
                             </div>
                             <!-- Instructor Banner Image End -->
                         </div>

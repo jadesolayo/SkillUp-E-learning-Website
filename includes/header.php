@@ -9,10 +9,10 @@
 
         <div class="header-top-bar-wrap__info">
           <ul class="header-top-bar-wrap__info-list">
-            <li><a href="tel:+8819906886"><i class="fas fa-phone"></i> <span class="info-text">(+88) 1990
-                  6886</span></a></li>
+            <li><a href="tel:+8819906886"><i class="fas fa-phone"></i> <span class="info-text">+234-8163-3946-
+                  98</span></a></li>
             <li><a href="mailto:agency@example.com"><i class="far fa-envelope"></i> <span
-                  class="info-text">agency@example.com</span></a></li>
+                  class="info-text">support@skillupbyjade.com</span></a></li>
           </ul>
         </div>
 
