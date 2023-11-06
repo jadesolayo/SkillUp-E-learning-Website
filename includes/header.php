@@ -153,7 +153,7 @@
           <div class="header-navigation d-none d-xl-block">
             <nav class="menu-primary">
               <ul class="menu-primary__container">
-                <li><a class="active" href="#"><span>Home</span></a>
+                <li><a class="active" href="index.php"><span>Home</span></a>
 
 
 
@@ -162,7 +162,7 @@
 
                 </li>
                 <li>
-                  <a href="#"><span>Courses</span></a>
+                  <a href="courses.php"><span>Courses</span></a>
                 </li>
                 <li>
                   <a href="#"><span>Blog</span></a>
@@ -175,67 +175,6 @@
           </div>
           <!-- Header Navigation End -->
 
-          <!-- Header Mini Cart Start -->
-          <div class="header-action">
-            <a href="#" class="header-action__btn">
-              <i class="fas fa-shopping-basket"></i>
-              <span class="header-action__number">3</span>
-            </a>
-
-            <!-- Header Mini Cart Start -->
-            <div class="header-mini-cart">
-
-              <!-- Header Mini Cart Product List Start -->
-              <ul class="header-mini-cart__product-list ">
-                <li class="header-mini-cart__item">
-                  <a href="#" class="header-mini-cart__close"></a>
-                  <div class="header-mini-cart__thumbnail">
-                    <a href="shop-single-list-left-sidebar.php"><img src="assets/images/product/product-1.png" alt="Product" width="80" height="93"></a>
-                  </div>
-                  <div class="header-mini-cart__caption">
-                    <h3 class="header-mini-cart__name"><a href="shop-single-list-left-sidebar.php">Awesome for Websites</a></h3>
-                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span class="separator">.00</span></span>
-                  </div>
-                </li>
-                <li class="header-mini-cart__item">
-                  <a href="#" class="header-mini-cart__close"></a>
-                  <div class="header-mini-cart__thumbnail">
-                    <a href="shop-single-list-left-sidebar.php"><img src="assets/images/product/product-2.png" alt="Product" width="80" height="93"></a>
-                  </div>
-                  <div class="header-mini-cart__caption">
-                    <h3 class="header-mini-cart__name"> <a href="shop-single-list-left-sidebar.php">Awesome for Websites</a></h3>
-                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span class="separator">.00</span></span>
-                  </div>
-                </li>
-                <li class="header-mini-cart__item">
-                  <a href="#" class="header-mini-cart__close"></a>
-                  <div class="header-mini-cart__thumbnail">
-                    <a href="shop-single-list-left-sidebar.php"><img src="assets/images/product/product-3.png" alt="Product" width="80" height="93"></a>
-                  </div>
-                  <div class="header-mini-cart__caption">
-                    <h3 class="header-mini-cart__name"> <a href="shop-single-list-left-sidebar.php">Awesome for Websites</a></h3>
-                    <span class="header-mini-cart__quantity">1 × <strong class="amount">$49</strong><span class="separator">.00</span></span>
-                  </div>
-                </li>
-              </ul>
-              <!-- Header Mini Cart Product List End -->
-
-              <div class="header-mini-cart__footer">
-                <div class="header-mini-cart__total">
-                  <p class="header-mini-cart__label">Total:</p>
-                  <p class="header-mini-cart__value">$445<span class="separator">.99</span></p>
-                </div>
-                <div class="header-mini-cart__btn">
-                  <a href="cart.php" class="btn btn-primary btn-hover-secondary">View cart</a>
-                  <a href="checkout.php" class="btn btn-primary btn-hover-secondary">Checkout</a>
-                </div>
-              </div>
-
-            </div>
-            <!-- Header Mini Cart End -->
-
-          </div>
-          <!-- Header Mini Cart End -->
 
           <!-- Header Mobile Toggle Start -->
           <div class="header-toggle">
