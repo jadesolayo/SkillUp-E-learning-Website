@@ -1,8 +1,8 @@
 <?php
 require "../includes/functions.php";
 
-if (!isset($_SESSION['admin'])) {
-    header("location: ../auth/admin-login.php");
+if (!isset($_SESSION['instructor'])) {
+    header("location: ../auth/instructor-login.php");
     exit();
 }
 
@@ -17,14 +17,14 @@ $allCourses = getAllCourses();
     <!-- Dashboard Nav Start -->
     <div class="dashboard-nav offcanvas offcanvas-start" id="offcanvasDashboard">
         <!-- Dashboard Nav Wrapper Start -->
-        <?php include('../includes/dashboard/admin-dash-nav.php') ?>
+        <?php include('../includes/dashboard/instructor-dash-nav.php') ?>
         <!-- Dashboard Nav Wrapper End -->
     </div>
     <!-- Dashboard Nav End -->
     <!-- Dashboard Main Wrapper Start -->
     <main class="dashboard-main-wrapper">
         <!-- Dashboard Header Start -->
-        <?php include("../includes/dashboard/admin-dash-header.php") ?>
+        <?php include("../includes/dashboard/instructor-dash-header.php") ?>
         <!-- Dashboard Header End -->
         <!-- Dashboard Content Start -->
         <div class="dashboard-content">
@@ -32,12 +32,13 @@ $allCourses = getAllCourses();
                 <h4 class="dashboard-title">All Courses</h4>
                 <!-- Dashboard My Courses Start -->
                 <div class="dashboard-courses">
-                    <?php if (!empty($allCourses)) : ?>
-                        <?php foreach ($allCourses as $course) : ?>
+                    <?php if (!empty($allCourses)): ?>
+                        <?php foreach ($allCourses as $course): ?>
                             <div class="dashboard-courses__item">
                                 <div class="dashboard-courses__thumbnail">
                                     <a href="course-details.php?id=<?= $course['id']; ?>">
-                                        <img src="../uploads/<?php echo $course['courseimage']; ?>" alt="Course" width="260" height="174">
+                                        <img src="../uploads/<?php echo $course['courseimage']; ?>" alt="Course" width="260"
+                                            height="174">
                                     </a>
                                 </div>
                                 <div class="dashboard-courses__content">
@@ -49,7 +50,9 @@ $allCourses = getAllCourses();
                                     <ul class="dashboard-courses__meta">
                                         <li>
                                             <span class="meta-label">Duration:</span>
-                                            <span class="meta-value"><?php echo $course['duration']; ?></span>
+                                            <span class="meta-value">
+                                                <?php echo $course['duration']; ?>
+                                            </span>
                                         </li>
                                     </ul>
                                     <div class="dashboard-courses__footer">
@@ -59,7 +62,8 @@ $allCourses = getAllCourses();
                                             </span>
                                         </div>
                                         <div class="dashboard-courses__action">
-                                            <a class="action" href="edit-courses.php?id=<?= $course['id']; ?>"><i class="fas fa-pencil-alt"></i> Edit</a>
+                                            <a class="action" href="edit-courses.php?id=<?= $course['id']; ?>"><i
+                                                    class="fas fa-pencil-alt"></i> Edit</a>
                                             <a class="action delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
                                         </div>
                                     </div>
@@ -67,7 +71,7 @@ $allCourses = getAllCourses();
                             </div>
                             <!-- Dashboard Course Item End -->
                         <?php endforeach; ?>
-                    <?php else : ?>
+                    <?php else: ?>
                         <!-- Display a message when there are no courses -->
                         <div class="dashboard-courses__item">
                             <p>No courses available.</p>
