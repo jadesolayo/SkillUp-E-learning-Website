@@ -30,21 +30,18 @@ $allCourses = getAllCourses();
         <div class="dashboard-content">
             <div class="container">
                 <h4 class="dashboard-title">All Courses</h4>
-                <!-- Dashboard My Courses Start -->
                 <div class="dashboard-courses">
                     <?php if (!empty($allCourses)) : ?>
                         <?php foreach ($allCourses as $course) : ?>
-                            <!-- Dashboard Course Item Start (for all courses) -->
                             <div class="dashboard-courses__item">
                                 <div class="dashboard-courses__thumbnail">
-                                    <a href="#">
+                                    <a href="course-details.php?id=<?= $course['id']; ?>">
                                         <img src="../uploads/<?php echo $course['courseimage']; ?>" alt="Course" width="260" height="174">
                                     </a>
                                 </div>
                                 <div class="dashboard-courses__content">
-                                    <!-- Display course content here -->
                                     <h3 class="dashboard-courses__title">
-                                        <a href="course-single.php?id=<?= $instructor['id']; ?>">
+                                        <a href="course-details.php?id=<?= $course['id']; ?>">
                                             <?php echo $course['coursetitle']; ?>
                                         </a>
                                     </h3>
@@ -102,4 +99,5 @@ $allCourses = getAllCourses();
     <script src="./assets/js/plugins/flatpickr.js"></script>
     <script src="./assets/js/plugins/range-slider.js"></script>
 </body>
+
 </html>

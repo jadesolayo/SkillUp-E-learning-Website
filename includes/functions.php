@@ -565,6 +565,28 @@ function getAllInstructors() {
     return $instructors;
 }
 
+function getAllCategories() {
+    $mysqli = connect();
+
+    $sql = "SELECT DISTINCT category FROM coursesinfo";
+    $result = $mysqli->query($sql);
+
+    $categories = array();
+
+    if ($result) {
+        while ($row = $result->fetch_assoc()) {
+            $categories[] = $row['category'];
+        }
+
+        $result->free(); 
+    }
+
+    $mysqli->close(); 
+
+    return $categories;
+}
+
+
 function enrollCourses() {
 
     
@@ -673,6 +695,34 @@ function updateCourse($courseId, $courseTitle, $courseDescription, $courseCatego
     }
 }
 
+function filterCourses($courses, $categoryFilter, $priceFilter, $durationFilter) {
+    // $mysqli = connect();
+    
+    $filteredCourses = [];
+
+    // Loop through all courses and apply filters
+    foreach ($courses as $course) {
+        // Check if the course matches the category filter (if applied)
+        if ($categoryFilter && $course['category_id'] != $categoryFilter) {
+            continue; // Skip this course
+        }
+
+        // Check if the course matches the price filter (if applied)
+        if ($priceFilter === 'free' && $course['price'] != 0) {
+            continue; // Skip this course
+        }
+
+        // Check if the course matches the duration filter (if applied)
+        if ($durationFilter && $course['duration'] < $durationFilter) {
+            continue; // Skip this course
+        }
+
+        // If the course passes all filters, add it to the filteredCourses array
+        $filteredCourses[] = $course;
+    }
+
+    return $filteredCourses;
+}
 
 
 

@@ -1,15 +1,21 @@
 <?php
 require "includes/functions.php";
 
+
 $allCourses = getAllCourses();
 
-$numberOfCourses = count($allCourses);
+// Apply filters if provided in the URL
+$categoryFilter = isset($_GET['category']) ? $_GET['category'] : null;
+$priceFilter = isset($_GET['price']) ? $_GET['price'] : null;
+$durationFilter = isset($_GET['duration']) ? $_GET['duration'] : null;
 
+// Filter courses based on selected filters
+$filteredCourses = filterCourses($allCourses, $categoryFilter, $priceFilter, $durationFilter);
 
-$coursesPerPage = 5;
+$coursesPerPage = 2;
 $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
 
-$totalCourses = count($allCourses);
+$totalCourses = count($filteredCourses);
 $totalPages = ceil($totalCourses / $coursesPerPage);
 
 if ($currentPage < 1) {
@@ -19,7 +25,7 @@ if ($currentPage < 1) {
 }
 
 $startCourseIndex = ($currentPage - 1) * $coursesPerPage;
-$displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage);
+$displayedCourses = array_slice($filteredCourses, $startCourseIndex, $coursesPerPage);
 
 ?>
 <!DOCTYPE html>
@@ -72,12 +78,12 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                 <div class="row gy-10 flex-row-reverse">
                     <div class="col-lg-9">
 
-                    <div class="archive-filter-bar">
-    <?php
-    $numberOfCourses = count($allCourses);
-    ?>
-    <p>We found <span><?php echo $numberOfCourses; ?></span> courses available for you</p>
-</div>
+                        <div class="archive-filter-bar">
+                            <?php
+                            $numberOfCourses = count($allCourses);
+                            ?>
+                            <p>We found <span><?php echo $numberOfCourses; ?></span> courses available for you</p>
+                        </div>
                         <div class="dashboard-courses">
                             <?php if (isset($course)) : ?>
                                 <!-- Display course details -->
@@ -92,7 +98,7 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                                     <div class="dashboard-courses__content">
                                         <!-- Display course content here -->
                                         <h3 class="dashboard-courses__title">
-                                            <a href="course-single.php"><?php echo $course['coursetitle']; ?></a>
+                                            <a href="course-single.php?id=<?= $course['id']; ?>"><?php echo $course['coursetitle']; ?></a>
                                         </h3>
                                         <p class="">
                                             <?php echo $course['coursedescription']; ?>
@@ -129,7 +135,7 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                                         <div class="dashboard-courses__content">
                                             <!-- Display course content here -->
                                             <h3 class="dashboard-courses__title">
-                                                <a href="#">
+                                                <a href="course-single.php?id=<?= $course['id']; ?>">
                                                     <?php echo $course['coursetitle']; ?>
                                                 </a>
                                             </h3>
@@ -174,13 +180,26 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                         <!-- Page Pagination End -->
                         <!-- Pagination Start -->
                         <div class="page-pagination">
+                            <ul class="pagination justify-content-center">
                             <?php
-                            if ($totalPages > 1) {
-                                for ($page = 1; $page <= $totalPages; $page++) {
-                                    echo '<ul class="pagination justify-content-center"><li><a class="' . ($page == $currentPage ? 'active' : '') . '" href="?page=' . $page . '">' . $page . '</a></li></ul>';
-                                }
-                            }
-                            ?>
+                if ($totalPages > 1) {
+                    // Display previous page link
+                    if ($currentPage > 1) {
+                        echo '<li><a href="?page=' . ($currentPage - 1) . '"><i class="fas fa-angle-left"></i></a></li>';
+                    }
+    
+                    // Display page number links
+                    for ($page = 1; $page <= $totalPages; $page++) {
+                        echo '<li><a class="' . ($page == $currentPage ? 'active' : '') . '" href="?page=' . $page . '">' . $page . '</a></li>';
+                    }
+    
+                    // Display next page link
+                    if ($currentPage < $totalPages) {
+                        echo '<li><a href="?page=' . ($currentPage + 1) . '"><i class="fas fa-angle-right"></i></a></li>';
+                    }
+                }
+                ?>
+                            </ul>
                         </div>
                         <!-- Pagination End -->
                     </div>
@@ -203,6 +222,15 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                                                 <div class="widget-filter__item">
                                                     <input type="checkbox" id="categories24" name="sort-by">
                                                     <label for="categories24">Teaching & Academics <span>(7)</span></label>
+                                                    <?php
+                                    // Assuming you have a list of categories, loop through and display filter options
+                                    foreach ($allCourses as $category) {
+                                        echo '<li>';
+                                        echo '<input type="radio" id="categories24' . $category['id'] . '" name="category" value="' . $category['id'] . '" ' . ($categoryFilter == $category['id'] ? 'checked' : '') . '>';
+                                        echo '<label for="category-' . $category['id'] . '">' . $category['name'] . '</label>';
+                                        echo '</li>';
+                                    }
+                                    ?>
                                                 </div>
                                                 <!-- Widget Filter Item End -->
                                             </li>
