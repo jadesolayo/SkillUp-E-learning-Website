@@ -72,6 +72,12 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                 <div class="row gy-10 flex-row-reverse">
                     <div class="col-lg-9">
 
+                    <div class="archive-filter-bar">
+    <?php
+    $numberOfCourses = count($allCourses);
+    ?>
+    <p>We found <span><?php echo $numberOfCourses; ?></span> courses available for you</p>
+</div>
                         <div class="dashboard-courses">
                             <?php if (isset($course)) : ?>
                                 <!-- Display course details -->
@@ -104,7 +110,7 @@ $displayedCourses = array_slice($allCourses, $startCourseIndex, $coursesPerPage)
                                                 </span>
                                             </div>
                                             <div class="course-list-info__action">
-                                                <button class="btn btn-primary btn-hover-secondary">Add to cart</button>
+                                                <button class="btn btn-primary btn-hover-secondary">Apply</button>
                                                 <button class="btn-icon btn-light btn-hover-primary" data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i class="far fa-heart"></i></button>
                                             </div>
                                         </div>

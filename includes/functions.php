@@ -157,6 +157,77 @@ function registerInstructor($firstname, $lastname, $username, $email, $password,
     }
 };
 
+function registerAdmin($firstname, $lastname, $username, $email, $password, $confirmPassword)
+{
+    $mysqli = connect();
+    $args = func_get_args();
+
+    $args = array_map(function ($value) {
+        return trim($value);
+    }, $args);
+
+    foreach ($args as $value) {
+        if (empty($value)) {
+            return "All fields are required";
+        }
+    }
+
+    foreach ($args as $value) {
+        if (preg_match("/([<|>])/", $value)) {
+            return "<> characters are not allowed";
+        }
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+        return "Email is not valid";
+    } else {
+        // Email is valid
+        // return "Email is valid";
+    }
+
+    $stmt = $mysqli->prepare("SELECT email FROM admin WHERE email = ? ");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+    if ($data != NULL) {
+        return "Email already exists";
+    }
+
+    if (strlen($username) > 50) {
+        return "Username is too long";
+    }
+
+    $stmt = $mysqli->prepare("SELECT username FROM admin WHERE username = ? ");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+    if ($data != NULL) {
+        return "Username already exists";
+    }
+
+    if (strlen($password) > 50) {
+        return "Password is too long";
+    }
+
+    if ($password !== $confirmPassword) {
+        return "Passwords do not match";
+    }
+
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    $stmt = $mysqli->prepare("INSERT INTO admin(firstname, lastname, username, email, password) VALUES(?,?,?,?,?)");
+    $stmt->bind_param("sssss", $firstname, $lastname, $username, $email, $hashed_password);
+    $stmt->execute();
+    if ($stmt->affected_rows != 1) {
+        return "An error occured. Please try again";
+    } else {
+        return "Success";
+    }
+};
+
 function loginUser($username, $password)
 {
     $mysqli = connect();
@@ -215,6 +286,37 @@ function loginInstructor($username, $password)
     } else {
         $_SESSION["instructor"] = $username;
         header("Location: ../instructor/dashboard.php");
+        exit();
+    }
+}
+
+function loginAdmin($username, $password)
+{
+    $mysqli = connect();
+    $username = trim($username);
+    $password = trim($password);
+
+    if (empty($username) || empty($password)) {
+        return "Both fields are required";
+    }
+
+
+    $sql = "SELECT username, password FROM admin WHERE username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+
+    if ($data === null) {
+        return "Wrong Username or Password";
+    }
+
+    if (!password_verify($password, $data["password"])) {
+        return "Wrong Username or Password";
+    } else {
+        $_SESSION["admin"] = $username;
+        header("Location: ../admin/dashboard.php");
         exit();
     }
 }
@@ -357,6 +459,23 @@ function fetchInstructorProfile($username)
     return null;
 }
 
+function fetchAdminProfile($username)
+{
+    $mysqli = connect();
+
+    $sql = "SELECT id, firstname, lastname, username, email FROM admin WHERE username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        return $result->fetch_assoc();
+    }
+
+    return null;
+}
+
 function addCourse($courseTitle, $courseDescription, $courseCategory, $coursePrice, $courseDuration, $courseImages)
 {
     $mysqli = connect();
@@ -416,12 +535,143 @@ function getAllCourses() {
     return $courses;
 }
 
+function getAllUsers() {
+    $mysqli = connect();
+
+    $sql = "SELECT * FROM users";
+    $result = $mysqli->query($sql);
+
+    $users = array();
+
+    while ($row = $result->fetch_assoc()) {
+        $users[] = $row;
+    }
+
+    return $users;
+}
+
+function getAllInstructors() {
+    $mysqli = connect();
+
+    $sql = "SELECT * FROM instructors";
+    $result = $mysqli->query($sql);
+
+    $instructors = array();
+
+    while ($row = $result->fetch_assoc()) {
+        $instructors[] = $row;
+    }
+
+    return $instructors;
+}
+
 function enrollCourses() {
 
     
 }
 
+function getInstructorById($instructorId) {
+    $mysqli = connect();
 
+    $instructorId = mysqli_real_escape_string($mysqli, $instructorId);
+
+    $sql = "SELECT * FROM instructors WHERE id = $instructorId";
+    $result = $mysqli->query($sql);
+
+    if ($result && $result->num_rows > 0) {
+        $instructor = $result->fetch_assoc();
+        return $instructor;
+    } else {
+        return null; // Instructor not found
+    }
+}
+
+// Function to update instructor information
+function updateInstructor($instructorId, $firstname, $lastname, $email) {
+    $mysqli = connect();
+
+    $instructorId = mysqli_real_escape_string($mysqli, $instructorId);
+    $firstname = mysqli_real_escape_string($mysqli, $firstname);
+    $lastname = mysqli_real_escape_string($mysqli, $lastname);
+    $email = mysqli_real_escape_string($mysqli, $email);
+
+    $sql = "UPDATE instructors SET firstname = '$firstname', lastname = '$lastname', email = '$email' WHERE id = $instructorId";
+
+    if ($mysqli->query($sql) === TRUE) {
+        return true; // Instructor information updated successfully
+    } else {
+        return false; // Failed to update instructor information
+    }
+}
+
+function getUserById($userId) {
+    $mysqli = connect();
+
+    $userId = mysqli_real_escape_string($mysqli, $userId);
+
+    $sql = "SELECT * FROM users WHERE user_id = $userId";
+    $result = $mysqli->query($sql);
+
+    if ($result && $result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        return $user;
+    } else {
+        return null; 
+    }
+}
+
+
+function updateUser($userId, $firstname, $lastname, $email) {
+    $mysqli = connect();
+
+    $userId = mysqli_real_escape_string($mysqli, $userId);
+    $firstname = mysqli_real_escape_string($mysqli, $firstname);
+    $lastname = mysqli_real_escape_string($mysqli, $lastname);
+    $email = mysqli_real_escape_string($mysqli, $email);
+
+    $sql = "UPDATE users SET user_firstname = '$firstname', user_lastname = '$lastname', user_email = '$email' WHERE user_id = $userId";
+
+    if ($mysqli->query($sql) === TRUE) {
+        return true; 
+    } else {
+        return false; 
+    }
+}
+
+function getCourseById($courseId) {
+    $mysqli = connect();
+
+    $courseId = mysqli_real_escape_string($mysqli, $courseId);
+
+    $sql = "SELECT * FROM coursesinfo WHERE id = $courseId";
+    $result = $mysqli->query($sql);
+
+    if ($result && $result->num_rows > 0) {
+        $course = $result->fetch_assoc();
+        return $course;
+    } else {
+        return null; 
+    }
+}
+
+function updateCourse($courseId, $courseTitle, $courseDescription, $courseCategory, $coursePrice, $courseDuration) {
+    $mysqli = connect();
+
+    $courseId = mysqli_real_escape_string($mysqli, $courseId);
+    $courseTitle = mysqli_real_escape_string($mysqli, $courseTitle);
+    $courseDescription = mysqli_real_escape_string($mysqli, $courseDescription);
+    $courseCategory = mysqli_real_escape_string($mysqli, $courseCategory);
+    $coursePrice = mysqli_real_escape_string($mysqli, $coursePrice);
+    $courseDuration = mysqli_real_escape_string($mysqli, $courseDuration);
+
+    $sql = "UPDATE coursesinfo SET coursetitle = '$courseTitle', coursedescription = '$courseDescription', category = '$courseCategory', price = '$coursePrice', duration = '$courseDuration' WHERE id = $courseId";
+
+    if ($mysqli->query($sql) === TRUE) {
+        return true; 
+    } else {
+        return false; 
+    }
+}
 
 
 
