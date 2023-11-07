@@ -32,6 +32,9 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.min.js"></script>
 
     <style>
         .alert-color {
@@ -43,6 +46,44 @@
             background: red !important;
             color: #fff;
         }
+        /* Style the table */
+    #instructorsTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    #instructorsTable th {
+        background-color: #f2f2f2;
+    }
+
+    #instructorsTable th, #instructorsTable td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Style table header */
+    #instructorsTable th {
+        background-color: #ddd;
+        color: white;
+    }
+
+    /* Style table rows */
+    #instructorsTable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Style table links */
+    #instructorsTable a {
+        text-decoration: none;
+        color: #007BFF;
+    }
+
+    #instructorsTable a:hover {
+        text-decoration: underline;
+    }
     </style>
 
 </head>

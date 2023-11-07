@@ -1,8 +1,8 @@
 <?php
 require "../includes/functions.php";
 
-if (!isset($_SESSION['instructor'])) {
-    header("location: ../auth/instructor-login.php");
+if (!isset($_SESSION['admin'])) {
+    header("location: ../auth/admin-login.php");
     exit();
 }
 
@@ -17,14 +17,14 @@ $allCourses = getAllCourses();
     <!-- Dashboard Nav Start -->
     <div class="dashboard-nav offcanvas offcanvas-start" id="offcanvasDashboard">
         <!-- Dashboard Nav Wrapper Start -->
-        <?php include('../includes/dashboard/instructor-dash-nav.php') ?>
+        <?php include('../includes/dashboard/admin-dash-nav.php') ?>
         <!-- Dashboard Nav Wrapper End -->
     </div>
     <!-- Dashboard Nav End -->
     <!-- Dashboard Main Wrapper Start -->
     <main class="dashboard-main-wrapper">
         <!-- Dashboard Header Start -->
-        <?php include("../includes/dashboard/instructor-dash-header.php") ?>
+        <?php include("../includes/dashboard/admin-dash-header.php") ?>
         <!-- Dashboard Header End -->
         <!-- Dashboard Content Start -->
         <div class="dashboard-content">
@@ -44,7 +44,7 @@ $allCourses = getAllCourses();
                                 <div class="dashboard-courses__content">
                                     <!-- Display course content here -->
                                     <h3 class="dashboard-courses__title">
-                                        <a href="#">
+                                        <a href="course-single.php?id=<?= $instructor['id']; ?>">
                                             <?php echo $course['coursetitle']; ?>
                                         </a>
                                     </h3>
