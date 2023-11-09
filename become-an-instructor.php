@@ -87,8 +87,7 @@ include("includes/functions.php");
                         <!-- Section Title Start -->
                         <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
                             <h2 class="section-title__title-03">Discover Your Potential</h2>
-                            <p>Unleash your potential with our diverse range of courses. Whether you're looking to expand your knowledge, advance your career, or pursue your passions, our platform offers the perfect opportunity. Explore, learn, and grow with us. Your journey to personal and professional development starts here.
-
+                            <p>Unleash your potential with our diverse range of courses. Whether you're looking to expand your knowledge, advance your career, or pursue your passions, our platform offers the perfect opportunity. 
 
 
 
