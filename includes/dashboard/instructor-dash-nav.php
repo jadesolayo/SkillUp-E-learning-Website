@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="dashboard-nav__logo">
-                    <a class="logo" href="../instructor/dashboard.php"><img src="../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
+                    <a class="logo" href="../index.php"><img src="../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
                 </div>
 
             </div>

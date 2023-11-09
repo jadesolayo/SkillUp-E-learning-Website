@@ -5,14 +5,17 @@ if (!isset($_SESSION['instructor'])) {
     exit();
 }
 
-$instructor = $_SESSION["instructor"]; // Use $_SESSION["instructor"] instead of $_SESSION["user"]
+$instructor = $_SESSION["instructor"];
 $instructorProfile = fetchInstructorProfile($instructor);
 
 if (!$instructorProfile) {
-    // Handle the case where instructor details are not found
     echo "Instructor details not found.";
     exit();
 }
+
+$allCourses = getAllCourses();
+
+$numberOfCourses = count($allCourses);
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +80,10 @@ if (!$instructorProfile) {
                                         <i class="edumi edumi-user-support"></i>
                                     </div>
                                     <div class="dashboard-info__card-content">
-                                        <div class="dashboard-info__card-value">1</div>
+                                        <?php
+                                        $numberOfCourses = count($allCourses);
+                                        ?>
+                                        <div class="dashboard-info__card-value"><?php echo $numberOfCourses; ?></div>
                                         <div class="dashboard-info__card-heading">Total Courses</div>
                                     </div>
                                 </div>
@@ -113,3 +119,6 @@ if (!$instructorProfile) {
     <script src="../assets/js/plugins/masonry.pkgd.min.js"></script>
     <script src="../assets/js/plugins/flatpickr.js"></script>
     <script src="../assets/js/plugins/range-slider.js"></script>
+</body>
+
+</html>

@@ -6,7 +6,15 @@ if (!isset($_SESSION['admin'])) {
     exit();
 }
 
+$msg = $error = "";
+
 $allCourses = getAllCourses();
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $response = deleteCourse($id);
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -31,6 +39,17 @@ $allCourses = getAllCourses();
             <div class="container">
                 <h4 class="dashboard-title">All Courses</h4>
                 <div class="dashboard-courses">
+                    <?php
+                    if (@$response == "Success") {
+                    ?>
+                        <p class="success"> Course deleted successfully! </p>
+                    <?php
+                    } else {
+                    ?>
+                        <p class="error"> <?php echo @$response; ?> </p>
+                    <?php
+                    }
+                    ?>
                     <?php if (!empty($allCourses)) : ?>
                         <?php foreach ($allCourses as $course) : ?>
                             <div class="dashboard-courses__item">
@@ -59,7 +78,7 @@ $allCourses = getAllCourses();
                                         </div>
                                         <div class="dashboard-courses__action">
                                             <a class="action" href="edit-courses.php?id=<?= $course['id']; ?>"><i class="fas fa-pencil-alt"></i> Edit</a>
-                                            <a class="action delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                                            <a class="action delete" href="dashboard-all-courses.php?id=<?= $course['id']; ?>"><i class="fas fa-trash-alt"></i> Delete</a>
                                         </div>
                                     </div>
                                 </div>

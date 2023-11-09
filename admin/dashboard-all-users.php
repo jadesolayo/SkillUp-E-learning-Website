@@ -7,7 +7,12 @@ if (!isset($_SESSION['admin'])) {
 }
 
 $allUsers = getAllUsers();
+$response = ""; // Initialize response variable
 
+if (isset($_GET['user_id'])) {
+    $user_id = $_GET['user_id'];
+    $response = deleteUser($user_id);
+}
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -30,37 +35,40 @@ $allUsers = getAllUsers();
         <div class="dashboard-content">
             <div class="container">
                 <h4 class="dashboard-title">All Students</h4>
-                <!-- Dashboard My Courses Start -->
-                <div class="dashboard-courses">
-                    <table id="instructorsTable" class="display" style="width:100%">
-                        <thead>
+                <!-- Display response message -->
+                <?php if ($response === "Success") : ?>
+                    <p class="success">User deleted successfully!</p>
+                <?php elseif ($response) : ?>
+                    <p class="error"><?= $response; ?></p>
+                <?php endif; ?>
+
+                <table id="instructorsTable" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Use PHP to populate the table with user data -->
+                        <?php foreach ($allUsers as $user) : ?>
                             <tr>
-                                <th>ID</th>
-                                <th>Firstname</th>
-                                <th>Lastname</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
+                                <td><?= $user['user_id']; ?></td>
+                                <td><?= $user['user_firstname']; ?></td>
+                                <td><?= $user['user_lastname']; ?></td>
+                                <td>
+                                    <a href="edit-users.php?id=<?= $user['user_id']; ?>"><i class="fas fa-pencil-alt"></i> Edit</a>
+                                </td>
+                                <td>
+                                    <a href="dashboard-all-users.php?user_id=<?= $user['user_id']; ?>"><i class="fas fa-trash-alt"></i> Delete</a>
+                                </td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Use PHP to populate the table with instructor data -->
-                            <?php foreach ($allUsers as $user) : ?>
-                                <tr>
-                                    <td><?= $user['user_id']; ?></td>
-                                    <td><?= $user['user_firstname']; ?></td>
-                                    <td><?= $user['user_lastname']; ?></td>
-                                    <td>
-                                        <a href="edit-users.php?id=<?= $user['user_id']; ?>">Edit</a>
-                                    </td>
-                                    <td>
-                                        <a href="delete-users.php?id=<?= $user['user_id']; ?>">Delete</a>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Dashboard My Courses End -->
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- Dashboard Content End -->
