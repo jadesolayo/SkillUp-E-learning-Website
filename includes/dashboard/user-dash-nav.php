@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="dashboard-nav__logo">
-                    <a class="logo" href="dashboard.php"><img src="../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
+                    <a class="logo" href="../index.php"><img src="../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
                 </div>
 
             </div>
@@ -44,7 +44,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../includes/logout.php">
+                            <a href="logout.php">
                                 <i class="edumi edumi-sign-out"></i>
                                 <span class="text">Logout</span>
                             </a>

@@ -8,6 +8,11 @@ if (!isset($_SESSION['admin'])) {
 
 $allInstructors = getAllInstructors();
 
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $response = deleteInstructor($id);
+}
+
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -32,11 +37,17 @@ $allInstructors = getAllInstructors();
                 <h4 class="dashboard-title">All Instructors</h4>
                 <!-- Dashboard My Courses Start -->
                 <div class="dashboard-courses">
-                    <div class="float">
-                    <div class="dashboard-header__btn">
-                        <a class="btn btn-outline-primary" href="add-instructor.php"><i class="edumi edumi-content-writing"></i> <span class="text">Add New Instructor </span></a>
-                    </div>
-                    </div>
+                    <?php
+                    if (@$response == "Success") {
+                    ?>
+                        <p class="success"> Instructor deleted successfully! </p>
+                    <?php
+                    } else {
+                    ?>
+                        <p class="error"> <?php echo @$response; ?> </p>
+                    <?php
+                    }
+                    ?>
                     <table id="instructorsTable" class="display" style="width:100%">
                         <thead>
                             <tr>
@@ -55,10 +66,10 @@ $allInstructors = getAllInstructors();
                                     <td><?= $instructor['firstname']; ?></td>
                                     <td><?= $instructor['lastname']; ?></td>
                                     <td>
-                                        <a href="edit-instructors.php?id=<?= $instructor['id']; ?>">Edit</a>
+                                        <a href="edit-instructors.php?id=<?= $instructor['id']; ?>"><i class="fas fa-pencil-alt"></i>Edit</a>
                                     </td>
                                     <td>
-                                        <a href="delete-instructors.php?id=<?= $instructor['id']; ?>">Delete</a>
+                                        <a href="dashboard-all-instructors.php?id=<?= $instructor['id']; ?>"><i class="fas fa-trash-alt"></i> Delete</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
