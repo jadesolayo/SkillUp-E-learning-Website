@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
 
         $allCourses = getAllCourses();
 
-?>
+        ?>
         <!DOCTYPE html>
         <html class="no-js" lang="en">
 
@@ -35,7 +35,9 @@ if (isset($_GET['id'])) {
             <!-- Font CSS -->
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
+                rel="stylesheet" />
 
             <!-- Vendor CSS (Bootstrap & Icon Font) -->
             <link rel="stylesheet" href="../assets/css/vendor/fontawesome-all.min.css" />
@@ -76,8 +78,10 @@ if (isset($_GET['id'])) {
                             <!-- Page Breadcrumb Start -->
                             <div class="page-breadcrumb">
                                 <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="dashboard-all-courses.php">Courses</a></li>
-                                    <li class="breadcrumb-item active"><?php echo htmlentities($course['coursetitle']); ?></li>
+                                    <li class="breadcrumb-item"><a href="dashboard-my-courses.php">Courses</a></li>
+                                    <li class="breadcrumb-item active">
+                                        <?php echo htmlentities($course['coursetitle']); ?>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- Page Breadcrumb End -->
@@ -104,9 +108,13 @@ if (isset($_GET['id'])) {
                                     <!-- Tutor Course Top Info Start -->
                                     <div class="tutor-course-top-info__content">
                                         <div class="tutor-course-top-info__badges">
-                                            <a class="badges-category" href="#"><?php echo htmlentities($course['category']); ?></a>
+                                            <a class="badges-category" href="#">
+                                                <?php echo htmlentities($course['category']); ?>
+                                            </a>
                                         </div>
-                                        <h1 class="tutor-course-top-info__title"><?php echo htmlentities($course['coursetitle']); ?></h1>
+                                        <h1 class="tutor-course-top-info__title">
+                                            <?php echo htmlentities($course['coursetitle']); ?>
+                                        </h1>
 
                                         <div class="tutor-course-top-info__meta">
                                             <div class="tutor-course-top-info__meta-rating">
@@ -123,7 +131,8 @@ if (isset($_GET['id'])) {
 
                                     <div class="tutor-course-top-info__video-02 mt-6">
                                         <div class="ratio ratio-16x9">
-                                            <img src="../uploads/<?php echo htmlentities($course['courseimage']); ?>" alt="Course">
+                                            <img src="../uploads/<?php echo htmlentities($course['courseimage']); ?>"
+                                                alt="Course">
                                         </div>
                                     </div>
 
@@ -133,7 +142,8 @@ if (isset($_GET['id'])) {
                                 <!-- Tutor Course tabs Menu Start -->
                                 <div class="tutor-course-tabs tutor-course-tabs-02 bg-color-13 mt-6">
                                     <ul class="nav justify-content-center">
-                                        <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">Overview</button></li>
+                                        <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">Overview</button>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- Tutor Course tabs Menu End -->
@@ -152,7 +162,8 @@ if (isset($_GET['id'])) {
                                                 <div class="tutor-course-segment__prerequisites">
                                                     <div class="tutor-course-segment__prerequisites-warning">
                                                         <i class="fas fa-exclamation-triangle"></i>
-                                                        Please note that this course has the following prerequisites which must be completed before it can be accessed
+                                                        Please note that this course has the following prerequisites which must
+                                                        be completed before it can be accessed
                                                     </div>
                                                 </div>
                                                 <!-- Tutor Course Segment Prerequisites End -->
@@ -166,7 +177,9 @@ if (isset($_GET['id'])) {
 
                                                 <!-- Tutor Course Segment Content Wrapper Start -->
                                                 <div class="tutor-course-segment__content-wrap">
-                                                    <p><?php echo htmlentities($course['coursedescription']); ?></p>
+                                                    <p>
+                                                        <?php echo htmlentities($course['coursedescription']); ?>
+                                                    </p>
                                                 </div>
                                                 <!-- Tutor Course Segment Content Wrapper End -->
 
@@ -182,19 +195,22 @@ if (isset($_GET['id'])) {
                                                     <div class="tutor-course-segment__benefit-item">
                                                         <div class="tutor-course-segment__benefit-content">
                                                             <i class="fas fa-check"></i>
-                                                            <span class="benefit-text">Ready to begin working on real-world data modeling projects,</span>
+                                                            <span class="benefit-text">Ready to begin working on real-world data
+                                                                modeling projects,</span>
                                                         </div>
                                                     </div>
                                                     <div class="tutor-course-segment__benefit-item">
                                                         <div class="tutor-course-segment__benefit-content">
                                                             <i class="fas fa-check"></i>
-                                                            <span class="benefit-text">Expanded responsibilities as part of an existing role</span>
+                                                            <span class="benefit-text">Expanded responsibilities as part of an
+                                                                existing role</span>
                                                         </div>
                                                     </div>
                                                     <div class="tutor-course-segment__benefit-item">
                                                         <div class="tutor-course-segment__benefit-content">
                                                             <i class="fas fa-check"></i>
-                                                            <span class="benefit-text">Find a new position involving data modeling.</span>
+                                                            <span class="benefit-text">Find a new position involving data
+                                                                modeling.</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -219,18 +235,24 @@ if (isset($_GET['id'])) {
                                     <div class="tutor-course-price-preview">
                                         <div class="tutor-course-price-preview__price">
                                             <div class="tutor-course-price">
-                                                <span class="sale-price"><?php echo htmlentities($course['price']); ?></span>
+                                                <span class="sale-price">
+                                                    <?php echo htmlentities($course['price']); ?>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="tutor-course-price-preview__meta">
                                             <ul class="tutor-course-meta-list">
                                                 <li>
                                                     <div class="label"><i class="fas fa-clock"></i> Duration </div>
-                                                    <div class="value"><?php echo htmlentities($course['duration']); ?></div>
+                                                    <div class="value">
+                                                        <?php echo htmlentities($course['duration']); ?>
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <div class="label"><i class="fas fa-tag"></i> Subject </div>
-                                                    <div class="value"><a href="#"><?php echo htmlentities($course['coursetitle']); ?></a></div>
+                                                    <div class="value"><a href="#">
+                                                            <?php echo htmlentities($course['coursetitle']); ?>
+                                                        </a></div>
                                                 </li>
                                                 <li>
                                                     <div class="label"><i class="fas fa-globe"></i> Language </div>
@@ -246,8 +268,10 @@ if (isset($_GET['id'])) {
                                         <h3 class="sidebar-widget__title">Course categories</h3>
 
                                         <ul class="sidebar-widget__link">
-                                            <?php foreach ($allCourses as $category) : ?>
-                                                <li><a href="#"><?php echo htmlentities($category['category']); ?></a></li>
+                                            <?php foreach ($allCourses as $category): ?>
+                                                <li><a href="#">
+                                                        <?php echo htmlentities($category['category']); ?>
+                                                    </a></li>
                                             <?php endforeach; ?>
                                         </ul>
                                     </div>
@@ -259,15 +283,22 @@ if (isset($_GET['id'])) {
 
                                         <div class="sidebar-widget__course">
 
-                                            <?php foreach ($allCourses as $course) : ?>
+                                            <?php foreach ($allCourses as $course): ?>
                                                 <div class="sidebar-widget__course-item">
                                                     <div class="sidebar-widget__course-thumbnail">
-                                                        <a href="course-single-layout-01.html"><img src="../uploads/<?php echo htmlentities($course['courseimage']); ?>" alt="Course" width="120" height="72"></a>
+                                                        <a href="course-single-layout-01.html"><img
+                                                                src="../uploads/<?php echo htmlentities($course['courseimage']); ?>"
+                                                                alt="Course" width="120" height="72"></a>
                                                     </div>
                                                     <div class="sidebar-widget__course-content">
-                                                        <h4 class="sidebar-widget__course-title"><a href="course-details.php?id=<?= $course['id']; ?>"><?php echo htmlentities($course['coursetitle']); ?></a></h4>
+                                                        <h4 class="sidebar-widget__course-title"><a
+                                                                href="course-details.php?id=<?= $course['id']; ?>">
+                                                                <?php echo htmlentities($course['coursetitle']); ?>
+                                                            </a></h4>
                                                         <div class="sidebar-widget__course-price">
-                                                            <span class="sale-price"><?php echo htmlentities($course['price']); ?></span>
+                                                            <span class="sale-price">
+                                                                <?php echo htmlentities($course['price']); ?>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -338,7 +369,7 @@ if (isset($_GET['id'])) {
         </body>
 
         </html>
-<?php
+        <?php
     } else {
         echo "Course not found";
     }
