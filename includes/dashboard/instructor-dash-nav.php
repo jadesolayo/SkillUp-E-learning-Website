@@ -5,9 +5,19 @@
         <!-- Dashboard Nav Header Start -->
         <div class="offcanvas-header dashboard-nav__header dashboard-nav-header">
 
+
+                <div class="dashboard-nav__toggle d-xl-none">
+                    <button class="toggle-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div class="dashboard-nav__logo">
+                    <a class="logo" href="../index.php"><img src="../assets/images/logo.png" alt="Logo" width="148" height="62"></a>
+                </div>
+
             <div class="dashboard-nav__toggle d-xl-none">
                 <button class="toggle-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
             </div>
+
 
             <div class="dashboard-nav__logo">
                 <a class="logo" href="../instructor/dashboard.php"><img src="../assets/images/logo.png" alt="Logo"

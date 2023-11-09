@@ -160,18 +160,15 @@
             <nav class="menu-primary">
               <ul class="menu-primary__container">
                 <li><a class="active" href="index.php"><span>Home</span></a>
-
-
-
-
-
-
                 </li>
                 <li>
                   <a href="courses.php"><span>Courses</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Blog</span></a>
+                  <a href="about.php"><span>About</span></a>
+                </li>
+                <li>
+                  <a href="contact-us.php"><span>Contact Us</span></a>
                 </li>
                 <li>
                   <a href="become-an-instructor.php"><span>Become an Instructor</span></a>

@@ -1,7 +1,7 @@
 <?php
 require "../includes/functions.php";
 if(isset($_GET['logout'])) {
-    logoutInstructor();
+    logoutAdmin();
 }
 ?>
 <!DOCTYPE html>
@@ -56,7 +56,7 @@ if(isset($_GET['logout'])) {
 </body>
 <script>
         function cancelLogout() {
-            window.location.href = "../instructor/dashboard.php";
+            window.location.href = "../admin/dashboard.php";
         }
     </script>
 </html>

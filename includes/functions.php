@@ -376,7 +376,49 @@ function changeuserPassword($username, $currentPassword, $newPassword, $confirmP
     }
 
     // Verify if the provided current password is correct
-    $sql = "SELECT password FROM instructors WHERE username = ?";
+    $sql = "SELECT password FROM users WHERE user_username = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $data = $result->fetch_assoc();
+
+    if ($data === null || !password_verify($currentPassword, $data["user_password"])) {
+        return "Incorrect current password";
+    }
+
+    if ($newPassword !== $confirmPassword) {
+        return "New password and confirm password do not match";
+    }
+
+    // Update the password with the new one
+    $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+    $updateSql = "UPDATE users SET password = ? WHERE user_username = ?";
+    $updateStmt = $mysqli->prepare($updateSql);
+    $updateStmt->bind_param("ss", $hashedPassword, $username);
+    $updateStmt->execute();
+
+    if ($updateStmt->affected_rows > 0) {
+        return "Success";
+    } else {
+        return "Failed to change the password";
+    }
+}
+
+function changeadminPassword($username, $currentPassword, $newPassword, $confirmPassword)
+{
+    $mysqli = connect();
+    $username = trim($username);
+    $currentPassword = trim($currentPassword);
+    $newPassword = trim($newPassword);
+    $confirmPassword = trim($confirmPassword);
+
+    if (empty($username) || empty($currentPassword) || empty($newPassword) || empty($confirmPassword)) {
+        return "All fields are required";
+    }
+
+    // Verify if the provided current password is correct
+    $sql = "SELECT password FROM admin WHERE username = ?";
     $stmt = $mysqli->prepare($sql);
     $stmt->bind_param("s", $username);
     $stmt->execute();
@@ -393,7 +435,7 @@ function changeuserPassword($username, $currentPassword, $newPassword, $confirmP
 
     // Update the password with the new one
     $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
-    $updateSql = "UPDATE instructors SET password = ? WHERE username = ?";
+    $updateSql = "UPDATE admin SET password = ? WHERE username = ?";
     $updateStmt = $mysqli->prepare($updateSql);
     $updateStmt->bind_param("ss", $hashedPassword, $username);
     $updateStmt->execute();
@@ -407,6 +449,28 @@ function changeuserPassword($username, $currentPassword, $newPassword, $confirmP
 
 
 function logoutUser()
+{
+    session_destroy();
+
+    if (isset($_COOKIE['remember_me'])) {
+        setcookie('remember_me', '', time() - 3600, '/');
+    }
+    header("Location: ../auth/login.php");
+    exit();
+}
+
+function logoutInstructor()
+{
+    session_destroy();
+
+    if (isset($_COOKIE['remember_me'])) {
+        setcookie('remember_me', '', time() - 3600, '/');
+    }
+    header("Location: ../auth/login.php");
+    exit();
+}
+
+function logoutAdmin()
 {
     session_destroy();
 
@@ -604,11 +668,10 @@ function getInstructorById($instructorId) {
         $instructor = $result->fetch_assoc();
         return $instructor;
     } else {
-        return null; // Instructor not found
+        return null; 
     }
 }
 
-// Function to update instructor information
 function updateInstructor($instructorId, $firstname, $lastname, $email) {
     $mysqli = connect();
 
@@ -620,9 +683,9 @@ function updateInstructor($instructorId, $firstname, $lastname, $email) {
     $sql = "UPDATE instructors SET firstname = '$firstname', lastname = '$lastname', email = '$email' WHERE id = $instructorId";
 
     if ($mysqli->query($sql) === TRUE) {
-        return true; // Instructor information updated successfully
+        return true; 
     } else {
-        return false; // Failed to update instructor information
+        return false; 
     }
 }
 
@@ -700,32 +763,124 @@ function filterCourses($courses, $categoryFilter, $priceFilter, $durationFilter)
     
     $filteredCourses = [];
 
-    // Loop through all courses and apply filters
     foreach ($courses as $course) {
-        // Check if the course matches the category filter (if applied)
-        if ($categoryFilter && $course['category_id'] != $categoryFilter) {
-            continue; // Skip this course
+        $courseCategory = $course['category']; 
+        $coursePrice = $course['price']; 
+        $courseDuration = $course['duration'];
+
+        if ($categoryFilter && $courseCategory != $categoryFilter) {
+            continue;
         }
 
-        // Check if the course matches the price filter (if applied)
-        if ($priceFilter === 'free' && $course['price'] != 0) {
-            continue; // Skip this course
+        if ($priceFilter === 'free' && $coursePrice != 0) {
+            continue;
         }
 
-        // Check if the course matches the duration filter (if applied)
-        if ($durationFilter && $course['duration'] < $durationFilter) {
-            continue; // Skip this course
+        if ($durationFilter && $courseDuration < $durationFilter) {
+            continue;
         }
 
-        // If the course passes all filters, add it to the filteredCourses array
         $filteredCourses[] = $course;
     }
 
     return $filteredCourses;
 }
 
+function deleteCourse($id) {
+    $mysqli = connect();
 
+    $sql = "DELETE FROM coursesinfo WHERE id = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("i", $id);
 
+    if ($stmt->execute()) {
+        return "Success";
+    } else {
+        return "Something went wrong. Please try again";
+    }
+}
+
+function deleteInstructor($id) {
+    $mysqli = connect();
+
+    $sql = "DELETE FROM instructors WHERE id = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("i", $id);
+
+    if ($stmt->execute()) {
+        return "Success";
+    } else {
+        return "Something went wrong. Please try again";
+    }
+}
+
+function deleteUser($user_id) {
+    $mysqli = connect();
+
+    $sql = "DELETE FROM users WHERE user_id = ?";
+    $stmt = $mysqli->prepare($sql);
+    $stmt->bind_param("i", $user_id);
+
+    if ($stmt->execute()) {
+        return "Success";
+    } else {
+        return "Something went wrong. Please try again";
+    }
+}
+
+function insertApplication($userId, $courseId) {
+    $mysqli = connect();
+
+    $query = "INSERT INTO courseapply (userid, courseid) VALUES (?, ?)";
+
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        $stmt->bind_param("ii", $userId, $courseId);
+
+        
+        if ($stmt->execute()) {
+            $stmt->close(); 
+            $mysqli->close(); 
+            return true;
+        } else {
+            $stmt->close();
+            $mysqli->close(); 
+            return false;
+        }
+    } else {
+        $mysqli->close(); 
+        return false;
+    }
+}
+
+function getAppliedCourses($userId) {
+    $mysqli = connect(); 
+
+    $appliedCourses = array();
+
+    $query = "SELECT coursesinfo.*
+    FROM coursesinfo
+    INNER JOIN courseapply ON coursesinfo.id = courseapply.courseid
+    WHERE courseapply.userid = ?;
+    ";
+
+    if ($stmt = $mysqli->prepare($query)) {
+        $stmt->bind_param("i", $userId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        while ($row = $result->fetch_assoc()) {
+            $appliedCourses[] = $row;
+        }
+
+        $stmt->close();
+    }
+
+    $mysqli->close();
+
+    return $appliedCourses;
+}
 
     
 ?>

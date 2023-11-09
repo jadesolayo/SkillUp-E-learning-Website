@@ -39,11 +39,11 @@
                 <h4 class="footer-widget__title">About</h4>
 
                 <ul class="footer-widget__link">
-                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="about.php">About Us</a></li>
                   <li>
-                    <a href="course-grid-left-sidebar.html">Courses</a>
+                    <a href="courses.php">Courses</a>
                   </li>
-                  <li><a href="event-grid-sidebar.html">Events</a></li>
+                  <li><a href="auth/register.php">Learn With Us</a></li>
                   <li>
                 </ul>
               </div>
@@ -55,11 +55,11 @@
                 <h4 class="footer-widget__title">Links</h4>
 
                 <ul class="footer-widget__link">
-                  <li>
-                    <a href="blog-grid-left-sidebar.html">News & Blogs</a>
-                  </li>
                   <li><a href="#">Partners</a></li>
                   <li><a href="#">Career</a></li>
+                  <li>
+                    <a href="become-an-instructor.php">Become An Instructor</a>
+                  </li>
                 </ul>
               </div>
               <!-- Footer Widget End -->
@@ -70,8 +70,8 @@
                 <h4 class="footer-widget__title">Support</h4>
 
                 <ul class="footer-widget__link">
-                  <li><a href="#">DContact</a></li>
-                  <li><a href="faqs.html">FAQs</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="faqs.php">FAQs</a></li>
                   <li><a href="#">Community</a></li>
                 </ul>
               </div>
