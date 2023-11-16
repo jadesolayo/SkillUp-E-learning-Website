@@ -1,6 +1,6 @@
 <?php
 require "../includes/functions.php";
-if(!isset($_SESSION['user'])) {
+if (!isset($_SESSION['user'])) {
     header("location: ../auth/login.php");
     exit();
 }
@@ -52,25 +52,33 @@ if (!$userProfile) {
                                 <div class="dashboard-profile__item">
                                     <div class="dashboard-profile__heading">First Name</div>
                                     <div class="dashboard-profile__content">
-                                        <p><?php echo $userProfile["user_firstname"]; ?></p>
+                                        <p>
+                                            <?php echo $userProfile["user_firstname"]; ?>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="dashboard-profile__item">
                                     <div class="dashboard-profile__heading">Last Name</div>
                                     <div class="dashboard-profile__content">
-                                        <p><?php echo $userProfile["user_lastname"]; ?></p>
+                                        <p>
+                                            <?php echo $userProfile["user_lastname"]; ?>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="dashboard-profile__item">
                                     <div class="dashboard-profile__heading">Username</div>
                                     <div class="dashboard-profile__content">
-                                        <p><?php echo $userProfile["user_username"]; ?></p>
+                                        <p>
+                                            <?php echo $userProfile["user_username"]; ?>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="dashboard-profile__item">
                                     <div class="dashboard-profile__heading">Email</div>
                                     <div class="dashboard-profile__content">
-                                        <p><?php echo $userProfile["user_email"]; ?></p>
+                                        <p>
+                                            <?php echo $userProfile["user_email"]; ?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

@@ -212,14 +212,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/web-dev-course.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/web-dev-course.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Web Development for Beginners: No matter your experience level, you
+                        <a href="#">Web Development for Beginners: No matter your experience level, you
                           can learn web development with this course
                         </a>
                       </h3>
@@ -243,14 +243,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/marketin-course.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/marketin-course.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Learn Digital Marketing: Master the latest digital marketing
+                        <a href="#">Learn Digital Marketing: Master the latest digital marketing
                           strategies and techniques with this course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Olabisi Johnson</a>
@@ -273,14 +273,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/photography-course.png"
-                            alt="courses" width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/photography-course.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Photography Fundamentals: Capture Moments, Create Memories, Master
+                        <a href="#">Photography Fundamentals: Capture Moments, Create Memories, Master
                           Photography!</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Samuel Afolabi</a>
@@ -303,8 +303,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/graphic-design.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/graphic-design.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -313,7 +313,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Graphic Design for Beginners: Master the Basics of Graphic
+                        <a href="#">Graphic Design for Beginners: Master the Basics of Graphic
                           Design</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Benson Grace</a>
@@ -336,8 +336,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/emo-intel.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/emo-intel.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -346,7 +346,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Emotional Intelligence and Communication: Master the Art of
+                        <a href="#">Emotional Intelligence and Communication: Master the Art of
                           Emotional Intelligence and Communicatio</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Olivia Parker</a>
@@ -362,8 +362,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/product-mgt.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/product-mgt.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -372,7 +372,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Become a Product Manager | Learn the Skills & Get
+                        <a href="#">Become a Product Manager | Learn the Skills & Get
                           the Job</a>
                       </h3>
                       <a href="#" class="course-info__instructor">parra</a>
@@ -395,14 +395,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/mech-eng.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/mech-eng.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Mechanical Engineering and Electrical Engineering
+                        <a href="#">Mechanical Engineering and Electrical Engineering
                           Explained</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
@@ -418,14 +418,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/algebra.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/algebra.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Learn Algebra The Easy Way!</a>
+                        <a href="#">Learn Algebra The Easy Way!</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
                       <div class="course-info__price">
@@ -447,14 +447,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/public-speaking.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/public-speaking.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Public Speaking: Communicate your ideas confidently and effectively
+                        <a href="#">Public Speaking: Communicate your ideas confidently and effectively
                           in front of an audience.</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Donald Logan</a>
@@ -477,14 +477,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/lightroom.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/lightroom.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Adobe Lightroom For Beginners : Complete
+                        <a href="#">Adobe Lightroom For Beginners : Complete
                           Photo/Image Editing</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Alex Tobi</a>
@@ -513,8 +513,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/data-modeling.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/data-modeling.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -524,7 +524,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Mastering Data Modeling Fundamentals</a>
+                        <a href="#">Mastering Data Modeling Fundamentals</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -546,8 +546,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/accounting.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/accounting.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="onsale">-51%</span>
@@ -556,7 +556,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Fundamentals of Accounting</a>
+                        <a href="#">Fundamentals of Accounting</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -580,14 +580,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/negotiation.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/negotiation.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Successful Negotiation: Master Your Negotiating
+                        <a href="#">Successful Negotiation: Master Your Negotiating
                           Skills</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Solomon Eniola</a>
@@ -610,14 +610,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/time-mgt.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/time-mgt.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Time Management Mastery: Do More, Stress Less</a>
+                        <a href="#">Time Management Mastery: Do More, Stress Less</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Winner Samuel</a>
                       <div class="course-info__price">
@@ -632,8 +632,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/lightroom.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/lightroom.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -643,7 +643,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Adobe Illustrator CC – Essentials Training
+                        <a href="#">Adobe Illustrator CC – Essentials Training
                           Course0</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Alex Tobi</a>
@@ -666,8 +666,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/problem-solving.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/problem-solving.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -676,7 +676,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Consulting Approach to Problem Solving</a>
+                        <a href="#">Consulting Approach to Problem Solving</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Kolade Johnson</a>
                       <div class="course-info__price">
@@ -698,14 +698,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/angular.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/angular.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Angular – The Complete Guide (2020 Edition)</a>
+                        <a href="#">Angular – The Complete Guide (2020 Edition)</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Igwe Blessing</a>
                       <div class="course-info__price">
@@ -720,8 +720,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/business-intel.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/business-intel.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -730,7 +730,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Business Intelligence Analyst Course 2020</a>
+                        <a href="#">The Business Intelligence Analyst Course 2020</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Helen Parker</a>
                       <div class="course-info__price">
@@ -752,8 +752,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/product-mgt.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/product-mgt.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -762,7 +762,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Become a Product Manager | Learn the Skills & Get
+                        <a href="#">Become a Product Manager | Learn the Skills & Get
                           the Job</a>
                       </h3>
                       <a href="#" class="course-info__instructor">parra</a>
@@ -785,14 +785,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/mech-eng.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/mech-eng.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Mechanical Engineering and Electrical Engineering
+                        <a href="#">Mechanical Engineering and Electrical Engineering
                           Explained</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
@@ -814,8 +814,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/lightroom.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/lightroom.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -825,7 +825,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Adobe Illustrator CC – Essentials Training
+                        <a href="#">Adobe Illustrator CC – Essentials Training
                           Course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
@@ -848,8 +848,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/problem-solving.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/problem-solving.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -858,7 +858,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Consulting Approach to Problem Solving</a>
+                        <a href="#">Consulting Approach to Problem Solving</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Kolade Johnson</a>
                       <div class="course-info__price">
@@ -880,8 +880,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/time-mgt.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/time-mgt.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -890,7 +890,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Time Management for Professional Productivity</a>
+                        <a href="#">Time Management for Professional Productivity</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Winner Samuel</a>
                       <div class="course-info__price">
@@ -912,8 +912,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/critical-thinking.jpeg"
-                            alt="courses" width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/critical-thinking.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -922,7 +922,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Critical Thinking: Think critically and analytically to solve
+                        <a href="#">Critical Thinking: Think critically and analytically to solve
                           problems and make decisions/a>
                       </h3>
                       <a href="#" class="course-info__instructor">Christ Owen</a>
@@ -945,8 +945,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/business-intel.jpeg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/business-intel.jpeg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -955,7 +955,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Business Intelligence Analyst Course 2020</a>
+                        <a href="#">The Business Intelligence Analyst Course 2020</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Helen Parker</a>
                       <div class="course-info__price">
@@ -970,8 +970,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/product-mgt.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/product-mgt.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -980,7 +980,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Become a Product Manager | Learn the Skills & Get
+                        <a href="#">Become a Product Manager | Learn the Skills & Get
                           the Job</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Donald Logan</a>
@@ -1003,8 +1003,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/web-dev-course.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/web-dev-course.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -1013,7 +1013,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Introduction to Web Development</a>
+                        <a href="#">Introduction to Web Development</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
                       <div class="course-info__price">
@@ -1038,7 +1038,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Blockchain 101: Learn about the technology behind blockchain and how
+                        <a href="#">Blockchain 101: Learn about the technology behind blockchain and how
                           it can be used to create secure and transparent systems.</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Oliver Porter</a>
@@ -1054,14 +1054,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/sing.jpeg" alt="courses" width="258"
+                        <a href="#"><img src="assets/images/courses/sing.jpeg" alt="courses" width="258"
                             height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">How To Sing #1: Complete Vocal Warm ups & Voice
+                        <a href="#">How To Sing #1: Complete Vocal Warm ups & Voice
                           Physiology</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Emilee Logan</a>
@@ -1077,8 +1077,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/product-mgt.png" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/product-mgt.png" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -1087,7 +1087,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Become a Product Manager | Learn the Skills & Get
+                        <a href="#">Become a Product Manager | Learn the Skills & Get
                           the Job</a>
                       </h3>
                       <a href="#" class="course-info__instructor">parra</a>
@@ -1116,8 +1116,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-19.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-19.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1126,7 +1126,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Complete 2020 Web Development Bootcamp</a>
+                        <a href="#">The Complete 2020 Web Development Bootcamp</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Donald Logan</a>
                       <div class="course-info__price">
@@ -1141,14 +1141,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-20.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-20.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Sales Training: Practical Sales Techniques</a>
+                        <a href="#">Sales Training: Practical Sales Techniques</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1163,8 +1163,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-21.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-21.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1173,7 +1173,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Business Intelligence Analyst Course 2020</a>
+                        <a href="#">The Business Intelligence Analyst Course 2020</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1188,8 +1188,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-22.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-22.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1198,7 +1198,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Complete Graphic Design Theory for Beginners
+                        <a href="#">The Complete Graphic Design Theory for Beginners
                           Course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
@@ -1214,8 +1214,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-23.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-23.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1224,7 +1224,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Graphic Design Bootcamp: Photoshop, Illustrator,
+                        <a href="#">Graphic Design Bootcamp: Photoshop, Illustrator,
                           InDesign</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
@@ -1240,8 +1240,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-13.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-13.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1251,7 +1251,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Adobe Illustrator CC – Essentials Training
+                        <a href="#">Adobe Illustrator CC – Essentials Training
                           Course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">parra</a>
@@ -1274,8 +1274,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-24.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-24.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1285,7 +1285,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Public Relations: Media Crisis Communications</a>
+                        <a href="#">Public Relations: Media Crisis Communications</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Emilee Logan</a>
                       <div class="course-info__price">
@@ -1301,8 +1301,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-25.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-25.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1311,7 +1311,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Learn Big Data: The Hadoop Ecosystem Masterclass</a>
+                        <a href="#">Learn Big Data: The Hadoop Ecosystem Masterclass</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1326,8 +1326,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-26.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-26.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1337,7 +1337,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Mastering Data Modeling Fundamentals</a>
+                        <a href="#">Mastering Data Modeling Fundamentals</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1360,8 +1360,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-27.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-27.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1370,7 +1370,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-all">All Levels</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Communication Skills Machine: Master Persuasion</a>
+                        <a href="#">Communication Skills Machine: Master Persuasion</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1398,8 +1398,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-22.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-22.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1408,7 +1408,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Complete Graphic Design Theory for Beginners
+                        <a href="#">The Complete Graphic Design Theory for Beginners
                           Course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Donald Logan</a>
@@ -1424,14 +1424,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-9.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-9.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">User Experience Design Fundamentals</a>
+                        <a href="#">User Experience Design Fundamentals</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1446,8 +1446,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-23.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-23.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1456,7 +1456,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Graphic Design Bootcamp: Photoshop, Illustrator,
+                        <a href="#">Graphic Design Bootcamp: Photoshop, Illustrator,
                           InDesign</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
@@ -1472,8 +1472,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-28.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-28.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="free">Free</span>
@@ -1482,7 +1482,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Ultimate Photoshop Training: From Beginner to
+                        <a href="#">Ultimate Photoshop Training: From Beginner to
                           Pro</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
@@ -1498,14 +1498,14 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-29.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-29.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                     </div>
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Complete Illustrator 2020 MasterClass</a>
+                        <a href="#">The Complete Illustrator 2020 MasterClass</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1520,8 +1520,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-13.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-13.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1531,7 +1531,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Adobe Illustrator CC – Essentials Training
+                        <a href="#">Adobe Illustrator CC – Essentials Training
                           Course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">parra</a>
@@ -1554,8 +1554,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-30.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-30.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="onsale">-50%</span>
@@ -1564,7 +1564,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-intermediate">Intermediate</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">The Complete UX & Web Design Master Course</a>
+                        <a href="#">The Complete UX & Web Design Master Course</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Emilee Logan</a>
                       <div class="course-info__price">
@@ -1580,8 +1580,8 @@ include('includes/functions.php');
                   <div class="course-item">
                     <div class="course-header">
                       <div class="course-header__thumbnail">
-                        <a href="course-single.php"><img src="assets/images/courses/courses-31.jpg" alt="courses"
-                            width="258" height="173" /></a>
+                        <a href="#"><img src="assets/images/courses/courses-31.jpg" alt="courses" width="258"
+                            height="173" /></a>
                       </div>
                       <div class="course-header__badge">
                         <span class="hot">Featured</span>
@@ -1590,7 +1590,7 @@ include('includes/functions.php');
                     <div class="course-info">
                       <span class="course-info__badge-text badge-beginner">Beginner</span>
                       <h3 class="course-info__title">
-                        <a href="course-single.php">Fundamentals of Graphic Design</a>
+                        <a href="#">Fundamentals of Graphic Design</a>
                       </h3>
                       <a href="#" class="course-info__instructor">Owen Christ</a>
                       <div class="course-info__price">
@@ -1639,7 +1639,7 @@ include('includes/functions.php');
               </h3>
             </div>
             <div class="call-to-action__btn">
-              <a href="course-grid-le.phpcourse-single.php" class="btn btn-secondary btn-hover-primary">Get started</a>
+              <a href="courses.php" class="btn btn-secondary btn-hover-primary">Get started</a>
             </div>
           </div>
           <!-- Call To Action Content End -->
@@ -1678,7 +1678,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/art&design.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1692,7 +1692,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/business.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1706,7 +1706,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/data-science.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1720,7 +1720,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/development.jpeg" alt="Category" width="258" height="318" />
                     </div>
@@ -1734,7 +1734,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/finance.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1748,7 +1748,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-6.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1762,7 +1762,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-7.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1776,7 +1776,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-8.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1790,7 +1790,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-9.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1804,7 +1804,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="#">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-1.jpg" alt="Category" width="258" height="318" />
                     </div>
