@@ -831,14 +831,17 @@ function deleteUser($user_id) {
 function insertApplication($userId, $courseId) {
     $mysqli = connect();
 
-    $query = "INSERT INTO courseapply (userid, courseid) VALUES (?, ?)";
+    if (isApplicationExists($userId, $courseId)) {
+        $mysqli->close();
+        return false;
+    }
 
+    $query = "INSERT INTO courseapply (userid, courseid) VALUES (?, ?)";
     $stmt = $mysqli->prepare($query);
 
     if ($stmt) {
         $stmt->bind_param("ii", $userId, $courseId);
 
-        
         if ($stmt->execute()) {
             $stmt->close(); 
             $mysqli->close(); 
@@ -853,6 +856,29 @@ function insertApplication($userId, $courseId) {
         return false;
     }
 }
+
+function isApplicationExists($userId, $courseId) {
+    $mysqli = connect();
+
+    $query = "SELECT * FROM courseapply WHERE userid = ? AND courseid = ?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        $stmt->bind_param("ii", $userId, $courseId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $application = $result->fetch_assoc();
+
+        $stmt->close();
+        $mysqli->close();
+
+        return !empty($application); 
+    } else {
+        $mysqli->close();
+        return false;
+    }
+}
+
 
 function getAppliedCourses($userId) {
     $mysqli = connect(); 
@@ -882,5 +908,105 @@ function getAppliedCourses($userId) {
     return $appliedCourses;
 }
 
+function getEnrolledCourses($userId) {
+    $mysqli = connect();
+
+    $query = "SELECT * FROM courseapply WHERE userid = ?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        $stmt->bind_param("i", $userId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $courses = $result->fetch_all(MYSQLI_ASSOC);
+
+        $stmt->close();
+        $mysqli->close();
+
+        return $courses;
+    } else {
+        $mysqli->close();
+        return false;
+    }
+}
+
+function getEnrolledCoursesCount($userId) {
+    $mysqli = connect();
+
+    $query = "SELECT COUNT(*) as count FROM courseapply WHERE userid = ?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        $stmt->bind_param("i", $userId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $count = $result->fetch_assoc()['count'];
+
+        $stmt->close();
+        $mysqli->close();
+
+        return $count;
+    } else {
+        $mysqli->close();
+        return false;
+    }
+}
+
+
+function searchCourses($searchQuery) {
+    $mysqli = connect();
+
+    $query = "SELECT * FROM courses WHERE coursetitle LIKE ?";
+    
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        $searchParam = "%{$searchQuery}%";
+        $stmt->bind_param("s", $searchParam);
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $courses = $result->fetch_all(MYSQLI_ASSOC);
+
+        $stmt->close();
+        $mysqli->close();
+
+        return $courses;
+    } else {
+        $mysqli->close();
+        return false;
+    }
+}
+
+function searchAllCourses($searchQuery = null) {
+    $mysqli = connect();
+
+    $query = "SELECT * FROM coursesinfo";
+
+    if ($searchQuery) {
+        $query .= " WHERE coursetitle LIKE ?";
+    }
+
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        if ($searchQuery) {
+            $searchParam = "%{$searchQuery}%";
+            $stmt->bind_param("s", $searchParam);
+        }
+
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $courses = $result->fetch_all(MYSQLI_ASSOC);
+
+        $stmt->close();
+        $mysqli->close();
+
+        return $courses;
+    } else {
+        $mysqli->close();
+        return false;
+    }
+}
     
 ?>

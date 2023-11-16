@@ -5,8 +5,11 @@ if(!isset($_SESSION['user'])) {
     exit();
 }
 
-$user = $_SESSION["user"]; // Use $_SESSION["instructor"] instead of $_SESSION["user"]
+$user = $_SESSION["user"]; 
 $userProfile = fetchUserProfile($user);
+
+$userId = isset($_SESSION['user']) ? $_SESSION['user'] : null;
+$enrolledCoursesCount = getEnrolledCoursesCount($userId);
 
 if (!$userProfile) {
     // Handle the case where instructor details are not found
@@ -81,7 +84,7 @@ if (!$userProfile) {
                                         <i class="edumi edumi-user-support"></i>
                                     </div>
                                     <div class="dashboard-info__card-content">
-                                        <div class="dashboard-info__card-value">1</div>
+                                        <div class="dashboard-info__card-value"><?php echo $enrolledCoursesCount; ?></div>
                                         <div class="dashboard-info__card-heading">Enroled Courses</div>
                                     </div>
                                 </div>
