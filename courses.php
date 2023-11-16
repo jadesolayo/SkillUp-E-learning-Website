@@ -3,6 +3,10 @@ require "includes/functions.php";
 
 $allCourses = getAllCourses();
 
+$searchQuery = isset($_GET['query']) ? $_GET['query'] : null;
+
+$allCourses = searchAllCourses($searchQuery);
+
 $categoryFilter = isset($_POST['category']) ? $_POST['category'] : null;
 $priceFilter = isset($_POST['price']) ? $_POST['price'] : null;
 $durationFilter = isset($_POST['duration']) ? $_POST['duration'] : null;

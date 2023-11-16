@@ -20,7 +20,7 @@
                     <!-- Page Breadcrumb Start -->
                     <div class="page-breadcrumb">
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active">FAQs</li>
                         </ul>
                     </div>
@@ -34,7 +34,7 @@
                             <div class="page-banner__search">
                                 <h2 class="page-banner__main-title">How may we help you?</h2>
 
-                                <form action="#">
+                                <form action="faqs.php">
                                     <div class="page-banner__search-form">
                                         <input class="page-banner__field" placeholder="Search...">
                                         <button type="submit" class="page-banner__submit">
@@ -49,7 +49,7 @@
                     </div>
 
                 </div>
-                <div class="page-banner__bg" style="background-image: url(assets/images/banner-image-06.png);"></div>
+                <div class="page-banner__bg" style="background-image: url(assets/images/faq.png);"></div>
             </div>
         </div>
         <!-- Page Banner Section End -->
@@ -221,7 +221,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Getting Started</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -247,7 +247,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Account/Profile</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -276,7 +276,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Troubleshooting</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -300,7 +300,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Course Taking</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -324,7 +324,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Purchase/Refunds</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -347,7 +347,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Mobile</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -474,7 +474,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Instructor Payments</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -503,7 +503,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Selling & Promotion</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -538,7 +538,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Quality Standards</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -563,7 +563,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Course Building</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -594,7 +594,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title"> Course Management</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!-- Box Item End -->
@@ -614,7 +614,7 @@
                                             <div class="edumall-box-item-04__content">
                                                 <h3 class="edumall-box-item-04__title">Trust & Safety</h3>
 
-                                                <p>Learn how EduMall works and how to start learning.</p>
+                                                <p>Learn how Skillup works and how to start learning.</p>
                                             </div>
                                         </div>
                                         <!--  Box Item End -->
