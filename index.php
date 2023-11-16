@@ -1639,7 +1639,7 @@ include('includes/functions.php');
               </h3>
             </div>
             <div class="call-to-action__btn">
-              <a href="course-grid-le.phpcourse-single.php" class="btn btn-secondary btn-hover-primary">Get started</a>
+              <a href="courses.php" class="btn btn-secondary btn-hover-primary">Get started</a>
             </div>
           </div>
           <!-- Call To Action Content End -->
@@ -1678,7 +1678,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/art&design.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1692,7 +1692,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/business.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1706,7 +1706,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/data-science.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1720,7 +1720,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/development.jpeg" alt="Category" width="258" height="318" />
                     </div>
@@ -1734,7 +1734,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/finance.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1748,7 +1748,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-6.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1762,7 +1762,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-7.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1776,7 +1776,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-8.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1790,7 +1790,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-9.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1804,7 +1804,7 @@ include('includes/functions.php');
               <div class="swiper-slide">
                 <!-- Category Item Start -->
                 <div class="category-item">
-                  <a class="category-item__link" href="cours.phpcourse-single.php">
+                  <a class="category-item__link" href="courses.php">
                     <div class="category-item__image">
                       <img src="assets/images/category/category-1.jpg" alt="Category" width="258" height="318" />
                     </div>
@@ -1941,7 +1941,7 @@ include('includes/functions.php');
               Create an account to receive our newsletter, course
               recommendations and promotions.
             </p>
-            <a href="#" class="banner-caption-03__btn btn btn-primary btn-hover-secondary">Register for free</a>
+            <a href="auth/register.php" class="banner-caption-03__btn btn btn-primary btn-hover-secondary">Register for free</a>
           </div>
 
           <div class="banner-big-box__image" style="background-image: url(assets/images/banner-newsletter.png)"></div>

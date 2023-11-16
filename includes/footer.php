@@ -70,7 +70,7 @@
                 <h4 class="footer-widget__title">Support</h4>
 
                 <ul class="footer-widget__link">
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="contact-us.php">Contact</a></li>
                   <li><a href="faqs.php">FAQs</a></li>
                   <li><a href="#">Community</a></li>
                 </ul>

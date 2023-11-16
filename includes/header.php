@@ -148,8 +148,8 @@
 
           <!-- Header Search Start -->
           <div class="header-search">
-            <form action="#">
-              <input type="text" class="header-search__input" placeholder="Search...">
+            <form action="courses.php" method="GET">
+              <input type="text" name="query" class="header-search__input" placeholder="Search...">
               <button class="header-search__btn"><i class="fas fa-search"></i></button>
             </form>
           </div>
