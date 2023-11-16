@@ -31,7 +31,7 @@
                         <li>
                             <a href="dashboard-all-course.php">
                                 <i class="edumi edumi-open-book"></i>
-                                <span class="text">Enrolled Courses</span>
+                                <span class="text">My Courses</span>
                             </a>
                         </li>
                         <li>

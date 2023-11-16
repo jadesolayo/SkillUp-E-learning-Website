@@ -1,21 +1,24 @@
 <?php
 require "../includes/functions.php";
-if (isset($_POST["course_id"])) {
-    $courseId = $_POST["course_id"];
 
-    
-    if (isset($_SESSION['user_id'])) {
-        $userId = $_SESSION['user_id'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["course_id"])) {
+        $courseId = $_POST["course_id"];
 
-        if (insertApplication($userId, $courseId)) {
-            header("Location: enrolled.php");
-            exit();
+        if (isset($_SESSION['user'])) {
+            $userId = $_SESSION['user'];
+
+            // Insert the application
+            if (insertApplication($userId, $courseId)) {
+                header("Location: enrolled.php");
+                exit();
+            } else {
+                echo "Error: Application could not be submitted.";
+            }
         } else {
-            echo "Error: Application could not be submitted.";
+            echo "User not authenticated.";
+            exit();
         }
-    } else {
-        echo "User not authenticated.";
-        exit();
     }
 }
 ?>

@@ -23,19 +23,19 @@
           <nav class="canvas-menu">
             <ul class="offcanvas-menu">
               <li>
-                <a class="active" href="../index.php"><span>Home</span></a>
+                <a class="active" href="index.php"><span>Home</span></a>
               </li>
               <li>
-                <a href=""><span>Courses</span></a>
+                <a href="courses.php"><span>Courses</span></a>
               </li>
               <li>
-                <a href="../about.php"><span>About</span></a>
+                <a href="about.php"><span>About</span></a>
               </li>
               <li>
-                <a href="../contact-us.php"><span>Contact Us</span></a>
+                <a href="contact-us.php"><span>Contact Us</span></a>
               </li>
               <li>
-                <a href="../become-an-instructor.php"><span>Become An Instructor</span></a>
+                <a href="become-an-instructor.php"><span>Become An Instructor</span></a>
               </li>
         </div>
 

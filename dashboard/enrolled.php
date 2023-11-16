@@ -6,9 +6,11 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 
-$userId = $_SESSION['user_id'];
+$userId = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 
 $appliedCourses = getAppliedCourses($userId);
+$displayedCourses = [];
+
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -30,13 +32,11 @@ $appliedCourses = getAppliedCourses($userId);
 
         <!-- Dashboard Content Start -->
         <div class="dashboard-content">
-
             <div class="container">
                 <h4 class="dashboard-title">Enrolled Courses</h4>
 
                 <!-- Dashboard Course Start -->
                 <div class="dashboard-course">
-
                     <!-- Dashboard Tabs Start -->
                     <div class="dashboard-tabs-menu">
                         <ul>
@@ -48,14 +48,14 @@ $appliedCourses = getAppliedCourses($userId);
 
                     <!-- Dashboard Course List Start -->
                     <div class="dashboard-course-list">
-
                         <!-- Dashboard Course Item Start -->
                         <?php if (!empty($appliedCourses)) : ?>
                             <?php foreach ($appliedCourses as $course) : ?>
                                 <?php
                                 // Fetch the complete course information based on $course['id']
                                 $courseInfo = getCourseById($course['id']);
-                                if ($courseInfo) :
+                                if ($courseInfo && !in_array($courseInfo['id'], $displayedCourses)) :
+                                    $displayedCourses[] = $courseInfo['id'];
                                 ?>
                                     <div class="dashboard-course-item">
                                         <a class="dashboard-course-item__link" href="#">
@@ -84,9 +84,7 @@ $appliedCourses = getAppliedCourses($userId);
                                             </div>
                                         </a>
                                     </div>
-                                <?php
-                                endif;
-                                ?>
+                                <?php endif; ?>
                             <?php endforeach; ?>
                         <?php else : ?>
                             <!-- Display a message when there are no courses -->
@@ -94,12 +92,9 @@ $appliedCourses = getAppliedCourses($userId);
                                 <p>No courses applied.</p>
                             </div>
                         <?php endif; ?>
-
                         <!-- Dashboard Course Item End -->
-
                     </div>
                     <!-- Dashboard Course List End -->
-
                 </div>
                 <!-- Dashboard Course End -->
             </div>

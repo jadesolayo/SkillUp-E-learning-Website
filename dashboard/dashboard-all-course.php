@@ -6,6 +6,10 @@ if (!isset($_SESSION['user'])) {
 }
 
 $allCourses = getAllCourses();
+
+$searchQuery = isset($_GET['query']) ? $_GET['query'] : null;
+
+$allCourses = searchAllCourses($searchQuery);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -36,7 +40,7 @@ $allCourses = getAllCourses();
         <div class="dashboard-content">
 
             <div class="container">
-                <h4 class="dashboard-title">Enrolled Courses</h4>
+                <h4 class="dashboard-title">My Courses</h4>
 
                 <!-- Dashboard Course Start -->
                 <div class="dashboard-course">
