@@ -12,7 +12,7 @@
 
             <div class="footer-widget__info">
               <span class="title">Call us</span>
-              <span class="number">800 488 40 30</span>
+              <span class="number">+234 8163 3946 98 </span>
             </div>
             <div class="footer-widget__info">
               <p>Send us an email at:</p>
