@@ -167,9 +167,9 @@
                 <li>
                   <a href="about.php"><span>About</span></a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="contact-us.php"><span>Contact Us</span></a>
-                </li>
+                </li> -->
                 <li>
                   <a href="become-an-instructor.php"><span>Become an Instructor</span></a>
                 </li>

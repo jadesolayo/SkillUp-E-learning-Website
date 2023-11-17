@@ -318,8 +318,7 @@
                         <div class="academics-item text-center" data-aos="fade-up" data-aos-duration="1000">
                             <a href="#" class="academics-item__link">
                                 <div class="academics-item__image">
-                                    <img src="assets/images/academics/event-thumbnail-03.jpg" alt="University"
-                                        width="370" height="269">
+                                    <img src="assets/images/our-mission.png" alt="University" width="370" height="269">
                                     <h3 class="academics-item__title">Our mission</h3>
                                 </div>
                                 <div class="academics-item__description">
@@ -342,81 +341,16 @@
         <!-- Academics Section End -->
 
         <!-- Gallery Start -->
-        <div class="gallery-section section-padding-01">
-            <div class="container custom-container">
 
-                <!-- Section Title Start -->
-                <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="section-title__title-03">A Great Place to <mark>Grow</mark></h2>
-                    <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipisc ing elit.</p>
-                </div>
-                <!-- Section Title End -->
+        <!-- Gallery Image End -->
+        </div>
+        </div>
 
-                <div class="row gy-6">
-                    <div class="col-md-8">
-                        <!-- Gallery Image Start -->
-                        <div class="gallery-image" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/images/gallery/about-us-gallery-01.jpg" alt="Gallery" width="770"
-                                height="420">
-                        </div>
-                        <!-- Gallery Image End -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Gallery Image Start -->
-                        <div class="gallery-image" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/images/gallery/about-us-gallery-02.jpg" alt="Gallery" width="370"
-                                height="420">
-                        </div>
-                        <!-- Gallery Image End -->
-                    </div>
-                    <div class="col-md-6">
-                        <!-- Gallery Image Start -->
-                        <div class="gallery-image" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/images/gallery/about-us-gallery-03.jpg" alt="Gallery" width="570"
-                                height="370">
-                        </div>
-                        <!-- Gallery Image End -->
-                    </div>
-                    <div class="col-md-6">
-                        <!-- Gallery Image Start -->
-                        <div class="gallery-image" data-aos="fade-up" data-aos-duration="1000">
-                            <img src="assets/images/gallery/about-us-gallery-04.jpg" alt="Gallery" width="570"
-                                height="370">
-                        </div>
-                        <!-- Gallery Image End -->
-                    </div>
-                </div>
-
-            </div>
+        </div>
         </div>
         <!-- Gallery End -->
 
-        <!-- Banner Start -->
-        <div class="banner-section section-padding-02">
-            <div class="container">
-                <!-- Banner Box Start -->
-                <div class="banner-big-box banner-bg-4" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="banner-big-box__arrow" src="assets/images/curve-arrow.png" alt="arrow" width="50"
-                        height="45" />
 
-                    <div class="banner-caption-03">
-                        <h3 class="banner-caption-03__title">
-                            Achieve Your Goals With SkillUp by Jade
-                        </h3>
-                        <p>
-                            Create an account to receive our newsletter, course
-                            recommendations and promotions.
-                        </p>
-                        <a href="#" class="banner-caption-03__btn btn btn-primary btn-hover-secondary">Register for
-                            free</a>
-                    </div>
-
-                    <div class="banner-big-box__image" style="background-image: url(assets/images/bg_04.png)"></div>
-                </div>
-                <!-- Banner Box End -->
-            </div>
-        </div>
-        <!-- Banner End -->
 
         <?php include("includes/footer.php") ?>
 
@@ -430,7 +364,7 @@
 
     </main>
 
-    
+
 
 
 
